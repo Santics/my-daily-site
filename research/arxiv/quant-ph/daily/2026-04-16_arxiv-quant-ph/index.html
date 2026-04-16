@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quant-ph 日报 — 2026-04-16 — Quantum Daily</title>
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>quant-ph 日报</h1>
+        <p>2026-04-16 | 56 篇新提交</p>
+    </header>
+    
+    <nav>
+        <a href="../../../../index.html">首页</a>
+        <a href="../../../index.html">Research</a>
+        <a href="../../index.html">quant-ph</a>
+        <span>2026-04-16</span>
+    </nav>
+    
+    <main>
+        <section>
+            <h2>今日概览</h2>
+            <ul>
+                <li><strong>总论文数：</strong>56 篇新提交</li>
+                <li><strong>高相关论文数：</strong>3 篇</li>
+                <li><strong>重点主题：</strong>中性原子快速测量、超导 fluxonium 可扩展架构、离子阱量子纠错</li>
+            </ul>
+            
+            <h3>建议优先阅读</h3>
+            <ol>
+                <li><strong>Fast measurement of neutral atoms with a multi-atom gate</strong> — 中性原子测量提速</li>
+                <li><strong>A scalable fluxonium processor with high-fidelity gates</strong> — fluxonium 架构验证</li>
+                <li><strong>Fault-Tolerant Error Detection Above Break-Even</strong> — 离子阱 Iceberg 码</li>
+            </ol>
+        </section>
+        
+        <section>
+            <h2>论文列表</h2>
+            
+            <div class="paper-section">
+                <h3>1. Quantum-inspired classical simulation through randomized time evolution</h3>
+                <table>
+                    <tr><td>作者</td><td>Fredrik Hasselgren, Bálint Koczor</td></tr>
+                    <tr><td>arXiv ID</td><td>2604.13144</td></tr>
+                    <tr><td>原链接</td><td><a href="https://arxiv.org/abs/2604.13144" target="_blank">arxiv.org/abs/2604.13144</a></td></tr>
+                    <tr><td>发布时间</td><td>2026-04-14</td></tr>
+                </table>
+                <p><strong>核心问题：</strong>如何将随机化量子时间演化算法适配到经典张量网络模拟以实现大规模并行化？</p>
+                <p><strong>AI 快评：</strong>这是一篇算法/理论论文，将 TE-PAI 改编为经典模拟框架。核心思想是用随机浅层 Trotter 变体电路的集合表示为 MPS 张量网络，实现无偏估计和高度并行化。数值实验显示每样本门数可减少 10^3 倍。</p>
+                <p><span class="relevance-medium">相关性：中</span> <span class="tag">模拟</span> <span class="tag">量子算法</span> <span class="tag">编译与优化</span></p>
+            </div>
+            
+            <div class="paper-section">
+                <h3>2. Fast measurement of neutral atoms with a multi-atom gate ⭐</h3>
+                <table>
+                    <tr><td>作者</td><td>Yotam Vaknin, Ran Finkelstein, Ofer Firstenberg, Alex Retzker</td></tr>
+                    <tr><td>arXiv ID</td><td>2604.13158</td></tr>
+                    <tr><td>原链接</td><td><a href="https://arxiv.org/abs/2604.13158" target="_blank">arxiv.org/abs/2604.13158</a></td></tr>
+                    <tr><td>发布时间</td><td>2026-04-14</td></tr>
+                </table>
+                <p><strong>核心问题：</strong>如何通过多原子 Rydberg 门加速中性原子量子计算机的测量过程？</p>
+                <p><strong>AI 快评：</strong>这是一篇实验/系统论文，针对中性原子平台的关键瓶颈——测量时间不可并行化——提出创新方案。利用 Rydberg 阻塞区域内的 N 个辅助原子寄存器测量单个数据比特，实现光子收集的 N 倍增强。模拟显示 5 个辅助原子即可在 6μs 内实现 &lt;10^-3 测量错误率。</p>
+                <p><strong>与你的主线关系：</strong>你研究中性原子量子计算，测量速度是该平台的关键瓶颈。本文提出实用的工程方案（双物种+全局操作），数值参数具体（6 μs, 10^-3），可直接与现有实验对比，具有明确的系统价值。</p>
+                <p><span class="relevance-high">相关性：高</span> <span class="tag">中性原子</span> <span class="tag">里德堡原子</span> <span class="tag">物理硬件</span> <span class="tag">量子控制</span></p>
+                <p><a href="papers/2604.13158_fast-measurement-neutral-atoms.html">→ 详细解读</a></p>
+            </div>
+            
+            <div class="paper-section">
+                <h3>3. Simple slow operators and thermalization</h3>
+                <table>
+                    <tr><td>作者</td><td>Tian-Hua Yang</td></tr>
+                    <tr><td>arXiv ID</td><td>2604.13172</td></tr>
+                    <tr><td>原链接</td><td><a href="https://arxiv.org/abs/2604.13172" target="_blank">arxiv.org/abs/2604.13172</a></td></tr>
+                    <tr><td>发布时间</td><td>2026-04-14</td></tr>
+                </table>
+                <p><strong>核心问题：</strong>热化与守恒量之间有何严格关系？</p>
+                <p><strong>AI 快评：</strong>这是一篇理论论文，建立热化与慢算符（slow operators）之间的严格数学关系。提出"简单慢算符"(SSOs)概念。偏基础理论，与具体量子计算应用距离较远。</p>
+                <p><span class="relevance-low">相关性：低</span> <span class="tag">量子复杂性</span> <span class="tag">量子信息</span></p>
+            </div>
+            
+            <div class="paper-section">
+                <h3>4. Semiclassical theory of transport</h3>
+                <table>
+                    <tr><td>作者</td><td>Marcel Novaes</td></tr>
+                    <tr><td>arXiv ID</td><td>2604.13193</td></tr>
+                    <tr><td>原链接</td><td><a href="https://arxiv.org/abs/2604.13193" target="_blank">arxiv.org/abs/2604.13193</a></td></tr>
+                    <tr><td>发布时间</td><td>2026-04-14</td></tr>
+                </table>
+                <p><strong>核心问题：</strong>如何用半经典方法处理量子混沌系统中的输运问题？</p>
+                <p><strong>AI 快评：</strong>这是一篇综述章节，回顾传输矩阵和时间延迟矩阵的半经典近似。属于基础理论综述，非算法或系统进展。</p>
+                <p><span class="relevance-low">相关性：低</span> <span class="tag">量子复杂性</span> <span class="tag">模拟</span></p>
+            </div>
+            
+            <div class="paper-section">
+                <h3>5. Fault-Tolerant Error Detection Above Break-Even for Multi-Qubit Gates ⭐</h3>
+                <table>
+                    <tr><td>作者</td><td>Colburn Riffel, Reece Robertson, Peter Hendrickson</td></tr>
+                    <tr><td>arXiv ID</td><td>2604.13219</td></tr>
+                    <tr><td>原链接</td><td><a href="https://arxiv.org/abs/2604.13219" target="_blank">arxiv.org/abs/2604.13219</a></td></tr>
+                    <tr><td>发布时间</td><td>2026-04-14</td></tr>
+                </table>
+                <p><strong>核心问题：</strong>量子错误检测码能否在真实硬件上实现超越盈亏平衡的保护？</p>
+                <p><strong>AI 快评：</strong>这是一篇实验论文，在离子阱量子计算机上验证 Iceberg [[2m, 2m-2, 2]] 错误检测码的容错实现。首次在 Toffoli 电路上实现超越盈亏平衡的错误检测。</p>
+                <p><strong>与你的主线关系：</strong>你关注量子计算实验进展，本文在真实离子阱硬件上验证了错误检测码的实用价值。虽然平台是离子阱而非中性原子，但其中的"错误检测过滤"思路对中性原子平台的近期纠错策略有借鉴意义。</p>
+                <p><span class="relevance-high">相关性：高</span> <span class="tag">量子纠错</span> <span class="tag">物理硬件</span></p>
+            </div>
+            
+            <div class="paper-section">
+                <h3>6. A scalable fluxonium processor with high-fidelity gates ⭐</h3>
+                <table>
+                    <tr><td>作者</td><td>Ze Zhan, Zishuo Li, Fei Wang, et al.</td></tr>
+                    <tr><td>arXiv ID</td><td>2604.13363</td></tr>
+                    <tr><td>原链接</td><td><a href="https://arxiv.org/abs/2604.13363" target="_blank">arxiv.org/abs/2604.13363</a></td></tr>
+                    <tr><td>发布时间</td><td>2026-04-15</td></tr>
+                </table>
+                <p><strong>核心问题：</strong>fluxonium 能否成为可扩展的超导量子比特平台？</p>
+                <p><strong>AI 快评：</strong>这是一篇实验/系统论文，建立模块化 fluxonium-可调耦合器单元架构。实现并行单比特门 99.99%、双比特 CZ 门 99%（最优 99.9% @ 32ns）。在 22 比特处理器上确定性生成 10 比特 GHZ 态。</p>
+                <p><strong>与你的主线关系：</strong>你研究量子计算硬件架构，本文展示 fluxonium 路线的可扩展架构与高性能门。虽与中性原子路线不同，但"模块化单元抑制残余相互作用"的设计思想具有跨平台借鉴价值。</p>
+                <p><span class="relevance-high">相关性：高</span> <span class="tag">物理硬件</span> <span class="tag">量子纠错</span> <span class="tag">量子控制</span></p>
+            </div>
+        </section>
+        
+        <section>
+            <p><small>以上为当日 56 篇新提交中的节选样例（6 篇）。完整列表见 <a href="https://arxiv.org/list/quant-ph/new" target="_blank">arxiv.org/list/quant-ph/new</a></small></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Quantum Daily — 数据来源: arXiv quant-ph</p>
+    </footer>
+</body>
+</html>
