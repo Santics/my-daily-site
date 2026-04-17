@@ -9,7 +9,7 @@
 <body>
     <header>
         <h1>quant-ph</h1>
-        <p>arXiv Quantum Physics 日报</p>
+        <p>arXiv Quantum Physics 日报（模块配置驱动）</p>
     </header>
     
     <nav>
@@ -20,13 +20,23 @@
     
     <main>
         <section>
+            <h2>模块配置</h2>
+            <p>本栏目采用配置驱动生成：</p>
+            <ul>
+                <li><code>PROMPT.md</code> — 页面布局、AI快评策略、详细页策略</li>
+                <li><code>SOURCES.md</code> — 信源配置、抓取边界（仅 New submissions）</li>
+                <li><code>PROFILE.md</code> — 用户主线、相关性判定（中性原子/里德堡优先）</li>
+            </ul>
+        </section>
+        
+        <section>
             <h2>日报归档</h2>
             <ul class="daily-list">
                 <li>
                     <a href="daily/2026-04-17_arxiv-quant-ph/index.html">
                         <span class="date">2026-04-17</span>
                         <span class="count">62 papers</span>
-                        <span class="highlight">3 篇详细解读</span>
+                        <span class="highlight">3 篇详细解读（配置驱动）</span>
                     </a>
                 </li>
                 <li>
@@ -41,13 +51,19 @@
         
         <section>
             <h2>关于本栏目</h2>
-            <p>跟踪 arXiv quant-ph 每日新提交。每篇论文提供 AI 快评，重点论文生成详细解读页。</p>
+            <p>跟踪 arXiv quant-ph 每日新提交。模块配置定义了：</p>
+            <ul>
+                <li>主页面只放全量速览，详细页独立跳转</li>
+                <li>默认详细页上限 3 篇</li>
+                <li>仅统计 New submissions（不含 Cross-lists/Replacements）</li>
+                <li>高相关方向：中性原子/里德堡/量子模拟/编译优化/量子纠错</li>
+            </ul>
             <p>信源：<a href="https://arxiv.org/list/quant-ph/new" target="_blank">arxiv.org/list/quant-ph/new</a></p>
         </section>
     </main>
     
     <footer>
-        <p>Quantum Daily</p>
+        <p>Quantum Daily — 模块: quant-ph</p>
     </footer>
 </body>
 </html>

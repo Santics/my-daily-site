@@ -1,31 +1,31 @@
 {
   "site_name": "Quantum Daily",
-  "site_description": "量子计算与量子信息前沿跟踪",
+  "site_description": "量子计算与量子信息前沿跟踪（配置驱动版）",
   "last_updated": "2026-04-17",
-  "sections": {
-    "research": {
-      "arxiv": {
-        "quant-ph": {
-          "latest": "2026-04-17",
-          "latest_url": "research/arxiv/quant-ph/daily/2026-04-17_arxiv-quant-ph/index.html",
-          "paper_count": 62,
-          "highlight_count": 3,
-          "history": [
-            {
-              "date": "2026-04-17",
-              "url": "research/arxiv/quant-ph/daily/2026-04-17_arxiv-quant-ph/index.html",
-              "papers": 62,
-              "highlights": ["2604.15298", "2604.15300", "2604.15214"]
-            },
-            {
-              "date": "2026-04-16",
-              "url": "research/arxiv/quant-ph/daily/2026-04-16_arxiv-quant-ph/index.html",
-              "papers": 56,
-              "highlights": []
-            }
-          ]
+  "modules": {
+    "quant-ph": {
+      "config_files": ["PROMPT.md", "SOURCES.md", "PROFILE.md"],
+      "latest": "2026-04-17",
+      "latest_url": "research/arxiv/quant-ph/daily/2026-04-17_arxiv-quant-ph/index.html",
+      "paper_count": 62,
+      "highlight_count": 3,
+      "highlights": ["2604.15099", "2604.15248", "2604.15132"],
+      "history": [
+        {
+          "date": "2026-04-17",
+          "url": "research/arxiv/quant-ph/daily/2026-04-17_arxiv-quant-ph/index.html",
+          "papers": 62,
+          "highlights": ["2604.15099", "2604.15248", "2604.15132"],
+          "config_driven": true
+        },
+        {
+          "date": "2026-04-16",
+          "url": "research/arxiv/quant-ph/daily/2026-04-16_arxiv-quant-ph/index.html",
+          "papers": 56,
+          "highlights": [],
+          "config_driven": false
         }
-      }
+      ]
     }
   }
 }

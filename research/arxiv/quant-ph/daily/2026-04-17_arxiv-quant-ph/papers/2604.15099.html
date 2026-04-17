@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O3LS: Optimizing Lattice Surgery - Quantum Daily</title>
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Quantum Daily</h1>
+        <p>量子计算与量子信息前沿跟踪</p>
+    </header>
+    
+    <nav>
+        <a href="../../../../index.html">首页</a>
+        <a href="../../../index.html">Research</a>
+        <a href="../../index.html">quant-ph</a>
+        <a href="../index.html">2026-04-17</a>
+    </nav>
+    
+    <main>
+        <article class="paper-detail">
+            <h1>O3LS: Optimizing Lattice Surgery via Automatic Layout Searching and Loose Scheduling</h1>
+            
+            <div class="paper-meta">
+                <p><strong>arXiv ID:</strong> 2604.15099</p>
+                <p><strong>原链接:</strong> <a href="https://arxiv.org/abs/2604.15099" target="_blank">https://arxiv.org/abs/2604.15099</a></p>
+                <p><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.15099" target="_blank">https://arxiv.org/pdf/2604.15099</a></p>
+                <p><strong>发布时间:</strong> 2026-04-16</p>
+                <p><strong>作者:</strong> Chenghong Zhu, Xian Wu, Jiahan Chen, Keming He, Junjie Wu, Xin Wang, Lingling Lao</p>
+                <p><strong>分类:</strong> quant-ph</p>
+                <p><strong>备注:</strong> Accepted by ISCA 2026</p>
+            </div>
+            
+            <section class="paper-summary">
+                <h2>原摘要</h2>
+                <p>Toward the large-scale, practical realization of quantum computing, quantum error correction is essential. Among various quantum error-correcting codes, the surface code stands out as a leading candidate, and lattice surgery based on surface codes has emerged as a promising technique for fault-tolerant quantum computation (FTQC). However, implementing quantum algorithms using lattice surgery introduces both resource and time overhead. Existing approaches typically focus on large layout designs, with compiler passes aimed primarily at optimizing time overhead. This often overlooks the trade-off between rotation bottlenecks and movement distance, which leads to inefficient resource utilization and prevents further reduction of the quantum computation failure rate.</p>
+                <p>To address these challenges, we introduce O3LS, a framework for optimizing lattice surgery through automatic layout search and loose scheduling. O3LS achieves an optimal balance by automatically generating squeezed data layouts to reduce space requirements and employing loose scheduling algorithms combined with circuit synthesis techniques to reduce time overhead, thereby effectively minimizing overall logical error rates. Numerical results indicate that O3LS can reduce space overhead by 28.0% over standard layouts and 46.7% over sparse layouts without increasing the number of time steps, leading to suppression of logical error rates by up to 16% relative to larger data layout designs. O3LS can also achieve time overhead reductions of 36.07% and 24.76% in compact and standard data layout designs, respectively. It suppresses logical error rates by up to an order of magnitude compared to prior compilers that focus primarily on maximizing parallelism.</p>
+            </section>
+            
+            <section class="paper-analysis">
+                <h2>AI 解读</h2>
+                
+                <h3>核心物理图像</h3>
+                <p>晶格手术是实现容错量子计算的关键技术，但传统编译器在优化时往往只关注时间开销，忽视了旋转瓶颈与移动距离之间的权衡，导致资源利用低效。O3LS 通过自动布局搜索找到压缩的数据布局，同时采用宽松调度算法平衡并行性与资源约束，从而在时空两个维度上同时优化。</p>
+                
+                <h3>关键术语</h3>
+                <ul>
+                    <li><strong>Lattice Surgery</strong>：基于表面码的容错量子计算技术，通过合并和分割逻辑量子比特实现逻辑门操作</li>
+                    <li><strong>Squeezed Data Layout</strong>：压缩的数据布局，减少空间开销的同时保持纠错能力</li>
+                    <li><strong>Loose Scheduling</strong>：宽松调度，允许一定程度的串行执行以换取更好的资源利用</li>
+                    <li><strong>Surface Code</strong>：表面码，具有高通门阈值和局部校验子的量子纠错码</li>
+                </ul>
+                
+                <h3>主要贡献</h3>
+                <ul>
+                    <li>提出 O3LS 框架，实现自动布局搜索与宽松调度的联合优化</li>
+                    <li>相比标准布局减少 28% 空间开销，相比稀疏布局减少 46.7%</li>
+                    <li>在紧凑和标准布局中分别减少 36.07% 和 24.76% 时间开销</li>
+                    <li>逻辑错误率相比传统并行最大化编译器降低一个数量级</li>
+                </ul>
+                
+                <h3>研究方法</h3>
+                <p>采用自动布局搜索生成优化的数据布局，结合宽松调度算法和电路合成技术。通过数值模拟验证在标准、紧凑和稀疏三种布局配置下的性能提升。</p>
+                
+                <h3>与你的主线关系</h3>
+                <p>这篇论文与<strong>编译与优化</strong>主线直接相关。O3LS 的自动布局搜索和宽松调度方法对中性原子量子计算的编译器开发具有明确参考价值。中性原子系统的全局纠缠特性可能允许更激进的布局压缩，而里德堡阻塞约束则需要谨慎的调度策略——这与论文中讨论的旋转瓶颈与移动距离权衡高度契合。此外，论文被 ISCA 2026 接受，说明其方法在经典-量子协同计算架构中的实用性。</p>
+                
+                <h3>结论与开放问题</h3>
+                <p>O3LS 为晶格手术编译优化提供了实用框架，但当前评估基于模拟数据。开放问题包括：该方法在不同量子硬件（如中性原子、超导）上的适应性如何？动态布局调整在实时编译中的可行性？</p>
+            </section>
+            
+            <section class="paper-tags">
+                <h2>标签</h2>
+                <span class="tag">量子纠错</span>
+                <span class="tag">编译与优化</span>
+                <span class="tag">表面码</span>
+            </section>
+        </article>
+    </main>
+    
+    <footer>
+        <p>Quantum Daily — 数据来源: arXiv</p>
+    </footer>
+</body>
+</html>
