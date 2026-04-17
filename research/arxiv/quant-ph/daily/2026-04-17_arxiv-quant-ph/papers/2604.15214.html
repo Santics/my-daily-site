@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimal algorithmic complexity of inference in quantum kernel methods - Quantum Daily</title>
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Quantum Daily</h1>
+        <p>量子计算与量子信息前沿跟踪</p>
+    </header>
+    
+    <nav>
+        <a href="../../../../index.html">首页</a>
+        <a href="../../../index.html">Research</a>
+        <a href="../../index.html">quant-ph</a>
+        <a href="../index.html">2026-04-17</a>
+    </nav>
+    
+    <main>
+        <article class="paper-detail">
+            <h1>Optimal algorithmic complexity of inference in quantum kernel methods</h1>
+            
+            <div class="paper-meta">
+                <p><strong>arXiv ID:</strong> 2604.15214</p>
+                <p><strong>原链接:</strong> <a href="https://arxiv.org/abs/2604.15214" target="_blank">https://arxiv.org/abs/2604.15214</a></p>
+                <p><strong>发布时间:</strong> 2026-04-16</p>
+                <p><strong>作者:</strong> Elies Gil-fuster, Seongwook Shin, Sofiene Jerbi, Jens Eisert, Maximilian J. Kramer</p>
+                <p><strong>分类:</strong> quant-ph, cs.LG</p>
+                <p><strong>备注:</strong> 26 pages (13+13), 4 figures, comments welcome</p>
+            </div>
+            
+            <section class="paper-summary">
+                <h2>摘要</h2>
+                <p>Quantum kernel methods are among the leading candidates for achieving quantum advantage in supervised learning. A key bottleneck is the cost of inference: evaluating a trained model on new data requires estimating a weighted sum Σᵢ αᵢ k(x,xᵢ) of N kernel values to additive precision ε, where α is the vector of trained coefficients. The standard approach estimates each term independently via sampling, yielding a query complexity of O(N‖α‖₂²/ε²).</p>
+                <p>In this work, we identify two independent axes for improvement: (1) How individual kernel values are estimated (sampling versus quantum amplitude estimation), and (2) how the sum is approximated (term-by-term versus via a single observable), and systematically analyze all combinations thereof. The query-optimal combination, encoding the full inference sum as the expectation value of a single observable and applying quantum amplitude estimation, achieves a query complexity of O(‖α‖₁/ε), removing the dependence on N from the query count and yielding a quadratic improvement in both ‖α‖₁ and ε.</p>
+                <p>We prove a matching lower bound of Ω(‖α‖₁/ε), establishing query-optimality of our approach up to logarithmic factors. Beyond query complexity, we also analyze how these improvements translate into gate costs and show that the query-optimal strategy is not always optimal in practice from the perspective of gate complexity. Our results provide both a query-optimal algorithm and a practically optimal choice of strategy depending on hardware capabilities, along with a complete landscape of intermediate methods to guide practitioners. All algorithms require only amplitude estimation as a subroutine and are thus natural candidates for early-fault-tolerant implementations.</p>
+            </section>
+            
+            <section class="paper-analysis">
+                <h2>AI 快评</h2>
+                <p>量子核方法是实现量子机器学习优势的主要候选方案之一。推理阶段的计算成本是关键瓶颈：需要估计 N 个核值的加权和以达到精度 ε。</p>
+                
+                <h3>复杂度对比</h3>
+                <table class="complexity-table">
+                    <tr>
+                        <th>方法</th>
+                        <th>查询复杂度</th>
+                    </tr>
+                    <tr>
+                        <td>标准方法（逐点采样）</td>
+                        <td>O(N‖α‖₂²/ε²)</td>
+                    </tr>
+                    <tr>
+                        <td>本文最优方法</td>
+                        <td>O(‖α‖₁/ε)</td>
+                    </tr>
+                </table>
+                
+                <h3>关键改进</h3>
+                <ul>
+                    <li>将完整推理和编码为单一可观测量的期望值</li>
+                    <li>应用量子振幅估计</li>
+                    <li>消除了对 N 的依赖</li>
+                    <li>在 ‖α‖₁ 和 ε 上实现二次改进</li>
+                </ul>
+                
+                <h3>理论保证</h3>
+                <p>证明匹配下界 Ω(‖α‖₁/ε)，确立查询最优性。作者还分析了查询复杂度优势如何转化为门复杂度，并指出查询最优策略在门复杂度层面不一定最优，需根据硬件能力权衡选择。</p>
+                
+                <p>所有算法仅需振幅估计作为子程序，是早期容错量子计算的自然候选。</p>
+                
+                <h3>为何值得关注</h3>
+                <ul>
+                    <li>实现了查询最优的量子核方法推理算法</li>
+                    <li>消除了对样本数 N 的依赖，实现二次加速</li>
+                    <li>匹配的下界证明了理论极限</li>
+                    <li>为量子机器学习的实用化提供了算法基础</li>
+                </ul>
+            </section>
+            
+            <section class="paper-links">
+                <h2>相关链接</h2>
+                <ul>
+                    <li><a href="https://arxiv.org/abs/2604.15214" target="_blank">arXiv 原文</a></li>
+                    <li><a href="https://arxiv.org/pdf/2604.15214" target="_blank">PDF 下载</a></li>
+                </ul>
+            </section>
+        </article>
+    </main>
+    
+    <footer>
+        <p>Quantum Daily — 数据来源: arXiv</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super-Constant Weight Dicke States - Quantum Daily</title>
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Quantum Daily</h1>
+        <p>量子计算与量子信息前沿跟踪</p>
+    </header>
+    
+    <nav>
+        <a href="../../../../index.html">首页</a>
+        <a href="../../../index.html">Research</a>
+        <a href="../../index.html">quant-ph</a>
+        <a href="../index.html">2026-04-17</a>
+    </nav>
+    
+    <main>
+        <article class="paper-detail">
+            <h1>Super-Constant Weight Dicke States in Constant Depth Without Fanout</h1>
+            
+            <div class="paper-meta">
+                <p><strong>arXiv ID:</strong> 2604.15298</p>
+                <p><strong>原链接:</strong> <a href="https://arxiv.org/abs/2604.15298" target="_blank">https://arxiv.org/abs/2604.15298</a></p>
+                <p><strong>发布时间:</strong> 2026-04-16</p>
+                <p><strong>作者:</strong> Lucas Gretta, Meghal Gupta, Malvika Raj Joshi</p>
+                <p><strong>分类:</strong> quant-ph, cs.DS</p>
+            </div>
+            
+            <section class="paper-summary">
+                <h2>摘要</h2>
+                <p>An n-qubit Dicke state of weight k, is the uniform superposition over all n-bit strings of Hamming weight k. Dicke states are an entanglement resource with important practical applications in the NISQ era and, for instance, play a central role in Decoded Quantum Interferometry (DQI). Furthermore, any symmetric state can be expressed as a superposition of Dicke states.</p>
+                <p>First, we give explicit constant-depth circuits that prepare n-qubit Dicke states for all k ≤ polylog(n), using only multi-qubit Toffoli gates and single-qubit unitaries. This gives the first QAC⁰ construction of super-constant weight Dicke states. Previous constant-depth constructions for any super-constant k required the FANOUTₙ gate, while QAC⁰ is only known to implement FANOUTₖ for k up to polylog(n). Moreover, we show that any weight-k Dicke state can be constructed with access to FANOUT_{min(k,n-k)}, rather than FANOUTₙ. Combined with recent hardness results, this yields a tight characterization: for k ≤ n/2, weight-k Dicke states can be prepared in QAC⁰ if and only if FANOUTₖ ∈ QAC⁰.</p>
+                <p>We further extend our techniques to show that, in fact, any superposition of n-qubit Dicke states of weight at most k can be prepared in QAC⁰ with access to FANOUTₖ. Taking k = n, we obtain the first O(1)-depth unitary construction for arbitrary symmetric states. In particular, any symmetric state can be prepared in constant depth on quantum hardware architectures that support FANOUTₙ, such as trapped ions with native global entangling operations.</p>
+            </section>
+            
+            <section class="paper-analysis">
+                <h2>AI 快评</h2>
+                <p>Dicke 态是量子信息中的重要纠缠资源，在解码量子干涉测量(DQI)中有核心应用。本文首次给出了仅使用多量子比特 Toffoli 门和单量子比特门、在常数深度内制备超常数权重量子 Dicke 态的显式电路构造。</p>
+                
+                <h3>主要贡献</h3>
+                <ul>
+                    <li>对于所有 k ≤ polylog(n)，给出常数深度制备 n-qubit Dicke 态的显式电路</li>
+                    <li>这是第一个不依赖 FANOUTₙ 门的 QAC⁰ 超重量 Dicke 态构造</li>
+                    <li>证明任何权重 k 的 Dicke 态可用 FANOUT_{min(k,n-k)} 构造，而非 FANOUTₙ</li>
+                    <li>给出紧刻画：对于 k ≤ n/2，权重 k Dicke 态可在 QAC⁰ 中制备当且仅当 FANOUTₖ ∈ QAC⁰</li>
+                    <li>进一步证明任意对称态可在常数深度制备（对于支持 FANOUTₙ 的硬件，如离子阱）</li>
+                </ul>
+                
+                <h3>技术核心</h3>
+                <p>关键技术是一个二次函数 Q(x) = Σᵢ<ⱼ xᵢxⱼ 的代数恒等式，允许在 IQP 电路内提取内积相位。这项工作解决了 Girish (arXiv:2510.06385) 提出的关于对易量子计算能力的开放问题。</p>
+                
+                <h3>为何值得关注</h3>
+                <ul>
+                    <li>首次 QAC⁰ 构造超重量 Dicke 态，不依赖 FANOUT 门</li>
+                    <li>解决了近期关于对易量子计算能力的开放问题</li>
+                    <li>为任意对称态提供了常数深度制备方案</li>
+                    <li>提供了展示量子优势的新途径，避开采样任务的验证困难</li>
+                </ul>
+            </section>
+            
+            <section class="paper-links">
+                <h2>相关链接</h2>
+                <ul>
+                    <li><a href="https://arxiv.org/abs/2604.15298" target="_blank">arXiv 原文</a></li>
+                    <li><a href="https://arxiv.org/pdf/2604.15298" target="_blank">PDF 下载</a></li>
+                </ul>
+            </section>
+        </article>
+    </main>
+    
+    <footer>
+        <p>Quantum Daily — 数据来源: arXiv</p>
+    </footer>
+</body>
+</html>

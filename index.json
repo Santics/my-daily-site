@@ -1,67 +1,31 @@
 {
-  "site": {
-    "name": "Quantum Daily",
-    "description": "量子计算与量子信息前沿跟踪",
-    "version": "1.0.0",
-    "updated": "2026-04-16"
-  },
-  "sections": [
-    {
-      "id": "research",
-      "name": "Research",
-      "path": "research/",
-      "categories": [
-        {
-          "id": "arxiv",
-          "name": "arXiv",
-          "path": "research/arxiv/",
-          "subcategories": [
+  "site_name": "Quantum Daily",
+  "site_description": "量子计算与量子信息前沿跟踪",
+  "last_updated": "2026-04-17",
+  "sections": {
+    "research": {
+      "arxiv": {
+        "quant-ph": {
+          "latest": "2026-04-17",
+          "latest_url": "research/arxiv/quant-ph/daily/2026-04-17_arxiv-quant-ph/index.html",
+          "paper_count": 62,
+          "highlight_count": 3,
+          "history": [
             {
-              "id": "quant-ph",
-              "name": "quant-ph",
-              "path": "research/arxiv/quant-ph/",
-              "url": "https://arxiv.org/list/quant-ph/new",
-              "dailies": [
-                {
-                  "date": "2026-04-16",
-                  "path": "research/arxiv/quant-ph/daily/2026-04-16_arxiv-quant-ph/",
-                  "total_papers": 56,
-                  "high_relevance": 3,
-                  "featured": [
-                    {
-                      "title": "Fast measurement of neutral atoms with a multi-atom gate",
-                      "arxiv_id": "2604.13158",
-                      "has_detail": true
-                    },
-                    {
-                      "title": "Fault-Tolerant Error Detection Above Break-Even for Multi-Qubit Gates",
-                      "arxiv_id": "2604.13219",
-                      "has_detail": false
-                    },
-                    {
-                      "title": "A scalable fluxonium processor with high-fidelity gates",
-                      "arxiv_id": "2604.13363",
-                      "has_detail": false
-                    }
-                  ]
-                }
-              ]
+              "date": "2026-04-17",
+              "url": "research/arxiv/quant-ph/daily/2026-04-17_arxiv-quant-ph/index.html",
+              "papers": 62,
+              "highlights": ["2604.15298", "2604.15300", "2604.15214"]
+            },
+            {
+              "date": "2026-04-16",
+              "url": "research/arxiv/quant-ph/daily/2026-04-16_arxiv-quant-ph/index.html",
+              "papers": 56,
+              "highlights": []
             }
           ]
         }
-      ]
+      }
     }
-  ],
-  "tags": [
-    "中性原子",
-    "里德堡原子",
-    "量子纠错",
-    "物理硬件",
-    "量子控制",
-    "量子算法",
-    "模拟",
-    "编译与优化",
-    "量子复杂性",
-    "量子信息"
-  ]
+  }
 }
