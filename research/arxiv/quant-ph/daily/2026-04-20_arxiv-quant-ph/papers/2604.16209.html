@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Towards Ultra-High-Rate Quantum Error Correction with Reconfigurable Atom Arrays - Quantum Daily</title>
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Quantum Daily</h1>
+        <p>量子计算与量子信息前沿跟踪</p>
+    </header>
+    
+    <nav>
+        <a href="../../../../index.html">首页</a>
+        <a href="../../../index.html">Research</a>
+        <a href="../../index.html">quant-ph</a>
+        <a href="../index.html">2026-04-20</a>
+    </nav>
+    
+    <main>
+        <article class="paper-detail">
+            <h1>Towards Ultra-High-Rate Quantum Error Correction with Reconfigurable Atom Arrays</h1>
+            
+            <div class="paper-meta">
+                <p><strong>arXiv ID:</strong> 2604.16209</p>
+                <p><strong>原链接:</strong> <a href="https://arxiv.org/abs/2604.16209" target="_blank">https://arxiv.org/abs/2604.16209</a></p>
+                <p><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.16209" target="_blank">https://arxiv.org/pdf/2604.16209</a></p>
+                <p><strong>发布时间:</strong> 2026-04-17</p>
+                <p><strong>作者:</strong> Chen Zhao, Casey Duckering, Andi Gu, Nishad Maskara, Hengyun Zhou</p>
+                <p><strong>分类:</strong> quant-ph, cs.IT</p>
+                <p><strong>备注:</strong> Ultra-high-rate LDPC codes for neutral atom arrays</p>
+            </div>
+            
+            <section class="paper-summary">
+                <h2>原摘要</h2>
+                <p>Quantum error correction is widely believed to be essential for large-scale quantum computation, but the required qubit overhead remains a central challenge. Quantum low-density parity-check codes can substantially reduce this overhead through high-rate encodings, yet finite-size instances with practical logical error rates often achieve encoding rates only around or below 1/10. Here, building on a recent ultra-high-rate construction by Kasai, we identify new structural conditions on the underlying affine permutation matrices that make encoding rates exceeding 1/2 compatible with efficient implementation on reconfigurable neutral atom arrays. These conditions define a co-designed family of ultra-high-rate quantum codes that supports efficient syndrome extraction and atom rearrangement under realistic parallel control constraints. Using a hierarchical decoder with high accuracy and good throughput, we study the performance under a circuit-level noise model with p=0.1%, achieving per-logical-per-round error rates of 1.3_{-0.9}^{+3.0} × 10^{-13} with a [[2304,1156,≤ 14]] code and 2.9_{-1.5}^{+3.1} × 10^{-11} with a [[1152,580,≤ 12]] code. These results approach the teraquop regime, highlighting the promise of this code family for practical ultra-high-rate quantum error correction.</p>
+            </section>
+            
+            <section class="paper-analysis">
+                <h2>AI 解读</h2>
+                
+                <h3>核心物理图像</h3>
+                <p>量子纠错是实现大规模量子计算的必经之路，但现有纠错码的编码率往往很低（~1/10），导致巨大的量子比特开销。本文针对中性原子可重构阵列平台，设计了一种"超高比率"量子 LDPC 码族，编码率超过 1/2，同时保证在真实原子阵列控制约束下的高效实现。</p>
+                <p>关键思想是：通过识别仿射置换矩阵上的特定结构条件，使超高比率编码与原子阵列的并行控制、重排操作、综合征提取兼容。这是一种"协同设计"思路——不是先设计码再找硬件映射，而是让码的结构本身就适合原子阵列的操作约束。</p>
+                
+                <h3>关键术语</h3>
+                <ul>
+                    <li><strong>LDPC (Low-Density Parity-Check) codes</strong>：低密度奇偶校验码，具有局部校验子结构的量子纠错码</li>
+                    <li><strong>编码率 (Code Rate)</strong>：k/n，逻辑量子比特数与物理量子比特数之比，反映纠错开销</li>
+                    <li><strong>Teraquop</strong>：万亿次量子操作（10^12 operations），纠错性能的常用指标</li>
+                    <li><strong>仿射置换矩阵 (Affine Permutation Matrices)</strong>：LDPC 码的校验矩阵构造单元</li>
+                    <li><strong>综合征提取 (Syndrome Extraction)</strong>：测量校验子以检测错误的操作</li>
+                    <li><strong>原子重排 (Atom Rearrangement)</strong>：中性原子阵列中移动原子以形成所需几何构型的操作</li>
+                </ul>
+                
+                <h3>主要贡献</h3>
+                <ul>
+                    <li>识别使编码率 >1/2 与中性原子阵列控制约束相容的结构条件</li>
+                    <li>提出协同设计的超高比率量子 LDPC 码族</li>
+                    <li>[[2304,1156,≤14]] 码在 p=0.1% 下达到 1.3 × 10^{-13} 逻辑错误率</li>
+                    <li>[[1152,580,≤12]] 码达到 2.9 × 10^{-11} 逻辑错误率</li>
+                    <li>结果接近 teraquop regime，展示实用超高比率量子纠错的前景</li>
+                </ul>
+                
+                <h3>研究方法</h3>
+                <p>基于 Kasai 的超高比率 LDPC 构造框架，分析仿射置换矩阵上的组合条件。设计分层解码器，在电路级噪声模型下进行蒙特卡洛模拟。考虑原子阵列的并行移动约束、测量约束和重排约束。</p>
+                
+                <h3>与你的主线关系</h3>
+                <p>这篇论文与<strong>中性原子量子计算</strong>和<strong>量子纠错</strong>两条主线<strong>直接相关</strong>。你研究的中性原子可扩展系统架构正需要这类"为平台量身定制"的纠错方案：</p>
+                <ul>
+                    <li>编码率 >1/2 意味着同样的逻辑量子比特只需不到两倍的物理量子比特——这对中性原子系统的资源约束是革命性的</li>
+                    <li>"协同设计"思路与你的软件栈理念一致：软硬件协同优化，而非分层独立设计</li>
+                    <li>teraquop 级别的性能目标是你的系统架构设计的重要参考基准</li>
+                    <li>分层解码器的设计对编译器开发中的解码模块有直接参考价值</li>
+                </ul>
+                
+                <h3>结论与开放问题</h3>
+                <p>本文证明了在中性原子可重构阵列上实现超高比率（>1/2）量子纠错的可行性，数值结果接近 teraquop 级别。</p>
+                <p><strong>开放问题</strong>：</p>
+                <ul>
+                    <li>该码族在更真实的原子阵列噪声模型（包括移动错误、丢失错误）下的表现如何？</li>
+                    <li>分层解码器的延迟和吞吐量是否满足实时纠错的需求？</li>
+                    <li>编码率 >1/2 时，码距的标度行为在大系统极限下如何？</li>
+                </ul>
+            </section>
+            
+            <section class="paper-tags">
+                <h2>标签</h2>
+                <span class="tag">量子纠错</span>
+                <span class="tag">中性原子</span>
+                <span class="tag">可扩展系统</span>
+                <span class="tag">LDPC码</span>
+            </section>
+        </article>
+    </main>
+    
+    <footer>
+        <p>Quantum Daily — 数据来源: arXiv</p>
+    </footer>
+</body>
+</html>

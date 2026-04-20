@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast, High-Fidelity Erasure Detection of Dual-Rail Qubits - Quantum Daily</title>
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Quantum Daily</h1>
+        <p>量子计算与量子信息前沿跟踪</p>
+    </header>
+    
+    <nav>
+        <a href="../../../../index.html">首页</a>
+        <a href="../../../index.html">Research</a>
+        <a href="../../index.html">quant-ph</a>
+        <a href="../index.html">2026-04-20</a>
+    </nav>
+    
+    <main>
+        <article class="paper-detail">
+            <h1>Fast, High-Fidelity Erasure Detection of Dual-Rail Qubits with Symmetrically Coupled Readout</h1>
+            
+            <div class="paper-meta">
+                <p><strong>arXiv ID:</strong> 2604.16292</p>
+                <p><strong>原链接:</strong> <a href="https://arxiv.org/abs/2604.16292" target="_blank">https://arxiv.org/abs/2604.16292</a></p>
+                <p><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.16292" target="_blank">https://arxiv.org/pdf/2604.16292</a></p>
+                <p><strong>发布时间:</strong> 2026-04-17</p>
+                <p><strong>作者:</strong> Jimmy Shih-Chun Hung, Arbel Haim, Mouktik Raha, Gihwan Kim, Ziwen Huang, Ming-Han Chou, Mitch D'Ewart, Erik Davis, Anurag Mishra, Patricio Arrangoiz Arriola, Amirhossein Khalajhedayati, David Hover, Fernando G. S. L. Brandão, Aashish A. Clerk, Alex Retzker, Harry Levine, Oskar Painter</p>
+                <p><strong>分类:</strong> quant-ph</p>
+                <p><strong>备注:</strong> Caltech / AWS collaboration on erasure qubits</p>
+            </div>
+            
+            <section class="paper-summary">
+                <h2>原摘要</h2>
+                <p>Erasure qubits are a promising platform for implementing hardware-efficient quantum error correction. Realizing the error-correction advantages of this encoding requires frequent mid-circuit erasure checks that are fast, high-fidelity, and scalable. Here, we realize erasure detection with a hardware-efficient circuit consisting of a single readout resonator dispersively and symmetrically coupled to both transmons of a dual-rail qubit. We use this circuit to demonstrate single-shot erasure detection in 384 ns with minimal impact on the dual-rail logical manifold, achieving a residual error per check of 6.0(2) × 10^{-4}, with only 8(3) × 10^{-5} induced dephasing per check, and an erasure error per check of 2.54(1) × 10^{-2}. The high degree of matched dispersive readout coupling (χ-matching) within the dual-rail qubit code space also allows us to realize a new modality: time-continuous erasure detection performed in parallel with single-qubit gates. Here we achieve a median 7.2 × 10^{-5} error per gate with < 1 × 10^{-5} error induced by erasure detection. This demonstrates a reduction in erasure detection overhead as well as a crucial ingredient for soft information quantum error correction. Together, these results establish symmetrically coupled dispersive readout as a fast, hardware-efficient, and scalable component for erasure-based quantum error correction using transmon dual-rail qubits.</p>
+            </section>
+            
+            <section class="paper-analysis">
+                <h2>AI 解读</h2>
+                
+                <h3>核心物理图像</h3>
+                <p>擦除量子比特（erasure qubits）是一种利用擦除错误（已知位置和类型的错误）来简化纠错的新型编码方案。本文的核心创新在于：用单个读出谐振器同时对称耦合到双轨量子比特的两个 transmon，实现了极快速（384 ns）且高保真度的擦除检测。</p>
+                <p>关键突破是"时间连续擦除检测"——在单量子比特门执行的同时持续进行擦除检测，实现检测与操作的重叠。这大幅降低了擦除检测的时间开销，是软信息量子纠错的关键组件。</p>
+                
+                <h3>关键术语</h3>
+                <ul>
+                    <li><strong>Erasure Qubit (擦除量子比特)</strong>：将 bit-flip 错误转化为已知位置的擦除错误，使纠错更高效</li>
+                    <li><strong>Dual-Rail Qubit (双轨量子比特)</strong>：用两个物理量子比特编码一个逻辑量子比特，利用擦除检测保护</li>
+                    <li><strong>Dispersive Readout (色散读出)</strong>：通过测量与量子比特耦合的谐振器频率偏移来读取量子态</li>
+                    <li><strong>χ-matching (χ 匹配)</strong>：使双轨编码子空间内的色散耦合高度匹配，保证检测对称性</li>
+                    <li><strong>Soft Information Quantum Error Correction (软信息量子纠错)</strong>：利用连续或概率性的错误信息而非二元校验子来提升纠错效果</li>
+                </ul>
+                
+                <h3>主要贡献</h3>
+                <ul>
+                    <li>单谐振器对称耦合双轨量子比特的擦除检测方案</li>
+                    <li>384 ns 单发检测，残余错误 6×10^{-4}，擦除错误 2.5×10^{-2}</li>
+                    <li>时间连续擦除检测与单量子比特门并行执行</li>
+                    <li>每门中位数错误 7.2×10^{-5}，检测引入错误 < 10^{-5}</li>
+                    <li>为软信息量子纠错提供关键硬件组件</li>
+                </ul>
+                
+                <h3>研究方法</h3>
+                <p>实验测量：在超导 transmon 双轨量子比特上搭建色散对称耦合读出电路。通过时间分辨测量验证检测速度和保真度。测试连续检测与门并行执行的可行性。</p>
+                
+                <h3>与你的主线关系</h3>
+                <p>这篇论文与<strong>量子纠错</strong>和<strong>量子控制</strong>主线<strong>相关</strong>。虽然实验平台是超导 transmon，但核心概念——<strong>擦除检测</strong>和<strong>软信息纠错</strong>——具有跨平台价值：</p>
+                <ul>
+                    <li>中性原子系统同样面临"如何快速检测原子丢失/态泄漏"的问题，擦除检测思路可直接借鉴</li>
+                    <li>"时间连续检测与操作并行"的策略对中性原子平台的连续测量和动态解耦有启发</li>
+                    <li>软信息纠错（利用检测到的概率信息而不仅是二元结果）是量子纠错的前沿方向，值得在你的软件栈中预留接口</li>
+                    <li>数值参数（384 ns, 10^{-4} 量级残余错误）为比较不同平台的纠错开销提供了参考基准</li>
+                </ul>
+                
+                <h3>结论与开放问题</h3>
+                <p>本文确立了擦除检测在超导双轨量子比特上的可行性，并开辟了"时间连续检测"这一新模态。</p>
+                <p><strong>开放问题</strong>：</p>
+                <ul>
+                    <li>该检测方案在两量子比特门执行期间是否仍能并行工作？</li>
+                    <li>擦除检测的速度和保真度在更大规模系统中如何标度？</li>
+                    <li>中性原子平台上如何实现对 atom loss / Rydberg state leakage 的等效擦除检测？</li>
+                </ul>
+            </section>
+            
+            <section class="paper-tags">
+                <h2>标签</h2>
+                <span class="tag">量子纠错</span>
+                <span class="tag">超导量子</span>
+                <span class="tag">擦除检测</span>
+                <span class="tag">物理硬件</span>
+            </section>
+        </article>
+    </main>
+    
+    <footer>
+        <p>Quantum Daily — 数据来源: arXiv</p>
+    </footer>
+</body>
+</html>
