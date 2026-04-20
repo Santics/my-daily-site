@@ -28,56 +28,56 @@
 | 6 | [2604.16274](https://arxiv.org/abs/2604.16274) | Yttrium ion as a platform for quantum information processing | Gilbreth et al. | 高 | [详解](papers/2604.16274.html) |
 | 7 | [2604.16236](https://arxiv.org/abs/2604.16236) | Long-term Performance Analysis of a Commercial QKD Device Under Real-world Deplo... | Tezzin et al. | 低 | - |
 | 8 | [2604.16218](https://arxiv.org/abs/2604.16218) | Quantum Tomography and Entanglement in Semi-Leptonic $h\to VV^*$ Decays at Highe... | Gonçalves et al. | 低 | - |
-| 9 | [2604.16216](https://arxiv.org/abs/2604.16216) | A digitally controlled silicon quantum processing unit | Team et al. | 高 | [详解](papers/2604.16216.html) |
+| 9 | [2604.16216](https://arxiv.org/abs/2604.16216) | A digitally controlled silicon quantum processing unit | Team et al. | 高 | - |
 | 10 | [2604.16210](https://arxiv.org/abs/2604.16210) | Preparation and detection of quasiparticles for quantum simulations of scatterin... | Morgavi et al. | 高 | [详解](papers/2604.16210.html) |
 | 11 | [2604.16209](https://arxiv.org/abs/2604.16209) | Towards Ultra-High-Rate Quantum Error Correction with Reconfigurable Atom Arrays | Zhao et al. | 高 | [详解](papers/2604.16209.html) |
 | 12 | [2604.16202](https://arxiv.org/abs/2604.16202) | Squeezing and measurement of a mechanical quadrature via PID feedback | Hijano et al. | 低 | - |
-| 13 | [2604.16194](https://arxiv.org/abs/2604.16194) | Strain-induced modification of spin-optical dynamics in silicon vacancy centers ... | Hollendonner et al. | 高 | [详解](papers/2604.16194.html) |
-| 14 | [2604.16190](https://arxiv.org/abs/2604.16190) | Coherence dynamics in Simon's quantum algorithm | Ye et al. | 中 | [详解](papers/2604.16190.html) |
-| 15 | [2604.16179](https://arxiv.org/abs/2604.16179) | Quantum-Inspired Simulation of 2D Turbulent Rayleigh-Bénard Convection | Hülst et al. | 高 | [详解](papers/2604.16179.html) |
-| 16 | [2604.16174](https://arxiv.org/abs/2604.16174) | All-photonic quantum key distribution beyond the single-repeater bound | Winnel et al. | 高 | [详解](papers/2604.16174.html) |
+| 13 | [2604.16194](https://arxiv.org/abs/2604.16194) | Strain-induced modification of spin-optical dynamics in silicon vacancy centers ... | Hollendonner et al. | 高 | - |
+| 14 | [2604.16190](https://arxiv.org/abs/2604.16190) | Coherence dynamics in Simon's quantum algorithm | Ye et al. | 中 | - |
+| 15 | [2604.16179](https://arxiv.org/abs/2604.16179) | Quantum-Inspired Simulation of 2D Turbulent Rayleigh-Bénard Convection | Hülst et al. | 高 | - |
+| 16 | [2604.16174](https://arxiv.org/abs/2604.16174) | All-photonic quantum key distribution beyond the single-repeater bound | Winnel et al. | 高 | - |
 | 17 | [2604.16165](https://arxiv.org/abs/2604.16165) | Single-Satellite Quantum Repeater Performance Analysis | Paterson et al. | 低 | - |
-| 18 | [2604.16164](https://arxiv.org/abs/2604.16164) | A unified framework for efficient quantum simulation of nonlinear spectroscopy | Xiong et al. | 高 | [详解](papers/2604.16164.html) |
+| 18 | [2604.16164](https://arxiv.org/abs/2604.16164) | A unified framework for efficient quantum simulation of nonlinear spectroscopy | Xiong et al. | 高 | - |
 | 19 | [2604.16144](https://arxiv.org/abs/2604.16144) | Gravitationally induced wave-function collapse from dynamical bifurcation | Almeida | 低 | - |
 | 20 | [2604.16140](https://arxiv.org/abs/2604.16140) | Characterizing all non-Hermitian degeneracies using algebraic approaches: Defect... | Sayyad et al. | 低 | - |
 | 21 | [2604.16139](https://arxiv.org/abs/2604.16139) | Converting non-Hermitian degeneracies of any order: Hierarchies of exceptional p... | Starkov et al. | 低 | - |
 | 22 | [2604.16137](https://arxiv.org/abs/2604.16137) | Observation of Strong-to-Weak Spontaneous Symmetry Breaking in a Dephased Fermi ... | Wang et al. | 低 | - |
 | 23 | [2604.16136](https://arxiv.org/abs/2604.16136) | Quantum Noise Suppression Beyond the Standard Quantum Limit in a Hybrid Magnonic... | Roy et al. | 低 | - |
-| 24 | [2604.16107](https://arxiv.org/abs/2604.16107) | Entanglement and photoelectron holography in dissociative photoionization: molec... | Hell et al. | 高 | [详解](papers/2604.16107.html) |
+| 24 | [2604.16107](https://arxiv.org/abs/2604.16107) | Entanglement and photoelectron holography in dissociative photoionization: molec... | Hell et al. | 高 | - |
 | 25 | [2604.16102](https://arxiv.org/abs/2604.16102) | Exact Steady State of a One-end Driven XXZ Spin Chain with Boundary Field | Popkov et al. | 低 | - |
-| 26 | [2604.16101](https://arxiv.org/abs/2604.16101) | Quantum-Resistant Quantum Teleportation | Jin et al. | 中 | [详解](papers/2604.16101.html) |
-| 27 | [2604.16071](https://arxiv.org/abs/2604.16071) | Security Framework for Quantum Distance-Bounding | Bogner et al. | 中 | [详解](papers/2604.16071.html) |
+| 26 | [2604.16101](https://arxiv.org/abs/2604.16101) | Quantum-Resistant Quantum Teleportation | Jin et al. | 中 | - |
+| 27 | [2604.16071](https://arxiv.org/abs/2604.16071) | Security Framework for Quantum Distance-Bounding | Bogner et al. | 中 | - |
 | 28 | [2604.16051](https://arxiv.org/abs/2604.16051) | Comment on "A General Framework for Constructing Local Hidden-state Models to De... | Selzam et al. | 低 | - |
-| 29 | [2604.16023](https://arxiv.org/abs/2604.16023) | MacWilliams Identities for Intrinsic Quantum Codes | Kubischta et al. | 高 | [详解](papers/2604.16023.html) |
-| 30 | [2604.16015](https://arxiv.org/abs/2604.16015) | Discovering quantum phenomena with Interpretable Machine Learning | Schoulepnikoff et al. | 高 | [详解](papers/2604.16015.html) |
-| 31 | [2604.15971](https://arxiv.org/abs/2604.15971) | A Modular Cryogenic Link for Microwave Quantum Communication Over Distances of T... | Schär et al. | 高 | [详解](papers/2604.15971.html) |
+| 29 | [2604.16023](https://arxiv.org/abs/2604.16023) | MacWilliams Identities for Intrinsic Quantum Codes | Kubischta et al. | 高 | - |
+| 30 | [2604.16015](https://arxiv.org/abs/2604.16015) | Discovering quantum phenomena with Interpretable Machine Learning | Schoulepnikoff et al. | 高 | - |
+| 31 | [2604.15971](https://arxiv.org/abs/2604.15971) | A Modular Cryogenic Link for Microwave Quantum Communication Over Distances of T... | Schär et al. | 高 | - |
 | 32 | [2604.15953](https://arxiv.org/abs/2604.15953) | Finite-Time Thermodynamics of an Autonomous Information Machine | Chen et al. | 低 | - |
-| 33 | [2604.15924](https://arxiv.org/abs/2604.15924) | Ultrafast Current Switching from Quantum Geometry in Semimetals | Kim et al. | 高 | [详解](papers/2604.15924.html) |
+| 33 | [2604.15924](https://arxiv.org/abs/2604.15924) | Ultrafast Current Switching from Quantum Geometry in Semimetals | Kim et al. | 高 | - |
 | 34 | [2604.15920](https://arxiv.org/abs/2604.15920) | Local qubit invariants on quantum computer | Szalay et al. | 低 | - |
-| 35 | [2604.15912](https://arxiv.org/abs/2604.15912) | Sensing of Low-Frequency Electric Fields Using Rydberg EIT within the Fisher Inf... | Zhou et al. | 高 | [详解](papers/2604.15912.html) |
-| 36 | [2604.15895](https://arxiv.org/abs/2604.15895) | Digital Predistortion for Flux Control of Tunable Superconducting Qubits | Venkateswaran et al. | 高 | [详解](papers/2604.15895.html) |
-| 37 | [2604.15888](https://arxiv.org/abs/2604.15888) | Enhancing Neural-Network Variational Monte Carlo through Basis Transformation | Liu et al. | 高 | [详解](papers/2604.15888.html) |
-| 38 | [2604.15886](https://arxiv.org/abs/2604.15886) | Asymptotic optimality of Grover-Radhakrishnan-Korepin algorithm | Zhang et al. | 中 | [详解](papers/2604.15886.html) |
+| 35 | [2604.15912](https://arxiv.org/abs/2604.15912) | Sensing of Low-Frequency Electric Fields Using Rydberg EIT within the Fisher Inf... | Zhou et al. | 高 | - |
+| 36 | [2604.15895](https://arxiv.org/abs/2604.15895) | Digital Predistortion for Flux Control of Tunable Superconducting Qubits | Venkateswaran et al. | 高 | - |
+| 37 | [2604.15888](https://arxiv.org/abs/2604.15888) | Enhancing Neural-Network Variational Monte Carlo through Basis Transformation | Liu et al. | 高 | - |
+| 38 | [2604.15886](https://arxiv.org/abs/2604.15886) | Asymptotic optimality of Grover-Radhakrishnan-Korepin algorithm | Zhang et al. | 中 | - |
 | 39 | [2604.15867](https://arxiv.org/abs/2604.15867) | Approximate Cosine Similarity Estimation via an Angle-Encoding Hadamard Test | Ohno | 低 | - |
 | 40 | [2604.15858](https://arxiv.org/abs/2604.15858) | Module Lattice Security (Part I): Unconditional Verification of Weber's Conjectu... | Luo | 低 | - |
-| 41 | [2604.15836](https://arxiv.org/abs/2604.15836) | A Practical Semi-Quantum Signature Protocol with Improved Eavesdropping Detectio... | Pang et al. | 中 | [详解](papers/2604.15836.html) |
-| 42 | [2604.15820](https://arxiv.org/abs/2604.15820) | Hilbert Space Fragmentation and Gauge Symmetry | Budde et al. | 高 | [详解](papers/2604.15820.html) |
+| 41 | [2604.15836](https://arxiv.org/abs/2604.15836) | A Practical Semi-Quantum Signature Protocol with Improved Eavesdropping Detectio... | Pang et al. | 中 | - |
+| 42 | [2604.15820](https://arxiv.org/abs/2604.15820) | Hilbert Space Fragmentation and Gauge Symmetry | Budde et al. | 高 | - |
 | 43 | [2604.15799](https://arxiv.org/abs/2604.15799) | Spectral design principles for local-excitation retention in impurity-assisted a... | Oba | 低 | - |
 | 44 | [2604.15790](https://arxiv.org/abs/2604.15790) | Holographic Stirling engines and the route to Carnot efficiency | Lilani et al. | 低 | - |
-| 45 | [2604.15775](https://arxiv.org/abs/2604.15775) | Federated Learning with Quantum Enhanced LSTM for Applications in High Energy Ph... | Sawaika et al. | 高 | [详解](papers/2604.15775.html) |
-| 46 | [2604.15765](https://arxiv.org/abs/2604.15765) | Orkan: Cache-friendly simulation of quantum operations on hermitian operators | Ziegler | 中 | [详解](papers/2604.15765.html) |
+| 45 | [2604.15775](https://arxiv.org/abs/2604.15775) | Federated Learning with Quantum Enhanced LSTM for Applications in High Energy Ph... | Sawaika et al. | 高 | - |
+| 46 | [2604.15765](https://arxiv.org/abs/2604.15765) | Orkan: Cache-friendly simulation of quantum operations on hermitian operators | Ziegler | 中 | - |
 | 47 | [2604.15763](https://arxiv.org/abs/2604.15763) | Machine-learning-assisted material and geometry characterization from Casimir fo... | Iizuka et al. | 低 | - |
-| 48 | [2604.15755](https://arxiv.org/abs/2604.15755) | Optically detected magnetic resonance of nitrogen-vacancy centers in diamond usi... | Nguyen et al. | 高 | [详解](papers/2604.15755.html) |
+| 48 | [2604.15755](https://arxiv.org/abs/2604.15755) | Optically detected magnetic resonance of nitrogen-vacancy centers in diamond usi... | Nguyen et al. | 高 | - |
 | 49 | [2604.15752](https://arxiv.org/abs/2604.15752) | Quantifying Uhlmann curvature from Yang-Mills action and its implications in qua... | Ge et al. | 低 | - |
 | 50 | [2604.15693](https://arxiv.org/abs/2604.15693) | Observable-Guided Generator Selection for Improving Trainability in Quantum Mach... | Ohno | 低 | - |
-| 51 | [2604.15666](https://arxiv.org/abs/2604.15666) | Explainable quantum regression algorithm with encoded data structure | Wang et al. | 高 | [详解](papers/2604.15666.html) |
+| 51 | [2604.15666](https://arxiv.org/abs/2604.15666) | Explainable quantum regression algorithm with encoded data structure | Wang et al. | 高 | - |
 | 52 | [2604.15653](https://arxiv.org/abs/2604.15653) | Growth of quantum dots by droplet etching epitaxy in molecular beam epitaxy: the... | Gossink et al. | 低 | - |
-| 53 | [2604.15645](https://arxiv.org/abs/2604.15645) | PINNACLE: An Open-Source Computational Framework for Classical and Quantum PINNs | Pisnoy et al. | 高 | [详解](papers/2604.15645.html) |
-| 54 | [2604.15626](https://arxiv.org/abs/2604.15626) | Bridge the Gap between Classical and Quantum Neural Networks with Residual Conne... | Li | 高 | [详解](papers/2604.15626.html) |
-| 55 | [2604.15616](https://arxiv.org/abs/2604.15616) | Overcoming the Lamb Shift in System-Bath Models via KMS Detailed Balance: High-A... | Chen et al. | 中 | [详解](papers/2604.15616.html) |
-| 56 | [2604.15605](https://arxiv.org/abs/2604.15605) | Deterministic multiphoton bundle emission via interference-interaction control | Tang et al. | 高 | [详解](papers/2604.15605.html) |
-| 57 | [2604.15604](https://arxiv.org/abs/2604.15604) | Many-Body Amplified Nonclassical Photon Emission in Cavity-Coupled Atomic Arrays | Jing et al. | 高 | [详解](papers/2604.15604.html) |
-| 58 | [2604.15603](https://arxiv.org/abs/2604.15603) | A Game Theoretic Approach for Optimizing Quantum Error Budget Distribution | Ronggon et al. | 高 | [详解](papers/2604.15603.html) |
+| 53 | [2604.15645](https://arxiv.org/abs/2604.15645) | PINNACLE: An Open-Source Computational Framework for Classical and Quantum PINNs | Pisnoy et al. | 高 | - |
+| 54 | [2604.15626](https://arxiv.org/abs/2604.15626) | Bridge the Gap between Classical and Quantum Neural Networks with Residual Conne... | Li | 高 | - |
+| 55 | [2604.15616](https://arxiv.org/abs/2604.15616) | Overcoming the Lamb Shift in System-Bath Models via KMS Detailed Balance: High-A... | Chen et al. | 中 | - |
+| 56 | [2604.15605](https://arxiv.org/abs/2604.15605) | Deterministic multiphoton bundle emission via interference-interaction control | Tang et al. | 高 | - |
+| 57 | [2604.15604](https://arxiv.org/abs/2604.15604) | Many-Body Amplified Nonclassical Photon Emission in Cavity-Coupled Atomic Arrays | Jing et al. | 高 | - |
+| 58 | [2604.15603](https://arxiv.org/abs/2604.15603) | A Game Theoretic Approach for Optimizing Quantum Error Budget Distribution | Ronggon et al. | 高 | - |
 
 ---
 
@@ -255,7 +255,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 量子模拟, 超导量子, 量子控制, 可扩展系统, 物理硬件  
-**进入详细页**: 是 → [详细解读](papers/2604.16216.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -334,7 +334,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 光量子, 量子控制, 物理硬件  
-**进入详细页**: 是 → [详细解读](papers/2604.16194.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -353,7 +353,7 @@
 
 **相关性**: 中  
 **标签**: 量子算法  
-**进入详细页**: 是 → [详细解读](papers/2604.16190.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -373,7 +373,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 量子模拟, 可扩展系统  
-**进入详细页**: 是 → [详细解读](papers/2604.16179.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -393,7 +393,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 量子纠错, 光量子, 量子算法, 量子控制, 可扩展系统  
-**进入详细页**: 是 → [详细解读](papers/2604.16174.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -432,7 +432,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 量子模拟, 超导量子, 量子算法, 可扩展系统, 物理硬件  
-**进入详细页**: 是 → [详细解读](papers/2604.16164.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -547,7 +547,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 光量子  
-**进入详细页**: 是 → [详细解读](papers/2604.16107.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -585,7 +585,7 @@
 
 **相关性**: 中  
 **标签**: 量子算法, 量子控制  
-**进入详细页**: 是 → [详细解读](papers/2604.16101.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -604,7 +604,7 @@
 
 **相关性**: 中  
 **标签**: 量子算法  
-**进入详细页**: 是 → [详细解读](papers/2604.16071.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -643,7 +643,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 量子纠错  
-**进入详细页**: 是 → [详细解读](papers/2604.16023.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -663,7 +663,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 中性原子  
-**进入详细页**: 是 → [详细解读](papers/2604.16015.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -683,7 +683,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 超导量子, 量子算法, 物理硬件  
-**进入详细页**: 是 → [详细解读](papers/2604.15971.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -722,7 +722,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 量子模拟, 量子控制, 物理硬件  
-**进入详细页**: 是 → [详细解读](papers/2604.15924.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -761,7 +761,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 中性原子, 量子控制, 可扩展系统  
-**进入详细页**: 是 → [详细解读](papers/2604.15912.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -781,7 +781,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 超导量子, 量子算法, 量子控制  
-**进入详细页**: 是 → [详细解读](papers/2604.15895.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -801,7 +801,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 可扩展系统  
-**进入详细页**: 是 → [详细解读](papers/2604.15888.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -820,7 +820,7 @@
 
 **相关性**: 中  
 **标签**: 量子算法, 量子控制  
-**进入详细页**: 是 → [详细解读](papers/2604.15886.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -877,7 +877,7 @@
 
 **相关性**: 中  
 **标签**: 量子算法  
-**进入详细页**: 是 → [详细解读](papers/2604.15836.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -897,7 +897,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 量子模拟  
-**进入详细页**: 是 → [详细解读](papers/2604.15820.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -955,7 +955,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 可扩展系统, 物理硬件  
-**进入详细页**: 是 → [详细解读](papers/2604.15775.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -974,7 +974,7 @@
 
 **相关性**: 中  
 **标签**: 量子模拟, 量子算法, 物理硬件  
-**进入详细页**: 是 → [详细解读](papers/2604.15765.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -1013,7 +1013,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 光量子  
-**进入详细页**: 是 → [详细解读](papers/2604.15755.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -1071,7 +1071,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 量子纠错, 量子模拟, 量子算法, 量子控制, 物理硬件  
-**进入详细页**: 是 → [详细解读](papers/2604.15666.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -1110,7 +1110,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 可扩展系统  
-**进入详细页**: 是 → [详细解读](papers/2604.15645.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -1130,7 +1130,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 可扩展系统  
-**进入详细页**: 是 → [详细解读](papers/2604.15626.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -1149,7 +1149,7 @@
 
 **相关性**: 中  
 **标签**: 量子算法, 量子控制  
-**进入详细页**: 是 → [详细解读](papers/2604.15616.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -1169,7 +1169,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 光量子, 量子控制, 可扩展系统, 物理硬件  
-**进入详细页**: 是 → [详细解读](papers/2604.15605.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -1189,7 +1189,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 光量子, 可扩展系统  
-**进入详细页**: 是 → [详细解读](papers/2604.15604.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -1209,7 +1209,7 @@
 **相关性**: 高  
 **与你的主线关系**: 与用户研究主线（中性原子量子计算/量子纠错/可扩展系统）相关。
 **标签**: 量子算法  
-**进入详细页**: 是 → [详细解读](papers/2604.15603.html)
+**进入详细页**: 是 → 详细页未生成
 
 ---
 
@@ -1217,7 +1217,7 @@
 
 1. **[Fast, High-Fidelity Erasure Detection of Dual-Rail Qubits with Symmetrically Coupled Readout](papers/2604.16292.html)** — 这是一篇实验论文，Erasure qubits are a promising platform for impleme...
 2. **[Yttrium ion as a platform for quantum information processing](papers/2604.16274.html)** — 这是一篇实验论文，Engineering large-scale quantum computers which sim...
-3. **[A digitally controlled silicon quantum processing unit](papers/2604.16216.html)** — 这是一篇实验论文，Commercially-relevant quantum computers will requir...
+3. **A digitally controlled silicon quantum processing unit** — 硅量子处理单元，可扩展控制方案
 4. **[Preparation and detection of quasiparticles for quantum simulations of scattering](papers/2604.16210.html)** — 这是一篇算法/协议论文，We introduce a method for the selective preparat...
 5. **[Towards Ultra-High-Rate Quantum Error Correction with Reconfigurable Atom Arrays](papers/2604.16209.html)** — 这是一篇理论/方法论文，Quantum error correction is widely believed to b...
 

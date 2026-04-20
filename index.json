@@ -8,8 +8,8 @@
       "latest": "2026-04-20",
       "latest_url": "research/arxiv/quant-ph/daily/2026-04-20_arxiv-quant-ph/index.html",
       "paper_count": 58,
-      "highlight_count": 26,
-      "highlights": [],
+      "highlight_count": 4,
+      "highlights": ["2604.16209", "2604.16210", "2604.16274", "2604.16292"],
       "history": [
         {
           "date": "2026-04-20",
@@ -19,7 +19,7 @@
           "config_driven": true,
           "mode": "production",
           "qa_passed": true,
-          "notes": "全量覆盖，58/58 篇完整条目，QA 通过"
+          "notes": "全量覆盖 58/58，4 篇详细页，链接与文件完全一致，QA 通过"
         },
         {
           "date": "2026-04-17",
