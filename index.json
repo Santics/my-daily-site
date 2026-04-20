@@ -4,20 +4,22 @@
   "last_updated": "2026-04-20",
   "modules": {
     "quant-ph": {
-      "config_files": ["PROMPT.md", "SOURCES.md", "PROFILE.md"],
+      "config_files": ["PROMPT.md", "SOURCES.md", "PROFILE.md", "qa_production.sh"],
       "latest": "2026-04-20",
       "latest_url": "research/arxiv/quant-ph/daily/2026-04-20_arxiv-quant-ph/index.html",
-      "paper_count": 59,
-      "highlight_count": 3,
-      "highlights": ["2604.16209", "2604.16292", "2604.16210"],
+      "paper_count": 58,
+      "highlight_count": 26,
+      "highlights": [],
       "history": [
         {
           "date": "2026-04-20",
           "url": "research/arxiv/quant-ph/daily/2026-04-20_arxiv-quant-ph/index.html",
-          "papers": 59,
-          "highlights": ["2604.16209", "2604.16292", "2604.16210"],
+          "papers": 58,
+          "highlights": [],
           "config_driven": true,
-          "notes": "摘要完整性 bug 修复验证"
+          "mode": "production",
+          "qa_passed": true,
+          "notes": "全量覆盖，58/58 篇完整条目，QA 通过"
         },
         {
           "date": "2026-04-17",
