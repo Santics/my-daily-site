@@ -1,16 +1,26 @@
 {
   "site_name": "Quantum Daily",
   "site_description": "量子计算与量子信息前沿跟踪（配置驱动版）",
-  "last_updated": "2026-04-20",
+  "last_updated": "2026-04-21",
   "modules": {
     "quant-ph": {
       "config_files": ["PROMPT.md", "SOURCES.md", "PROFILE.md", "qa_production.sh"],
-      "latest": "2026-04-20",
-      "latest_url": "research/arxiv/quant-ph/daily/2026-04-20_arxiv-quant-ph/index.html",
-      "paper_count": 58,
-      "highlight_count": 4,
-      "highlights": ["2604.16209", "2604.16210", "2604.16274", "2604.16292"],
+      "latest": "2026-04-21",
+      "latest_url": "research/arxiv/quant-ph/daily/2026-04-21_arxiv-quant-ph/index.html",
+      "paper_count": 59,
+      "highlight_count": 24,
+      "highlights": ["2604.15389", "2604.15405", "2604.15432", "2604.15435", "2604.15436", "2604.15603", "2604.15693", "2604.15765", "2604.15836", "2604.15867", "2604.15886", "2604.15895", "2604.15920", "2604.15971", "2604.16023", "2604.16101", "2604.16164", "2604.16165", "2604.16174", "2604.16194", "2604.16209", "2604.16216", "2604.16274", "2604.16292"],
       "history": [
+        {
+          "date": "2026-04-21",
+          "url": "research/arxiv/quant-ph/daily/2026-04-21_arxiv-quant-ph/index.html",
+          "papers": 59,
+          "highlights": [],
+          "config_driven": true,
+          "mode": "production",
+          "qa_passed": true,
+          "notes": "全量覆盖 59/59，24 篇详细页，链接与文件完全一致，QA 通过"
+        },
         {
           "date": "2026-04-20",
           "url": "research/arxiv/quant-ph/daily/2026-04-20_arxiv-quant-ph/index.html",

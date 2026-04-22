@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orkan: Cache-friendly simulation of quantum operations on hermitian operators — arXiv 2604.15765</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; }
+.back { margin-top: 2em; padding-top: 1em; border-top: 1px solid #ddd; }
+.back a { color: #3498db; text-decoration: none; }
+</style>
+</head>
+<body>
+<h1>Orkan: Cache-friendly simulation of quantum operations on hermitian operators</h1>
+<div class="meta">
+<span><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2604.15765" target="_blank">2604.15765</a></span>
+<span><strong>发布:</strong> 2026-04-17</span>
+<span><strong>类型:</strong> Software</span>
+<span><strong>相关性:</strong> High</span>
+</div>
+
+<div class="section">
+<h2>作者</h2>
+<p>Timo Ziegler</p>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Classical simulation of quantum operations is essential for algorithm design, noise characterisation, and benchmarking of quantum hardware. The most general physically realisable operation can be described by a positive linear map acting on a hermitian operator, representing either a density matrix or an observable. Established simulators vectorise the density matrix on an $n$-qubit Hilbert space and reuse state-vector kernels, storing all $2^{2n}$ elements and forgoing the benefits of hermitian symmetry. In this work, I introduce \emph{Orkan}, a simulation library that uses a tiled memory layout storing only the lower triangle of the hermitian matrix at tile granularity, roughly halving both the memory footprint and the wall time to simulate the evolution of quantum states under generic quantum operations. The implementation treats any hermitian operator uniformly and is agnostic to whether the Schrödinger or Heisenberg picture is used. Dedicated $k$-local conjugation algorithms update all entries of the hermitian matrix in a single pass. Benchmarks against Qiskit Aer, QuEST, and Qulacs show consistent wall-clock speedups of $2$-$4{\times}$ partly attributable to the reduced memor...
+</div>
+</div>
+
+<div class="section">
+<h2>核心物理问题</h2>
+<p>如何通过利用厄米算符对称性的分块内存布局，设计一个能将通用量子操作经典模拟的内存占用和运行时间大致减半的模拟库？</p>
+</div>
+
+<div class="section">
+<h2>AI 快评</h2>
+<p>本文提出了Orkan模拟库，针对现有模拟器将密度矩阵矢量化后存储全部2^(2n)元素、忽略厄米对称性的问题，采用分块瓦片内存布局仅存储下三角部分。设计了专用的k-local共轭算法单次遍历更新所有矩阵元，在Qiskit Aer、QuEST和Qulacs基准测试中实现了2-4倍加速。对量子算法设计、噪声表征和硬件基准测试具有实用价值。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>经典模拟是量子计算研究的重要基础设施，Orkan通过对称性利用实现了显著的性能提升，对需要大规模模拟的研究者有直接工具价值。</p>
+</div>
+
+<div class="section">
+<h2>与量子计算主线关系</h2>
+<p>直接服务于量子计算的经典模拟需求，涉及算法设计、噪声表征和硬件基准测试等核心场景。</p>
+</div>
+
+<div class="section">
+<h2>标签</h2>
+<p>
+<span class="tag">quantum simulation</span><span class="tag">classical simulation</span><span class="tag">software</span><span class="tag">Hermitian operators</span>
+</p>
+</div>
+
+<div class="back">
+<a href="../index_draft.md">← 返回主页面</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Optimal algorithms for materializing stabilizer states and Clifford gates from compact descriptions — arXiv 2604.15405</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; }
+.back { margin-top: 2em; padding-top: 1em; border-top: 1px solid #ddd; }
+.back a { color: #3498db; text-decoration: none; }
+</style>
+</head>
+<body>
+<h1>Optimal algorithms for materializing stabilizer states and Clifford gates from compact descriptions</h1>
+<div class="meta">
+<span><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2604.15405" target="_blank">2604.15405</a></span>
+<span><strong>发布:</strong> 2026-04-16</span>
+<span><strong>类型:</strong> Algorithm</span>
+<span><strong>相关性:</strong> High</span>
+</div>
+
+<div class="section">
+<h2>作者</h2>
+<p>Hyunho Cha, Jungwoo Lee</p>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Stabilizer states admit compact classical descriptions, but many downstream tasks still require their full amplitude vectors. Since the output itself has size $2^n$, the main algorithmic question is whether one can materialize an $n$-qubit stabilizer state vector in optimal $O(2^n)$ time, rather than paying an additional polynomial overhead. We answer this question in the affirmative. Starting from the standard quadratic-form representation of stabilizer states, we give an algorithm that runs in $O(2^n)$ time and $O(2^n)$ space. The idea is to maintain a cached parity word that records all future off-diagonal quadratic phase increments simultaneously. As consequences, we obtain an optimal procedure for materializing a stabilizer state vector from a standard check-matrix description, and an optimal algorithm for expanding a Clifford tableau into its full dense matrix. These results close the asymptotic gap for dense stabilizer and Clifford materialization.
+</div>
+</div>
+
+<div class="section">
+<h2>核心物理问题</h2>
+<p>如何从稳定子态的紧凑经典描述出发，以最优时间复杂度实现稳定子态和Clifford门的物化？</p>
+</div>
+
+<div class="section">
+<h2>AI 快评</h2>
+<p>给出了O(2^n)时间的最优算法，将经典描述转换为量子态/门操作。稳定子态是量子计算的重要资源，该结果对编译和模拟都有价值。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>稳定子计算是量子计算核心基础，最优算法结果值得详细了解。</p>
+</div>
+
+<div class="section">
+<h2>与量子计算主线关系</h2>
+<p>稳定子态和Clifford门是量子计算的基础组件，最优算法对理论和应用均有重要意义。</p>
+</div>
+
+<div class="section">
+<h2>标签</h2>
+<p>
+<span class="tag">stabilizer states</span><span class="tag">Clifford gates</span><span class="tag">optimal algorithm</span><span class="tag">compact description</span>
+</p>
+</div>
+
+<div class="back">
+<a href="../index_draft.md">← 返回主页面</a>
+</div>
+
+</body>
+</html>

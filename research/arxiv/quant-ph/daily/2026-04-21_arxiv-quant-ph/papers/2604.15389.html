@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Unified Hardware-to-Decoder Architecture for Hybrid Continuous-Variable and Discrete-Variable Quantum Error Correction in LiDMaS+ — arXiv 2604.15389</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; }
+.back { margin-top: 2em; padding-top: 1em; border-top: 1px solid #ddd; }
+.back a { color: #3498db; text-decoration: none; }
+</style>
+</head>
+<body>
+<h1>A Unified Hardware-to-Decoder Architecture for Hybrid Continuous-Variable and Discrete-Variable Quantum Error Correction in LiDMaS+</h1>
+<div class="meta">
+<span><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2604.15389" target="_blank">2604.15389</a></span>
+<span><strong>发布:</strong> 2026-04-16</span>
+<span><strong>类型:</strong> Hardware</span>
+<span><strong>相关性:</strong> High</span>
+</div>
+
+<div class="section">
+<h2>作者</h2>
+<p>Dennis Delali Kwesi Wayo, Chinonso Onah, Leonardo Goliatt, Sven Groppe</p>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+We present an architecture-level hardware-to-logical-to-decoder execution stack for hybrid continuous-variable and discrete-variable quantum error correction in LiDMaS+. Provider-native records are normalized into a single decoder IO contract and replayed under fixed controls across MWPM, UF, BP, and neural-MWPM. In a Xanadu case study using fixture inputs and sampled public datasets, replay integrity was complete: 108/108 fixture and 4000/4000 real-slice request-response lines, with zero request-parse errors, zero response-parse errors, and zero decoder-name mismatches. Under matched inputs, decoder behavior is clearly regime-dependent. For weighted fixture summaries, average flip count was 1.296 (MWPM), 1.296 (UF), 0.667 (BP), and 1.296 (neural-MWPM). For weighted real-data summaries, average flip count was 0.641 (MWPM), 0.741 (UF), 0.318 (BP), and 0.641 (neural-MWPM); corresponding nonempty-flip rates were 0.490, 0.490, 0.318, and 0.490. Across fixture data, BP reduced weighted correction volume by 48.6\% versus MWPM; across real slices, BP reduced weighted correction volume by 50.4\% versus MWPM and 57.1\% versus UF. Quality controls show the central interpretability tradeoff: ...
+</div>
+</div>
+
+<div class="section">
+<h2>核心物理问题</h2>
+<p>如何设计统一的硬件-解码器架构，实现连续变量和离散变量混合量子纠错？</p>
+</div>
+
+<div class="section">
+<h2>AI 快评</h2>
+<p>提出了LiDMaS+的完整执行栈架构，涵盖从硬件到逻辑层再到解码器的全链条。对混合QEC系统的工程实现具有重要参考价值。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>混合CV-DV QEC架构是当前容错量子计算的前沿方向，具有重要参考价值。</p>
+</div>
+
+<div class="section">
+<h2>与量子计算主线关系</h2>
+<p>直接涉及量子纠错架构设计，是容错量子计算的关键技术路径。</p>
+</div>
+
+<div class="section">
+<h2>标签</h2>
+<p>
+<span class="tag">quantum error correction</span><span class="tag">continuous variable</span><span class="tag">discrete variable</span><span class="tag">hardware architecture</span>
+</p>
+</div>
+
+<div class="back">
+<a href="../index_draft.md">← 返回主页面</a>
+</div>
+
+</body>
+</html>
