@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LightStim: A Framework for QEC Protocol Evaluation and Prototyping with Automated DEM Construction | quant-ph 日报 2026-04-24</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
+h1 { font-size: 1.4em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; border-bottom: 1px solid #eee; padding-bottom: 1em; }
+.section { margin: 1.5em 0; }
+.section h2 { font-size: 1.1em; color: #2c3e50; border-left: 3px solid #3498db; padding-left: 10px; }
+.abstract { background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 1em 0; }
+.tags { margin-top: 1em; }
+.tag { display: inline-block; background: #e8f4f8; color: #2c3e50; padding: 3px 10px; border-radius: 12px; font-size: 0.85em; margin-right: 5px; margin-bottom: 5px; }
+.back { margin-top: 2em; padding-top: 1em; border-top: 1px solid #eee; }
+.back a { color: #3498db; text-decoration: none; }
+</style>
+</head>
+<body>
+<h1>LightStim: A Framework for QEC Protocol Evaluation and Prototyping with Automated DEM Construction</h1>
+<div class="meta">
+  <strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.21472" target="_blank">2604.21472</a> |
+  <strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.21472" target="_blank">下载</a><br>
+  <strong>作者:</strong> Xiang Fang, Ming Wang, Yue Wu, Sharanya Prabhu, Dean Tullsen et al. (9 authors)<br>
+  <strong>分类:</strong> Quantum Physics (quant-ph)<br>
+  <strong>抓取日期:</strong> 2026-04-24 | <strong>数据来源:</strong> arXiv
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Fault-tolerant quantum computing increasingly demands rigorous, circuit-level evaluation of diverse quantum error correction (QEC) protocols and efficient prototyping of new ones. Such evaluation requires both the physical circuit and its Detector Error Model (DEM) to simulate end-to-end logical error rates. However, DEM construction today is performed by manual annotation, a tedious and error-prone process that effectively limits evaluation to simple memory experiments. We present LightStim, a framework that automates DEM construction concurrently with circuit compilation by maintaining a Pauli tableau augmented with measurement records, with no protocol-specific input required. We benchmark LightStim across protocols from memory experiments to end-to-end distillation circuits; cross-validation against public implementations confirms exact detector and observable counts and consistent logical error rates. LightStim additionally accelerates the exploration of new protocols, which we demonstrate through a novel heterogeneous cross-code lattice surgery design between surface and punctured quantum Reed-Muller codes. These capabilities together make LightStim a unified infrastructure for systematic QEC protocol evaluation and exploration.
+</div>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>本文提出LightStim框架，通过维护Pauli tableau自动构建DEM，无需协议特定输入，支持从存储器实验到完整蒸馏电路的端到端评估。验证跨表面码和穿孔量子Reed-Muller码的异构晶格手术设计。偏量子纠错/编译方向，对QEC协议评估基础设施有直接价值。</p>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何自动构建探测器误差模型（DEM）以评估QEC协议？</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>本文提出LightStim框架，通过维护Pauli tableau自动构建DEM，无需协议特定输入，支持从存储器实验到完整蒸馏电路的端到端评估。验证跨表面码和穿孔量子Reed-Muller码的异构晶格手术设计。偏量子纠错/编译方向，对QEC协议评估基础设施有直接价值。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>本文提出的自动DEM构建和QEC协议评估框架，对量子纠错系统的编译和验证流程有直接参考价值。LightStim支持异构码之间的晶格手术设计，这对构建灵活的纠错编译器有启发意义，属于软件栈和系统实现方向。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><strong>高</strong> — 直接涉及量子纠错协议的自动评估和编译，与用户纠错和软件栈方向强相关。</p>
+</div>
+
+<div class="tags">
+<span class="tag">量子纠错</span><span class="tag">编译与优化</span><span class="tag">可扩展系统</span>
+</div>
+
+<div class="back">
+<a href="../index.md">← 返回 2026-04-24 日报总览</a>
+</div>
+</body>
+</html>
