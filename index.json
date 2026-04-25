@@ -1,21 +1,69 @@
 {
   "site_name": "Quantum Daily",
   "site_description": "量子计算与量子信息前沿跟踪（配置驱动版）",
-  "last_updated": "2026-04-24",
+  "last_updated": "2026-04-23",
   "modules": {
     "quant-ph": {
-      "config_files": ["PROMPT.md", "SOURCES.md", "PROFILE.md"],
-      "latest": "2026-04-24",
-      "latest_url": "research/arxiv/quant-ph/daily/2026-04-24_arxiv-quant-ph/index.html",
-      "paper_count": 58,
-      "highlight_count": 5,
-      "highlights": ["2604.21012", "2604.21472", "2604.21722", "2604.21866", "2604.21876"],
+      "config_files": [
+        "PROMPT.md",
+        "SOURCES.md",
+        "PROFILE.md"
+      ],
+      "latest": "2026-04-23",
+      "latest_url": "research/arxiv/quant-ph/daily/2026-04-23_arxiv-quant-ph/index.html",
+      "paper_count": 46,
+      "highlight_count": 1,
+      "highlights": [
+        "2604.20838"
+      ],
       "history": [
+        {
+          "date": "2026-04-23",
+          "url": "research/arxiv/quant-ph/daily/2026-04-23_arxiv-quant-ph/index.html",
+          "papers": 46,
+          "highlights": [
+            "2604.20838"
+          ],
+          "config_driven": true,
+          "mode": "production",
+          "qa_passed": true,
+          "notes": "补抓 46/46，1 篇详细页，链接与文件一致，QA 通过"
+        },
+        {
+          "date": "2026-04-23",
+          "url": "research/arxiv/quant-ph/daily/2026-04-23_arxiv-quant-ph/index.html",
+          "papers": 46,
+          "highlights": [
+            "2604.20838"
+          ],
+          "config_driven": true,
+          "mode": "production",
+          "qa_passed": true,
+          "notes": "补抓 46/46，1 篇详细页，链接与文件一致，QA 通过"
+        },
+        {
+          "date": "2026-04-23",
+          "url": "research/arxiv/quant-ph/daily/2026-04-23_arxiv-quant-ph/index.html",
+          "papers": 46,
+          "highlights": [
+            "2604.20838"
+          ],
+          "config_driven": true,
+          "mode": "production",
+          "qa_passed": true,
+          "notes": "补抓 46/46，1 篇详细页，链接与文件一致，QA 通过"
+        },
         {
           "date": "2026-04-24",
           "url": "research/arxiv/quant-ph/daily/2026-04-24_arxiv-quant-ph/index.html",
           "papers": 58,
-          "highlights": ["2604.21012", "2604.21472", "2604.21722", "2604.21866", "2604.21876"],
+          "highlights": [
+            "2604.21012",
+            "2604.21472",
+            "2604.21722",
+            "2604.21866",
+            "2604.21876"
+          ],
           "config_driven": true,
           "mode": "production",
           "qa_passed": true,
@@ -45,7 +93,11 @@
           "date": "2026-04-17",
           "url": "research/arxiv/quant-ph/daily/2026-04-17_arxiv-quant-ph/index.html",
           "papers": 62,
-          "highlights": ["2604.15099", "2604.15248", "2604.15132"],
+          "highlights": [
+            "2604.15099",
+            "2604.15248",
+            "2604.15132"
+          ],
           "config_driven": true
         },
         {
