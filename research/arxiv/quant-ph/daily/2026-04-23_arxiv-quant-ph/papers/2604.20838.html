@@ -23,7 +23,7 @@ h1 { font-size: 1.4em; margin-bottom: 0.3em; }
   <strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.20838" target="_blank">2604.20838</a> |
   <strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.20838" target="_blank">下载</a><br>
   <strong>作者:</strong> Okada, Koki, Kasai, Kenta<br>
-  <strong>分类:</strong> quant-ph<br>
+  <strong>发布时间:</strong> 2026-04-23 | <strong>分类:</strong> quant-ph<br>
   <strong>抓取日期:</strong> 2026-04-23 | <strong>数据来源:</strong> arXiv
 </div>
 
@@ -32,6 +32,11 @@ h1 { font-size: 1.4em; margin-bottom: 0.3em; }
 <div class="abstract">
 We construct a quantum low-density parity-check code family from a length-512 Calderbank-Shor-Steane base matrix pair. The base pair is $(3,8)$-regular, both Tanner graphs have girth 8 , and the base code has parameters $[[512,174,8]]$. The construction uses affine cosets of six 3-dimensional subspaces of $\mathbb{F}_2^9$ as check supports, and then applies circulant permutation matrix (CPM) lifts. The main decoding experiment uses the CPM-lifted code with lift factor $P=32$, which has parameters $[[16384, 4142, \leq 40]]$, under the code-capacity depolarizing model. A belief-propagation decoder with post-processing achieved frame error rate about $10^{-8}$ at $p=$ 0.085 , and one observed logical residual of weight 40 gives a decoder-derived upper bound $d \leq 40$.
 </div>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>从长度512的CSS基矩阵对出发，利用仿射陪集结构构造(3,8)-正则量子LDPC码族。基码Tanner图围长为8，通过循环置换矩阵(CPM)提升实现大规模码构造，最终在提升因子P=32下获得[[16384,4142,≤40]]码，并通过置信传播解码器在噪声模型下验证性能。</p>
 </div>
 
 <div class="section">
@@ -45,12 +50,22 @@ We construct a quantum low-density parity-check code family from a length-512 Ca
 </div>
 
 <div class="section">
+<h2>主要贡献</h2>
+<p>(1) 提出基于仿射陪集和循环置换矩阵提升的量子LDPC码构造方法；(2) 实现基码参数[[512,174,8]]，围长8；(3) 在提升因子P=32下构造[[16384,4142,≤40]]大规模码；(4) 通过置信传播加后处理解码器，在p=0.085处达到约10^-8帧错误率。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>本文直接涉及量子纠错码的构造与解码实验，属于用户量子计算/量子纠错主线的高优先级方向。码构造方法和解码性能数据对容错量子计算方案评估有参考价值。</p>
+</div>
+
+<div class="section">
 <h2>相关性判定</h2>
-<p><strong>高</strong> — 本文从长度512的Calderbank-Shor-Steane基矩阵对出发，构造(3,8)-正则量子LDPC码族，两个Tanner图围长均为8。使用仿射陪集作为校验支撑，结合循环置换矩阵提升。主要解码...</p>
+<p><strong>高</strong> — 本文从长度512的CSS基矩阵对出发，构造(3,8)-正则量子LDPC码族，使用仿射陪集和CPM提升方法，并在提升因子P=32下完成解码实验。直接涉及量子纠错码构造，与用户量子计算主线强相关。</p>
 </div>
 
 <div class="tags">
-<span class="tag">量子纠错</span><span class="tag">可扩展系统</span>
+<span class="tag">quantum-error-correction</span><span class="tag">scalable-systems</span>
 </div>
 
 <div class="back">
