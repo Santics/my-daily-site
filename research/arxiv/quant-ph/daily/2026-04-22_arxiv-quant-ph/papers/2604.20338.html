@@ -37,33 +37,33 @@ h2 { font-size: 1.1em; margin-top: 1.5em; border-bottom: 1px solid #eee; padding
 
 <div class="section">
 <h2>AI快评</h2>
-<p>本文研究column generation for the optimization of switching in repeaterless quantum networks。Efficient resource allocation and optical switching promise high key rates, network adaptability, and cost reduction in repeaterless quantum communication networks. However, identifying optimal switch... 偏photonic/quantum-network/scalable-systems方向，与用户主线高度相关。</p>
+<p>量子密钥分发网络需要高效的光路交换来实现多用户间的灵活密钥分配，但最优交换策略的组合爆炸问题长期阻碍实用化。本文提出了一种新颖的图论建模框架，将无中继量子网络的物理拓扑和逻辑需求统一描述，并通过列生成算法在指数级配置空间中高效搜索最优解。这项工作为大规模量子接入网络的动态资源调度提供了可扩展的计算工具。</p>
 </div>
 
 
 <div class="section">
 <h2>一句话核心问题</h2>
-<p>本文研究的核心问题是：Column Generation for the Optimization of Switching in Repeaterless Quantum Netw...</p>
+<p>如何在无中继量子通信网络中，高效求解最优光路交换配置以最大化密钥分发效率？</p>
 </div>
 
 <div class="section">
 <h2>核心物理图像</h2>
-<p>Efficient resource allocation and optical switching promise high key rates, network adaptability, and cost reduction in repeaterless quantum communication networks. However, identifying optimal switching configurations remains a significant challenge due to the combinatorial complexity</p>
+<p>量子网络由多个用户节点和光纤链路组成，每对用户之间可以建立量子信道生成密钥。光开关设备可以在不同链路间动态建立或断开连接，但每次切换都有物理限制（如信道损耗、串扰）。最优策略需要在所有可能的连接配置中找到一组"光路"，使得整体密钥率最高。由于可能的配置数量随节点数指数增长，直接穷举不可行。作者将网络建模为图，其中边代表物理信道、路径代表端到端量子连接，然后用列生成方法逐步构建最有潜力的连接组合。</p>
 </div>
 
 <div class="section">
 <h2>主要贡献</h2>
-<p>Efficient resource allocation and optical switching promise high key rates, network adaptability, and cost reduction in repeaterless quantum communication networks. However, identifying optimal switching configurations remains a significant challenge due to the combinatorial complexity. We introduce a novel graph formulation to model the physical and logical structure of repeaterless quantum networks, enabling the systematic optimization of switching strategies. The problem is posed as a linear </p>
+<p>（1）提出统一的图论模型，同时刻画无中继量子网络的物理层拓扑结构和逻辑层密钥需求；（2）将开关优化问题转化为线性规划，设计了基于列生成的高效求解算法，克服指数级配置空间的计算障碍；（3）通过实证测试验证了算法在实用规模网络中的可扩展性和优化效果。</p>
 </div>
 
 <div class="section">
 <h2>与你的主线关系</h2>
-<p>相关性判定为高。本文涉及photonic/quantum-network/scalable-systems方向，与用户量子计算研究方向直接相关。</p>
+<p>你研究量子计算与量子信息，量子密钥分发网络是量子信息走向实际应用的重要方向之一。本文的列生成优化框架直接关联到量子网络的资源调度问题——如何在有限物理资源下最大化网络整体的密钥生成能力。这对你理解量子网络的工程化约束、算法设计思路以及从理论模型到实际部署的转化过程有参考价值。</p>
 </div>
 
 <div class="section">
 <h2>相关性判定</h2>
-<p>高相关。核心技术与用户研究方向高度吻合，建议精读。</p>
+<p>高相关。量子网络的资源优化是连接量子信息理论与工程实践的桥梁，本文的列生成算法为大规模无中继网络的动态配置提供了实用工具。如果你关注量子密钥分发、量子接入网络或光量子网络的架构设计，这篇工作的建模方法和算法框架都值得了解。</p>
 </div>
 <div class="section">
 <h2>原文链接</h2>

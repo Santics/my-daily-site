@@ -28,7 +28,7 @@ h2 { font-size: 1.1em; margin-top: 1.5em; border-bottom: 1px solid #eee; padding
 <strong>作者:</strong> Stephanie Wehner
 </div>
 
-<div class="tags"><span class="tag">quantum-network</span></div>
+<div class="tags"><span class="tag">quantum-network</span><span class="tag">quantum-information</span><span class="tag">quantum-advantage</span></div>
 
 <div class="section">
 <h2>原摘要</h2>
@@ -37,33 +37,33 @@ h2 { font-size: 1.1em; margin-top: 1.5em; border-bottom: 1px solid #eee; padding
 
 <div class="section">
 <h2>AI快评</h2>
-<p>本文研究quantum advantage for coordinated frequency selection against distributed jammers。Consider two parties who want to agree on a common frequency band for communication in the presence of independent jammers. Such jammers block a different subset of bands at each site, where each part... 偏quantum-network方向，与用户主线高度相关。</p>
+<p>这篇论文提出了一个简洁而有启发性的量子优势场景：在没有直接通信的情况下，两个受干扰的节点如何利用共享纠缠来协调选择共同频段。作者严格证明了当安全频段数量和总频谱规模足够大时，纠缠可以带来严格优于任何经典策略的协调成功率。这不仅为量子网络的实用协议设计提供了思路，也为量子优势的"通信复杂约化"范式提供了一个新的实例。</p>
 </div>
 
 
 <div class="section">
 <h2>一句话核心问题</h2>
-<p>本文研究的核心问题是：Quantum Advantage for Coordinated Frequency Selection Against Distributed Jammer...</p>
+<p>在没有经典通信的条件下，如何利用量子纠缠帮助两个受独立干扰的节点选择共同的通信频段？</p>
 </div>
 
 <div class="section">
 <h2>核心物理图像</h2>
-<p>Consider two parties who want to agree on a common frequency band for communication in the presence of independent jammers. Such jammers block a different subset of bands at each site, where each party can observe only its own set of unjammed bands</p>
+<p>想象两个军事基地需要选择同一无线电频段进行通信，但敌方干扰器在不同基地周围阻塞了不同的频段。双方无法互相告知自己哪些频段可用。经典情况下，双方只能各自随机选择，成功概率有限。但如果双方事先共享一对纠缠量子比特，通过对本地可用频段进行量子测量，测量结果的关联性使得双方有更高概率选中同一个未被阻塞的频段——这就是量子纠缠带来的协调优势。</p>
 </div>
 
 <div class="section">
 <h2>主要贡献</h2>
-<p>Consider two parties who want to agree on a common frequency band for communication in the presence of independent jammers. Such jammers block a different subset of bands at each site, where each party can observe only its own set of unjammed bands. Yet, they must agree on a common band without communicating. We first establish the optimal classical strategy, maximizing the probability they output a common frequency band in a single shot. We proceed to show that sharing an entangled pair of loca</p>
+<p>（1）严格建立了在独立干扰下双方选择共同频段的经典最优策略，给出了单轮尝试的成功概率上限；（2）证明了共享d维纠缠对在安全频段数d和总频谱大小n足够大时，可以实现严格优于任何经典策略的协调成功率；（3）设计了d=2时的显式量子测量策略，给出了近-term实验可行的演示路径。</p>
 </div>
 
 <div class="section">
 <h2>与你的主线关系</h2>
-<p>相关性判定为高。本文涉及quantum-network方向，与用户量子计算研究方向直接相关。</p>
+<p>你研究量子计算与量子信息，量子纠缠作为信息资源的基本特性是你的核心关注之一。本文将纠缠的协调优势应用于频率选择协议，展示了量子网络中"无通信协调"的具体应用场景。这对你理解纠缠在分布式量子信息处理中的实际效用、以及设计量子网络协议时如何利用量子优势有直接的参考价值。</p>
 </div>
 
 <div class="section">
 <h2>相关性判定</h2>
-<p>高相关。核心技术与用户研究方向高度吻合，建议精读。</p>
+<p>高相关。本文从量子基础理论出发，给出了纠缠在协调任务中的严格优势证明，并且提供了实验可验证的显式策略。如果你关注量子纠缠的信息论应用、量子网络协议设计或量子优势的通信复杂性边界，这篇工作的分析框架和结果都值得参考。</p>
 </div>
 <div class="section">
 <h2>原文链接</h2>
