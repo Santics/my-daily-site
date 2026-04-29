@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noise-aware selection of circuit cutting strategies under hardware noise non-uniformity — arXiv 2604.24422v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Noise-aware selection of circuit cutting strategies under hardware noise non-uniformity</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.24422v1" target="_blank">2604.24422v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.24422v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Debarthi Pal, Ritajit Majumdar, Padmanabha Venkatagiri Seshadri, Anupama Ray, Yogesh Simmhan</span><br>
+<span><strong>分类:</strong> quant-ph, cs.ET</span><br>
+<span><strong>发布时间:</strong> 2026-04-27 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">circuit-cutting</span><span class="tag">hardware-noise</span><span class="tag">nisq-computing</span><span class="tag">quantum-compilation</span><span class="tag">noise-non-uniformity</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Noise in contemporary quantum hardware is highly non-uniform across qubits and couplers, giving rise to localized low-noise islands within otherwise noisy device topologies. As quantum workloads scale, executions are increasingly forced to traverse high-noise regions, degrading algorithmic fidelity. Circuit cutting provides a route to circumvent such regions by decomposing large circuits into smaller subcircuits, but its practicality is limited by exponential sampling overhead and the lack of systematic guidance on how cut strategies should align with heterogeneous hardware noise. In this work, we present a hardware-noise-aware circuit cutting framework that explicitly exploits the spatial non-uniformity of noise in quantum devices. Rather than proposing a new cut-finding algorithm, we formalize the problem of device-constraint selection under realistic hardware noise and show that this choice critically determines both execution开销 and effective noise. Using a unified gate- and wire-cutting formulation, we demonstrate that small, hardware-informed relaxations in the device constraint yield exponential reductions in execution overhead while preserving alignment with low-noise hardware regions. Across representative workloads, our method achieves an average reduction in the number of circuit executions ranging from 5-54x for 20-qubit circuits, and enables tractable circuit cutting for 50-qubit circuits and application-level benchmarks where conventional strategies incur prohibitive overhead.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何利用量子硬件噪声的非均匀性来优化电路切割策略，在保证低噪声区域对齐的同时减少执行开销？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>本文提出了噪声感知的电路切割框架，利用量子硬件中噪声的空间非均匀性来优化设备约束选择。作者将设备约束选择问题形式化，证明了该选择对执行开销和有效噪声的关键影响。在 20 量子比特电路上，该方法将电路执行次数平均减少 5-54 倍，并使 50 量子比特电路和应用级基准测试上的电路切割变得可行。这项工作对扩展 NISQ 量子电路规模具有重要实用价值，直接针对当前量子硬件的噪声异构性问题。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>想象一张量子芯片的地图，上面布满了红色和绿色的区域。红色区域代表高噪声的量子比特和耦合器，绿色区域则是相对安静的低噪声岛屿。当一个大型的量子算法需要运行时，它往往被迫穿越大片红色区域，导致计算结果的保真度急剧下降。电路切割技术就像一位聪明的交通规划师，它不把整个算法塞进一条路，而是将大型电路分解成多个小块，每块都可以通过不同的路径绕过红色区域。传统的切割方法盲目地寻找分割点，往往导致需要运行天文数字般的子电路组合。而本文的方法就像给交通规划师配备了一张实时噪声地图——它知道哪些量子比特是可靠的，然后只需要在最可靠的区域附近稍微放宽约束，就能指数级地减少需要运行的子电路数量。在 20 量子比特的电路上，这意味着从数百万次执行减少到几万次；在 50 量子比特的电路上，这使得原本不可能完成的任务变得切实可行。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出硬件噪声感知的电路切割框架，通过利用量子设备噪声的空间非均匀性优化设备约束选择，在 20 量子比特电路上实现电路执行次数 5-54 倍的平均减少，并使 50 量子比特电路和应用级基准测试的电路切割变得可行。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>如果你正在使用或关注 NISQ 量子硬件，这篇文章解决了一个非常实际的问题：当前量子芯片的噪声分布极不均匀，而大型量子电路往往被迫使用高噪声区域。电路切割是绕过这一限制的重要技术，但传统方法的开销巨大。本文展示了如何通过利用噪声地图来智能地选择切割策略，将执行开销降低数倍到数十倍，这对于在实际量子硬件上运行更复杂的算法具有直接的实用价值。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。电路切割是扩展量子电路规模以适配有限量子硬件的重要技术，本文针对当前量子硬件噪声非均匀性的实际问题提出了优化框架，在 20 量子比特和 50 量子比特电路上展示了显著的开销降低，对 NISQ 时代的量子计算实用化具有直接意义。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2604.24422v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2604.24422v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

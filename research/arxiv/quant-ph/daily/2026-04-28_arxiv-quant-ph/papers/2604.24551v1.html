@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GSC-QEMit: A Telemetry-Driven Hierarchical Forecast-and-Bandit Framework for Adaptive Quantum Error Mitigation — arXiv 2604.24551v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>GSC-QEMit: A Telemetry-Driven Hierarchical Forecast-and-Bandit Framework for Adaptive Quantum Error Mitigation</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.24551v1" target="_blank">2604.24551v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.24551v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Steven Szachara, Sheeraja Rajakrishnan, Dylan Jay Van Allen, Jason Pollack, Travis Desell, Daniel Krutz</span><br>
+<span><strong>分类:</strong> quant-ph, cs.LG</span><br>
+<span><strong>发布时间:</strong> 2026-04-27 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">quantum-error-mitigation</span><span class="tag">adaptive-mitigation</span><span class="tag">machine-learning</span><span class="tag">nisq-computing</span><span class="tag">qiskit</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Quantum error mitigation (QEM) is essential for extracting reliable results from near-term quantum devices, yet practical deployments must balance mitigation强度 against runtime overhead under time-varying noise. We introduce GSC-QEMit, a telemetry-driven, context-forecast-bandit framework for adaptive mitigation that switches between lightweight suppression and heavier intervention as drift evolves. GSC-QEMit composes three coupled modules: (G) a Growing Hierarchical Self-Organizing Map (GHSOM) that clusters streaming telemetry into operating contexts; (S) an uncertainty-aware subsampled Gaussian-process forecaster that predicts short-horizon fidelity degradation; and (C) a cost-aware contextual multi-armed bandit (CMAB) that selects mitigation actions via Thompson sampling with explicit intervention cost. We evaluate GSC-QEMit on benchmark circuit families (GHZ, Quantum Fourier Transform, and Grover search) under nonstationary noise regimes simulated in Qiskit Aer, using an instrumented testbed where action labels correspond to graded mitigation intensity. Across Clifford, non-Clifford, and structured workloads, GSC-QEMit improves average logical fidelity by +9.0% relative to unmitigated execution while reducing unnecessary heavy interventions by reserving them for inferred noise spikes. The resulting policies exhibit a favorable fidelity-cost trade-off and transfer across the evaluated workloads without circuit-specific tuning.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何利用遥测数据和分层预测-决策框架实现自适应量子错误缓解，在时变噪声环境下平衡缓解强度和运行开销？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>本文提出了 GSC-QEMit，一个遥测驱动的自适应量子错误缓解框架。该系统通过三个耦合模块实现：GHSOM 聚类遥测数据到操作上下文、高斯过程预测器预测短期保真度退化、上下文多臂老虎机通过 Thompson 采样选择缓解动作。在 Qiskit Aer 模拟的非平稳噪声环境下，GSC-QEMit 相比未缓解执行将平均逻辑保真度提高了 9.0%，同时减少了不必要的重度干预。这项工作将机器学习技术引入量子错误缓解的动态调度，对 NISQ 时代的实用化量子计算有重要价值，但仅在模拟环境中验证，需要真实量子硬件上的测试。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>想象一台量子计算机正在运行，但它的量子比特不断受到环境噪声的干扰，就像一台精密的天平在风中摇晃。传统的错误缓解方法像是固定开启一台强力除湿机——无论当前湿度如何，它都以最大功率运行，消耗大量电力。而 GSC-QEMit 就像一个智能空调系统：它首先通过传感器（遥测数据）识别当前环境状态（GHSOM 聚类），然后预测接下来几分钟的湿度变化趋势（高斯过程预测），最后决定是轻微通风还是强力除湿（多臂老虎机决策）。当噪声突然增大时，系统立即启动强力缓解；当环境稳定时，则切换为轻量模式节省资源。在 Qiskit 模拟中，这套智能系统将量子计算的保真度提升了 9%，同时避免了不必要的重度干预开销。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出 GSC-QEMit 自适应量子错误缓解框架，结合 GHSOM 聚类、高斯过程预测和上下文多臂老虎机决策，在非平稳噪声模拟中实现平均逻辑保真度提升 9.0%，同时减少不必要的重度干预，展示了机器学习驱动的动态错误缓解在 NISQ 计算中的潜力。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>如果你正在关注 NISQ 时代的量子计算实用化，这篇文章展示了一个重要的实用方向：如何让量子错误缓解变得更智能、更自适应。传统错误缓解方法通常是静态的——无论当前噪声水平如何，都以固定强度运行。GSC-QEMit 通过机器学习实现了动态调节，在噪声突增时加强缓解，在环境稳定时节省开销，这种保真度-成本的权衡优化对实际部署量子算法具有直接参考价值。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。量子错误缓解是 NISQ 时代量子计算走向实用化的关键技术之一。本文提出的自适应框架将机器学习（聚类、预测、决策）与量子错误缓解结合，在模拟中实现了 9% 的保真度提升，代表了量子错误缓解算法的前沿进展。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2604.24551v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2604.24551v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

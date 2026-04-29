@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Architecture-aware Unitary Synthesis — arXiv 2604.23777v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Architecture-aware Unitary Synthesis</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.23777v1" target="_blank">2604.23777v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.23777v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Frans Perkkola, Arianne Meijer-van de Griend, Jukka K. Nurminen</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-04-26 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">quantum-compilation</span><span class="tag">unitary-synthesis</span><span class="tag">superconducting-qubits</span><span class="tag">transpilation</span><span class="tag">cnot-optimization</span><span class="tag">topology-aware</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+We present a novel architecture-aware transpilation method for exact general unitary gate synthesis on superconducting quantum hardware. Our approach is tightly integrated with the optimized block-ZXZ decomposition, exploiting its recursive structure to make hardware-aware decisions at each level of the recursion rather than treating transpilation as an independent post-processing step. The method introduces three key techniques: a greedy qubit mapping strategy that minimizes pairwise distances between physical qubits, an adaptive Gray code selection combined with qubit swapping that optimizes the construction of uniformly controlled Rz gates for the target topology, and a heuristic for reducing CNOT gates by exploiting the structure of long-range CNOT ladders. We benchmark our method against TKet, Qiskit, and Pennylane on the 20-qubit IQM Garnet (square lattice) and the 156-qubit IBM Marrakesh (heavy-hex) architectures with qubit counts ranging from 3 to 11. Our method achieves CNOT count reductions of up to 36 percent on the IQM Garnet and up to 34 percent on the IBM Marrakesh compared to the best competing transpiler, while simultaneously achieving transpilation speedups of up to 553x. Furthermore, our method is the only one capable of transpiling circuits beyond 10 qubits within a 30-minute time limit across both architectures.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何将酉门分解与硬件拓扑深度集成，实现比现有 transpiler 更高效的超导量子硬件编译？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>本文提出了一种与架构紧密集成的酉门合成 transpilation 方法，将优化后的 block-ZXZ 分解的递归结构与硬件感知决策相结合。关键创新包括：贪心量子比特映射策略最小化物理量子比特间距、自适应格雷码选择结合量子比特交换优化均匀控制 Rz 门构建、以及利用长程 CNOT 阶梯结构减少 CNOT 门的启发式方法。在 IQM Garnet（20 量子比特）和 IBM Marrakesh（156 量子比特）上的基准测试显示，CNOT 数量减少高达 36%，transpilation 速度提升高达 553 倍。这项工作直接面向超导量子计算的编译优化，具有显著的实用价值。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>想象你有一个复杂的量子电路，需要在超导量子芯片上运行。传统的方法是先把电路分解成基本门，然后再考虑如何映射到芯片的物理拓扑上——这就像先设计一座建筑，然后再想办法把它塞进一块不规则的土地。本文提出的方法则完全不同：它在分解电路的每一步递归过程中就实时考虑硬件的拓扑约束，像一个既懂建筑设计又懂地形规划的建筑师。具体来说，它首先用贪心策略把逻辑量子比特映射到物理芯片上距离最近的位置；然后用自适应格雷码和量子比特交换来优化控制门的构建；最后通过分析长程 CNOT 阶梯的结构来减少多余的门操作。在 IBM 的 156 量子比特 Marrakesh 芯片上，这种方法不仅把 CNOT 数量减少了 34%，还把编译时间从数小时缩短到几秒钟——这意味着你可以在 30 分钟内编译超过 10 量子比特的复杂电路，而其他工具根本做不到。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出了与超导量子硬件拓扑紧密集成的架构感知酉门合成方法，通过递归级联硬件感知决策实现 block-ZXZ 分解，在 IQM Garnet 和 IBM Marrakesh 上分别实现 CNOT 数量减少 36% 和 34%，transpilation 速度提升 553 倍，且是唯一能在 30 分钟内编译超过 10 量子比特电路的工具。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>如果你正在使用或关注超导量子计算平台（如 IBM、IQM），这篇文章提供了一个可以立即改善你工作流程的工具。传统的量子电路编译通常把分解和映射当作两个独立步骤，导致大量不必要的 CNOT 门和漫长的编译时间。本文的方法通过深度集成架构感知决策到递归分解过程中，不仅显著减少了门数量，还将编译速度提升了数百倍。这意味着你可以在合理时间内尝试更大、更复杂的量子电路，而不会被编译时间所限制。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。本文提出了一种面向超导量子硬件的架构感知酉门合成方法，在 IQM 和 IBM 量子架构上实现了 CNOT 数量减少 34-36% 和 transpilation 速度提升 553 倍的显著改进。超导量子计算是量子计算的主流平台之一，这项工作直接改善了量子电路编译效率，对 NISQ 时代的实际量子计算有重要实用价值。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2604.23777v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2604.23777v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

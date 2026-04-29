@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAbLECAR: efficiently scheduling QLDPC codes on a tileable spin qubit chip with shuttling — arXiv 2604.24739v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>CAbLECAR: efficiently scheduling QLDPC codes on a tileable spin qubit chip with shuttling</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.24739v1" target="_blank">2604.24739v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.24739v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Jason D. Chadwick, Frederic T. Chong</span><br>
+<span><strong>分类:</strong> quant-ph, cs.ET</span><br>
+<span><strong>发布时间:</strong> 2026-04-27 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">quantum-error-correction</span><span class="tag">qldpc-codes</span><span class="tag">semiconductor-spin-qubits</span><span class="tag">shuttling-architecture</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Semiconductor spin qubits are a promising platform for large-scale quantum computing, but have yet to take full advantage of the broad class of quantum low-density parity check (QLDPC) codes, which promise high encoding rates and efficient logic but require nonlocal connectivity between physical qubits. In this work, we investigate the implementation of QLDPC codes on a tileable, shuttling-based spin qubit architecture. By tailoring syndrome extraction circuits to the shuttling noise model, we significantly improve on previous surface code proposals and extend the feasible shuttling range of the architecture by 5-10x, enabling the implementation of more complex codes with长程 interactions. Taking inspiration from the field of robotics, we develop a coordinated shuttle scheduling algorithm that supports arbitrary codes and use it to benchmark the logical performance of a variety of promising code families. We find that the optimized schedules are up to 86% faster than hand-optimized schedules for certain code families. Through detailed circuit-level simulations, we identify specific QLDPC codes that improve upon prior surface code implementations by orders of magnitude, increasing encoding efficiency and reducing logical error rates. This work demonstrates the potential of shuttling-based spin qubit hardware platforms for scalable and efficient fault-tolerant quantum computation.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何在可平铺的 shuttling 自旋量子比特芯片上高效调度 QLDPC 量子纠错码，并超越表面码的性能？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>本文系统研究了 QLDPC 码在 shuttling 型半导体自旋量子比特架构上的实现方案。作者针对 shuttling 噪声模型定制了 syndrome extraction 电路，将可行 shuttling 范围扩展了 5-10 倍，从而支持具有长程相互作用的更复杂编码。借鉴机器人领域的协调调度思想，作者开发了支持任意编码家族的自动 shuttle 调度算法，发现优化后的调度方案比手工优化快达 86%。通过电路级模拟，作者识别出特定 QLDPC 码在编码效率和逻辑错误率上比表面码提升数个数量级。这项工作为半导体自旋量子比特平台实现可扩展容错量子计算展示了明确的技术路径和性能优势。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>想象一个由多个平铺单元组成的半导体量子芯片，每个单元内有若干自旋量子比特。当需要进行非局域的 syndrome extraction 时，量子比特不是被动等待，而是像工厂里的自动导引车一样，通过协调的 shuttling 操作主动移动到目标位置完成相互作用。研究人员借鉴机器人路径规划算法，为整个芯片的量子比特编排了一套高效的移动调度方案——某些编码家族的调度速度比人工设计快了 86%。最终，特定的 QLDPC 码在这片可扩展的芯片上展现出比传统表面码高出数个数量级的纠错效率。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>将 QLDPC 码引入 shuttling 型半导体自旋量子比特架构，开发了自动 shuttle 调度算法使性能比手工优化提升 86%，并通过电路级模拟证明特定 QLDPC 码在编码效率和逻辑错误率上超越表面码数个数量级，为可扩展容错量子计算提供了新的硬件-编码协同设计方案。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>如果你关注量子纠错和量子计算硬件的技术路线，这篇文章提供了两个关键洞见：一是 QLDPC 码不仅适用于超导平台，在 shuttling 型半导体自旋量子比特上同样可以实现远超表面码的性能；二是借鉴机器人协调调度的思想来编排量子比特移动，这种跨学科思路可能启发你在量子系统控制策略上的新想法。文章中的具体编码家族和性能数据也为评估不同量子纠错方案提供了量化参考。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。量子纠错是量子计算走向实用化的关键瓶颈，QLDPC 码是当前最具前景的量子纠错方案之一。本文将 QLDPC 码与 shuttling 型半导体自旋量子比特结合，展示了比表面码提升数个数量级的性能优势，对量子计算硬件发展具有重要参考价值。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2604.24739v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2604.24739v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

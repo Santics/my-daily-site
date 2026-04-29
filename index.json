@@ -1,7 +1,7 @@
 {
   "site_name": "Quantum Daily",
   "site_description": "量子计算与量子信息前沿跟踪（配置驱动版）",
-  "last_updated": "2026-04-24",
+  "last_updated": "2026-04-28",
   "modules": {
     "quant-ph": {
       "config_files": [
@@ -9,18 +9,54 @@
         "SOURCES.md",
         "PROFILE.md"
       ],
-      "latest": "2026-04-24",
-      "latest_url": "research/arxiv/quant-ph/daily/2026-04-24_arxiv-quant-ph/index.html",
-      "paper_count": 58,
-      "highlight_count": 5,
+      "latest": "2026-04-28",
+      "latest_url": "research/arxiv/quant-ph/daily/2026-04-28_arxiv-quant-ph/index.html",
+      "paper_count": 100,
+      "highlight_count": 15,
       "highlights": [
-        "2604.21012",
-        "2604.21472",
-        "2604.21722",
-        "2604.21866",
-        "2604.21876"
+        "2604.24740v1",
+        "2604.24739v1",
+        "2604.24716v1",
+        "2604.24640v1",
+        "2604.24582v1",
+        "2604.24551v1",
+        "2604.24422v1",
+        "2604.24397v1",
+        "2604.24283v1",
+        "2604.24059v1",
+        "2604.23777v1",
+        "2604.23700v1",
+        "2604.23556v1",
+        "2604.23555v1",
+        "2604.23221v1"
       ],
       "history": [
+        {
+          "date": "2026-04-28",
+          "url": "research/arxiv/quant-ph/daily/2026-04-28_arxiv-quant-ph/index.html",
+          "papers": 100,
+          "highlights": [
+            "2604.24740v1",
+            "2604.24739v1",
+            "2604.24716v1",
+            "2604.24640v1",
+            "2604.24582v1",
+            "2604.24551v1",
+            "2604.24422v1",
+            "2604.24397v1",
+            "2604.24283v1",
+            "2604.24059v1",
+            "2604.23777v1",
+            "2604.23700v1",
+            "2604.23556v1",
+            "2604.23555v1",
+            "2604.23221v1"
+          ],
+          "config_driven": true,
+          "mode": "production",
+          "qa_passed": true,
+          "notes": "全量覆盖 100/100，15 篇详细页，链接与文件完全一致，QA 通过"
+        },
         {
           "date": "2026-04-24",
           "url": "research/arxiv/quant-ph/daily/2026-04-24_arxiv-quant-ph/index.html",

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Few-Shot Cross-Device Transfer for Quantum Noise Modeling on Real Hardware — arXiv 2604.24397v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Few-Shot Cross-Device Transfer for Quantum Noise Modeling on Real Hardware</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.24397v1" target="_blank">2604.24397v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.24397v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Sahil Al Farib, Sheikh Redwanul Islam, Azizur Rahman Anik</span><br>
+<span><strong>分类:</strong> quant-ph, cs.LG</span><br>
+<span><strong>发布时间:</strong> 2026-04-27 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">quantum-noise-modeling</span><span class="tag">transfer-learning</span><span class="tag">cross-device</span><span class="tag">nisq-computing</span><span class="tag">ibm-quantum</span><span class="tag">error-mitigation</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+In the noisy intermediate-scale quantum (NISQ) regime, quantum devices contain hardware-specific noise sources which restrict device-invariant error mitigation strategies. We explore transfer learning approaches to apply noise models learned on one quantum device to a different device with the help of a small amount of data. We create a real-hardware dataset from two IBM quantum devices, ibm_fez (source) and ibm_marrakesh (target), comprising 170 noisy and ideal circuit output distributions, with device校准 features added. We train a residual neural network on the source设备 to map noisy to ideal outcomes. The zero-shot transfer test shows a KL divergence of 1.6706 (up from 0.3014), establishing device specificity. With K = 20 fine-tuning samples, KL drops to 1.1924 (28.6% improvement over zero-shot), recovering 34.9% of the gap between zero-shot and in-domain KL. Ablation studies reveal that the major cause of mismatches across devices is CX gate error, followed by readout error. The results show quantum noise can be learned and fine-tuned with minimal samples, and provide a plausible approach to cross-device quantum error mitigation.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何利用迁移学习将在一个量子设备上学到的噪声模型迁移到另一个不同的量子设备，仅需少量样本即可实现有效的跨设备噪声建模？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>本文探索了跨设备量子噪声建模的迁移学习方法。作者在 IBM 的两台真实量子设备（ibm_fez 和 ibm_marrakesh）上构建了包含 170 个噪声和理想电路输出分布的数据集，训练残差神经网络将噪声输出映射到理想结果。零样本迁移测试证实了设备特异性，而仅用 20 个微调样本即可将 KL 散度降低 28.6%，弥合了零样本与域内差距的 34.9%。消融研究表明跨设备不匹配的主要原因是 CX 门误差，其次是读出误差。这项工作为跨设备量子错误缓解提供了可行路径，对 NISQ 时代的量子计算实用化有重要意义，但仅在 IBM 设备上验证，需要更广泛的硬件测试。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>想象两台来自同一制造商但性格迥异的量子计算机。第一台（ibm_fez）像一位经验丰富的老手，它的量子比特相对稳定，误差模式已经过充分研究。第二台（ibm_marrakesh）则像一位新同事，虽然硬件规格相似，但每个量子比特的噪声特性都有微妙差异。传统方法要求每台新设备都需要大量数据采集和重新建模——就像每次换工作都要重新考一次驾照。本文的方法则像一个聪明的知识转移系统：先在老设备上训练一个深度神经网络学习噪声模式，然后把这个网络带到新设备，仅用 20 个示例电路的测量数据进行微调。结果发现，新设备的噪声预测准确度立即提升了 28.6%。消融分析进一步揭示，跨设备差异的主要来源是 CX 两量子比特门的误差，其次是读出误差——这些信息就像一张设备差异诊断报告，帮助工程师优先改进最关键的硬件组件。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>在 IBM 真实量子硬件上验证了跨设备量子噪声建模的迁移学习方法，使用残差神经网络和仅 20 个微调样本即可将 KL 散度降低 28.6%，消融研究揭示了 CX 门误差和读出误差是跨设备噪声差异的主导因素。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>如果你正在使用或计划使用多台量子设备，这篇文章提供了一个非常实用的解决方案：不需要为每台设备从头训练噪声模型。作者展示了如何在 IBM 量子设备之间迁移噪声知识，仅需少量校准数据就能达到较好的跨设备性能。这显著降低了多设备部署的成本和复杂性，对在实际量子硬件上运行可靠算法具有直接的工程价值。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。量子噪声建模是 NISQ 量子计算实用化的核心问题之一，本文提出的跨设备迁移学习方法仅用 20 个样本即可显著改善噪声模型迁移效果，对降低多设备量子计算的校准开销具有直接价值。消融研究揭示的 CX 门误差和读出误差主导因素对量子硬件优化也有指导意义。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2604.24397v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2604.24397v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

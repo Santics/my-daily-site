@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoQResearch: LLM-Guided Closed-Loop Policy Search for Adaptive Variational Quantum Optimization — arXiv 2604.24283v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>AutoQResearch: LLM-Guided Closed-Loop Policy Search for Adaptive Variational Quantum Optimization</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.24283v1" target="_blank">2604.24283v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.24283v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Monit Sharma, Hoong Chuin Lau</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-04-27 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">llm-guided-quantum</span><span class="tag">variational-quantum-optimization</span><span class="tag">adaptive-policy-search</span><span class="tag">combinatorial-optimization</span><span class="tag">quantum-genai</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Configuring variational quantum algorithms for combinatorial optimization remains a difficult, expert-driven process requiring coordinated choices over solver family, ansatz, objective, and optimizer. We present AutoQResearch, an LLM-guided closed-loop experimentation framework that casts this task as sequential policy search over a curated design space. Instead of a single static configuration, the framework searches for adaptive solver-control policies that condition future decisions on diagnostics such as feasibility, optimality gap, and convergence stagnation. The system operates through a structured workflow: an LLM agent edits a small policy surface under a fixed evaluation harness, candidate policies are screened using cheap scout evaluations, and only the strongest candidates are promoted to full confirmation. This enables controlled autonomous exploration while guarding against proxy overfitting and unstable selection. We evaluate the framework on Maximum Independent Set (MIS) and the Capacitated Vehicle Routing Problem (CVRP). On MIS instances (16-64 vertices), discovered policies substantially outperform static baselines and reveal scale-dependent behavior: CVaR objectives are effective at small scale, while QRAO-based qubit compression provides the most effective explored scaling path. On CVRP curricula (8-12 customers) and a held-out E-n13-k4 benchmark, the framework discovers adaptations involving sampling budget, penalty design, and hybrid repair protocols, yielding high-quality solutions. Methodologically, we find that staged confirmation is essential: cheap proxy evaluations can materially misestimate policy quality and even invert candidate rankings. Overall, the paper positions AutoQResearch as a benchmarked quantum-GenAI co-design workflow for autonomous solver discovery in variational quantum optimization.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何利用大语言模型引导闭环策略搜索来自动发现和优化变分量子算法在组合优化中的自适应配置？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>本文提出了 AutoQResearch，一个由 LLM 引导的闭环实验框架，将变分量子算法的配置任务转化为策略搜索问题。该框架不是寻找单一静态配置，而是搜索能够根据可行性、最优性间隙和收敛停滞等诊断信息自适应调整的控制策略。系统在 MIS（16-64 顶点）和 CVRP（8-12 客户）问题上进行了评估，发现的策略显著优于静态基线。这项工作代表了量子计算与生成式 AI 结合的新方向，对降低变分量子算法配置的专家依赖具有重要意义，但主要在模拟环境中验证。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>想象一个繁忙的量子算法实验室，里面有许多旋钮和开关——ansatz 选择、目标函数设计、优化器参数、采样预算等等。传统上，调整这些参数需要经验丰富的专家花费数小时甚至数天。AutoQResearch 就像一个由大语言模型驱动的智能实验助手：它首先阅读所有先前的实验结果，然后提出新的策略假设，在小型侦察任务上快速测试这些假设，只把最有希望的策略提升到完整的验证阶段。在最大独立集问题上，它发现小规模实例适合 CVaR 目标函数，而大规模实例则需要基于 QRAO 的量子比特压缩。在车辆路径问题上，它学会了动态调整采样预算和惩罚设计。这个系统不仅发现了人类专家可能忽略的策略组合，还建立了一个可重复的自动化流程——每次遇到新的优化问题，它都能从零开始自主探索。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出 AutoQResearch 框架，利用 LLM 引导闭环策略搜索来自动发现变分量子算法的自适应配置策略，在 MIS（16-64 顶点）和 CVRP（8-12 客户）问题上显著超越静态基线，并揭示了规模依赖的最优策略规律。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>如果你正在使用或研究变分量子算法，这篇文章展示了一个激动人心的方向：让大语言模型成为你的量子算法配置助手。传统上，配置 VQE/QAOA 需要深厚的专业知识和大量试错。AutoQResearch 通过自动化策略搜索不仅降低了这一门槛，还发现了人类可能忽略的最优策略组合——例如不同规模问题需要完全不同的目标函数和压缩策略。这种量子-GenAI 协同设计方法可能是未来量子算法工程化的重要路径。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。变分量子算法是 NISQ 量子计算的核心应用范式，本文创新性地将大语言模型与量子优化结合，提出了自动发现和自适应配置策略的框架，对降低量子算法的专家门槛和推动实用化具有重要价值。在 MIS 和 CVRP 问题上展示了显著的性能提升。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2604.24283v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2604.24283v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

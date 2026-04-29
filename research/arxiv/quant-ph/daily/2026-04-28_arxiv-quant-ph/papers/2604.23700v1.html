@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quantum Circuit Cutting: Complexity and Optimization — arXiv 2604.23700v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Quantum Circuit Cutting: Complexity and Optimization</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.23700v1" target="_blank">2604.23700v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.23700v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Yuval Idan, Eitan Zahavi, Elad Mentovich, Eliahu Cohen, Shmuel Zaks</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-04-26 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">quantum-circuit-cutting</span><span class="tag">nisq</span><span class="tag">computational-complexity</span><span class="tag">np-complete</span><span class="tag">smt-solver</span><span class="tag">graph-theory</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+The current noisy intermediate-scale quantum (NISQ) era is characterized by substantial errors and noise, which limit the practical可行性 of deep, many-qubit circuits. To address these constraints, quantum circuit cutting has emerged as a promising tool. Recently, there has been significant research on methods for performing such cutting effectively. In this work, the duality between quantum circuits and classical graphs - specifically, directed acyclic graphs (dags) - is leveraged to analyze the complexity of finding an optimal circuit-cutting configuration that minimizes the number of cuts. After developing a rigorous graph论 framework, the complexity of identifying cut locations that partition a given quantum circuit into smaller fragments is characterized. The corresponding graph-combinatorial task is then defined, and the resulting partition problem is shown to be NP-complete. Furthermore, even a simplified version of the problem, restricted to circuits composed only of one- and two-qubit gates, is shown to be NP-complete. Finally, based on these constraints, an algorithm grounded in satisfiability modulo theories (SMT) is proposed to find optimal cuts when the number of qubits per partition is bounded. This work therefore provides a complexity-theoretic characterization of cut placement and a practical solver for bounded-size decompositions.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>量子电路切割中的最优切割配置问题在计算复杂度上是什么性质，如何实际求解？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>本文研究了量子电路切割的最优配置问题。作者利用量子电路与经典有向无环图（DAG）的对偶性，建立了严格的图论框架，证明了切割位置识别问题是 NP-完全的，即使限制在仅由单量子比特和双量子比特门组成的电路上也是如此。基于这些复杂性约束，作者提出了基于可满足性模理论（SMT）的算法来在分区量子比特数有界时寻找最优切割。这项工作对 NISQ 量子计算中的电路切割技术提供了理论基础和实践工具，但偏向理论复杂度分析。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>想象你有一个 50 量子比特的量子电路，但你的量子计算机只有 20 个量子比特。量子电路切割就像把一个大拼图切成小块——你需要决定在哪里切割，使得每块都能放入你的量子计算机，同时总的计算成本最小。本文揭示了这个问题本质上是一个 NP-完全问题：即使对于一个相对简单的电路，找到最优切割位置也像解一个极其困难的拼图。具体来说，作者把量子电路看作一个有向无环图（DAG），切割问题就变成了图分割问题。好消息是，作者提出了一个基于 SMT（可满足性模理论）的求解器，可以在分区大小有界的情况下找到最优切割。这就像有一个智能助手，虽然不能解决所有情况，但在实际约束下能给出很好的切割方案。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>证明了量子电路切割的最优配置问题是 NP-完全的（即使限制在单/双量子比特门电路），建立了量子电路与 DAG 的严格图论框架，并提出了基于 SMT 的实用求解器用于有界大小的电路分解。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>如果你正在 NISQ 设备上运行超过其量子比特数量的电路，电路切割是一个关键工具。这篇文章不仅告诉你最优切割问题在理论上有多难（NP-完全），还提供了一套基于 SMT 的求解方法来实际找到好的切割方案。这意味着你可以更科学地评估电路切割的成本，而不是盲目尝试。对于需要突破当前量子硬件限制的实际应用，这项工作提供了重要的理论和工具支撑。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。量子电路切割是 NISQ 量子计算中突破量子比特数量限制的重要技术。本文不仅证明了最优切割配置问题是 NP-完全的，还提出了基于 SMT 的实用求解器，对理解和优化电路切割有重要理论和实践价值，与量子计算的实用化直接相关。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2604.23700v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2604.23700v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

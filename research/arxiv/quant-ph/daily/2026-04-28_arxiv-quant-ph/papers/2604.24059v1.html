@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beyond Monolithic Scaling: Modularity and Heterogeneity as an Architectural Imperative for Utility-Scale Quantum Computing — arXiv 2604.24059v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Beyond Monolithic Scaling: Modularity and Heterogeneity as an Architectural Imperative for Utility-Scale Quantum Computing</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.24059v1" target="_blank">2604.24059v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.24059v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Bo Fan, Renzhou Fang, Yuntao Zhang, Xiaolong Yuan, Dafa Zhao</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-04-27 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">quantum-computing-architecture</span><span class="tag">modularity</span><span class="tag">distributed-quantum-computing</span><span class="tag">fault-tolerant-quantum-computing</span><span class="tag">locc</span><span class="tag">qec</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Scalable quantum computing is fundamentally bottlenecked not by量子比特数量 or fabrication yield, but by a rigid temporal mismatch: macroscopic classical coordination latency inevitably grows with system diameter, while microscopic quantum coherence remains strictly bounded. Beyond a critical scale, this mismatch breaches the classical control light cone, triggering a superlinear geometric penalty that renders monolithic synchronization physically impossible. We formalize the resulting structural phase transition through a governing scaling law, which mandates modular decomposition and a shift from global unitaries to Local Operations and Classical Communication (LOCC). To manage the resulting resource contention under strict coherence预算, we introduce a layered semantic architecture and a time-aware Reserve-Commit protocol. By embedding predictive temporal pre-validation, the protocol acts as an architectural semantic classifier: it preemptively aborts超过因果视界的事务 and explicitly converts调度-induced failures into location-known erasure metadata, directly relaxing hardware fidelity thresholds for downstream QEC decoders. Under near-term transduction targets, we project a crossover scale at 10^5--10^6 physical qubits. This threshold marks a profound architectural convergence: the footprint required for modularity aligns precisely with early fault-tolerant utility, establishing time-aware distributed orchestration, rather than monolithic expansion or centralized classical控制, as the physical imperative for utility-scale quantum computing.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>为什么实用规模量子计算必须从单体架构转向模块化和异构分布式架构？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>本文提出了量子计算架构的根本性观点：可扩展量子计算的瓶颈不在于量子比特数量，而在于经典协调延迟与量子相干时间之间的刚性时间失配。当系统规模超过临界点时，这种失配使得单体同步在物理上不可能实现。作者通过标度律形式化了这一结构相变，论证了模块化和从全局酉操作向 LOCC 转变的必要性。文章引入了分层语义架构和时间感知的 Reserve-Commit 协议，能够将调度失败转化为位置已知的擦除元数据，从而直接放宽下游 QEC 解码器的硬件保真度阈值。在近端转换效率目标下，预计交叉规模为 10^5-10^6 物理量子比特。这项工作对量子计算的未来架构设计具有深远的指导意义。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>想象一座由数百万量子比特组成的巨型量子计算机。传统的思路是把所有量子比特都放在一块芯片上，像一座单一的城市。但本文揭示了一个根本性的物理限制：经典控制信号从中心传到边缘需要时间，而随着系统扩大，这个延迟最终将超过量子比特的相干时间——就像一座城市太大，消息传递速度赶不上事情变化的速度。在约 10 万到 100 万物理量子比特的规模上，这种失配使得单体架构在物理上不可行。解决方案是将巨型计算机分解为许多模块，每个模块本地运行，模块之间通过经典通信协调（LOCC）。作者进一步提出了时间感知的 Reserve-Commit 协议：在事务开始前就预测它是否会超时，如果会，就提前中止并将其标记为已知位置的擦除错误——这种擦除错误比未知错误更容易纠正，从而直接放宽了量子纠错解码器对硬件保真度的要求。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>揭示了经典协调延迟与量子相干时间之间的刚性失配是量子计算可扩展性的根本瓶颈，形式化了单体架构到模块化分布式架构的结构相变标度律，提出了时间感知的 Reserve-Commit 协议将调度失败转化为位置已知的擦除元数据，从而放宽下游 QEC 解码器的硬件保真度阈值。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>如果你正在关注量子计算向实用规模发展的路径，这篇文章提出了一个可能被忽视但至关重要的观点：问题不在于我们能制造多少量子比特，而在于经典控制系统能否在量子比特退相干之前完成协调。作者论证了约 10 万-100 万物理量子比特是单体架构的物理极限，并展示了如何通过模块化和时间感知协议来突破这一限制。这对理解量子计算机的未来架构演变和量子纠错系统的设计约束具有重要参考价值。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。本文提出了量子计算架构的根本性洞察：单体缩放因经典控制延迟与量子相干时间的失配而不可行，必须转向模块化和分布式架构。这一观点对实用规模量子计算的发展方向具有深远影响，且与量子纠错（QEC 解码器阈值放宽）直接相关。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2604.24059v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2604.24059v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>
