@@ -34,7 +34,7 @@ h1 { font-size: 1.5em; margin-bottom: 0.3em; }
 </div>
 
 <div class="tags">
-<span class="tag">qec</span>
+<span class="tag">quantum-error-correction</span><span class="tag">stabilizer-codes</span><span class="tag">decoder</span><span class="tag">graph-states</span><span class="tag">qec-software</span>
 </div>
 
 <div class="section">
@@ -46,32 +46,32 @@ We formulate a bounded distance decoding strategy applicable to all stabilizer c
 
 <div class="section">
 <h2>一句话核心问题</h2>
-<p>该论文研究的核心问题是：A graph-aware bounded distance decoder for all stabilizer codes</p>
+<p>如何利用稳定子态与图态的局部Clifford等价性，为所有稳定子码（CSS与非CSS）构建图感知的有界距离解码器并降低搜索空间？</p>
 </div>
 
 <div class="section">
 <h2>AI快评</h2>
-<p>本文研究A graph-aware bounded distance decoder for all stabilizer codes。核心贡献在于探索相关方法/系统并给出实验或理论结果。</p>
+<p>该工作属于量子纠错解码器方向，直接面向QEC核心需求。作者利用稳定子态与图态的局部Clifford等价性，将任意稳定子码的解码转化为图上的有界距离搜索问题，通过图结构的前馈网络剪枝减少搜索空间。在距离d≤11的最优非CSS码上验证了对depolarizing错误的满意纠错性能，在color码和surface码上实现了接近最优的bit-flip纠错。开源库QGDecoder支持任意稳定子码的图感知解码。对用户QEC研究有直接工具价值，但解码复杂度随距离增长的情况需进一步关注。</p>
 </div>
 
 <div class="section">
 <h2>核心物理图像</h2>
-<p>论文研究的物理系统涉及量子态操控、测量方案及相关量子硬件实现，We formulate a bounded distance decoding strategy </p>
+<p>将任意稳定子码的 stabilizer 和 syndrome 表示为图结构，利用局部Clifford变换后的图态拓扑，通过前馈网络剪枝在图上执行有界距离搜索，寻找权重不超过目标值的最优错误模式。</p>
 </div>
 
 <div class="section">
 <h2>主要贡献</h2>
-<p>论文的主要贡献在于提出并分析了A graph-aware bounded distance decoder for all stabilizer co的新方法，为量子计算与量子信息领域提供了重要技术路径</p>
+<p>提出了适用于所有稳定子码（包括非CSS码）的图感知有界距离解码框架，利用稳定子-图态等价性将解码转化为图搜索问题，并通过前馈网络结构剪枝降低搜索复杂度，开源QGDecoder库支持任意稳定子码解码。</p>
 </div>
 
 <div class="section">
 <h2>与你的主线关系</h2>
-<p>与你的主线关系：该论文属于qec方向，对中性原子/模拟/系统研究有直接参考价值。</p>
+<p>直接相关：用户研究量子计算与量子信息，QEC是核心方向之一；该解码器覆盖surface code、color code等用户可能使用的纠错码，且开源工具可集成到模拟工作流中。</p>
 </div>
 
 <div class="section">
 <h2>相关性判定</h2>
-<p><span class="relevance-high">高相关</span>。该论文在quant-ph领域直接涉及量子计算或量子信息的核心方法，对研究有重要参考价值</p>
+<p><span class="relevance-high">高相关</span>。论文直接研究量子纠错解码器，覆盖所有稳定子码（CSS和非CSS），与用户的QEC主线高度相关；开源的QGDecoder库可直接用于QEC模拟研究。</p>
 </div>
 
 <div class="section">

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graph-Conditioned Meta-Optimizer for QAOA Parameter Generation on Multiple Problem Classes — arXiv 2604.25275v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Graph-Conditioned Meta-Optimizer for QAOA Parameter Generation on Multiple Problem Classes</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.25275v1" target="_blank">2604.25275v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.25275v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Kien X. Nguyen, Ilya Safro</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-04-28 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">qaoa-optimization</span><span class="tag">meta-optimizer</span><span class="tag">variational-algorithm</span><span class="tag">graph-embedding</span><span class="tag">circuit-initialization</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+We study parameter transferability for the Quantum Approximate Optimization Algorithm (QAOA) across multiple combinatorial optimization problem classes from a parameter generation perspective. Specifically, a meta-optimizer is trained on one problem class and deployed on another during test time. Prior work employs a Long Short-Term Memory network to emulate QAOA optimization trajectories, but the learned dynamics usually collapse to near-identical paths, limiting cross-problem transfer efficiency. In this paper, we present a problem-aware graph-conditioned meta-optimizer for QAOA that learns to generate parameter trajectories over a fixed horizon, providing strong initializations with only a few steps. The optimizer is conditioned on compact graph embeddings and trained end-to-end using differentiable feedback from the QAOA objective, avoiding the need for ground-truth angles. We evaluate across multiple graph problem classes, including MaxCut, Maximum Independent Set, Maximum Clique, and Minimum Vertex Cover. We report both solution quality and feasibility-aware metrics where constraints apply. Results across a comprehensive empirical study consisting of 64 settings show that the learned optimizer can reduce optimization effort and improve performance over standard initialization, while exhibiting transferable behavior across graph families and problem types.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何训练一个基于图嵌入条件的元优化器，为QAOA生成可跨MaxCut、最大独立集、最大团等多组合优化问题类迁移的参数初始化轨迹，从而显著减少后续优化迭代步数并提升解质量？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>该工作面向变分量子算法中的参数初始化子方向，以QAOA为对象解决跨问题类参数迁移效率低的问题。提出图条件化元优化器，将图结构嵌入与QAOA目标函数的可微反馈结合进行端到端训练，在64组实验设置中相比标准初始化降低了优化开销并提升了性能，同时展现出跨图族和问题类型的迁移能力。对中性原子系统上运行QAOA类变分算法的编译与优化流程具有直接的方法参考价值。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>将组合优化问题的图结构编码为紧凑嵌入向量，以此条件化一个元优化器网络，使其生成固定时间范围内的QAOA参数轨迹；该轨迹作为强初始化输入给经典优化器，大幅减少从随机起点到近似解的迭代步数，同时保持跨MaxCut、MIS等不同问题类的可迁移性。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出图条件化元优化器框架，将问题图嵌入与QAOA可微目标反馈结合，实现无需真实角度标签的端到端训练；在64组设置上验证了跨问题类参数轨迹的迁移能力，相比标准初始化显著降低优化开销。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>论文的元优化与跨问题迁移思路可直接用于中性原子平台上的QAOA及变分算法编译优化，对提升算法执行效率和减少经典-量子交互轮数有明确参考价值。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。论文直接涉及量子算法的编译优化与参数初始化，元优化器的跨问题迁移思路可借鉴于中性原子量子计算平台上的变分算法调度与优化。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2604.25275v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2604.25275v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

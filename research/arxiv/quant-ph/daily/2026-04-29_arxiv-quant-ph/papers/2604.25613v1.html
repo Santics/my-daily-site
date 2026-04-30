@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Coordinate at a Time: Convergence Guarantees for Rotosolve in Variational Quantum Algorithms — arXiv 2604.25613v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>One Coordinate at a Time: Convergence Guarantees for Rotosolve in Variational Quantum Algorithms</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.25613v1" target="_blank">2604.25613v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.25613v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Sayantan Pramanik, M Girish Chandra</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-04-28 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">variational-quantum-algorithms</span><span class="tag">rotosolve-optimization</span><span class="tag">coordinate-descent</span><span class="tag">convergence-analysis</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+In this paper, we resolve an open question in the field of optimization algorithms for training parametrized quantum circuits: Does the popular Rotosolve algorithm converge? Until now, interpolation-based coordinate descent methods such as Rotosolve have mostly been treated as heuristics, lacking any formal convergence guarantees. We rigorously analyze Rotosolve, and show that it converges to $\varepsilon$-stationary points if the optimization landscape is non-convex and smooth; and to $\varepsilon$-suboptimal points if the objective function additionally obeys the Polyak-Lojasiewicz (PL) condition. Further, we derive explicit worst-case rates of convergence in the finite quantum measurement regime. These rates are contrasted against those from a similar coordinate-based method: Randomized Coordinate Descent (RCD). Although in the worst case their rates are, prima facie, equivalent, we present arguments for a more nuanced comparison between the two. We highlight that Rotosolve is hyperparameter-free, and implicitly uses first and second derivatives in its updates. Finally, we supplement our theoretical findings with numerical experiments from Quantum Machine Learning; and compare the performance of Rotosolve against RCD, Stochastic Gradient Descent, Simultaneous Perturbation Stochastic Approximation, and Randomized Stochastic Gradient Free methods.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>在变分量子算法的非凸优化景观下，基于坐标轮换的Rotosolve算法是否能保证收敛到ε-稳定点，其有限量子测量体制下的最坏情况收敛速率如何？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>第1句：变分量子算法优化子方向，针对Rotosolve这一无超参数坐标下降法的收敛性理论缺失问题。第2句：通过非凸光滑性分析和Polyak-Łojasiewicz条件，建立Rotosolve在精确制和有限测量体制下的收敛保证。第3句：在非凸光滑景观下收敛到ε-稳定点，在PL条件下收敛到ε-次优点，并给出有限量子测量下的显式最坏情况速率。第4句：Rotosolve作为无超参数的变分优化方法，其理论收敛保证对NISQ算法的实际训练策略有参考价值。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>在变分量子电路的参数空间中，Rotosolve每次沿单个坐标方向执行基于三点评估的精确线搜索，利用目标函数的一阶和二阶导数信息隐式更新参数，在非凸光滑景观下逐步逼近稳定点。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>首次为Rotosolve建立了严格的收敛理论：在非凸光滑景观下收敛到ε-稳定点，在Polyak-Łojasiewicz条件下收敛到ε-次优点，并推导出有限量子测量体制下的显式最坏情况收敛速率。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>变分量子算法优化属于量子算法方向的间接相关工作，对理解NISQ时代参数化量子电路的训练行为有通用参考价值，但不特定于中性原子平台。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-medium">中相关</span>。变分量子算法是NISQ时代量子计算的重要算法范式，Rotosolve的收敛性理论直接关系到量子电路参数优化的可靠性，属于量子算法与软件栈的间接相关方向。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2604.25613v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2604.25613v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

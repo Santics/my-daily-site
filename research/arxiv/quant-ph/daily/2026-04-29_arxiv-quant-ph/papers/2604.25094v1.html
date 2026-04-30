@@ -34,45 +34,45 @@ h1 { font-size: 1.5em; margin-bottom: 0.3em; }
 </div>
 
 <div class="tags">
-<span class="tag">qec</span>
+<span class="tag">fault-tolerant-qc</span><span class="tag">magic-state-injection</span><span class="tag">qec-extractor</span><span class="tag">bb-code</span><span class="tag">non-clifford-gates</span>
 </div>
 
 <div class="section">
 <h2>原摘要</h2>
 <div class="abstract">
 Near-term FTQC system designs are constrained by limited error budgets and largely sequential execution of non-Clifford gates. As a result, reducing the number of the most-error prone instructions becomes critical for successful program execution. In this work, we study the extractor architecture, a recently proposed FTQC design that enables universal quantum computation on spatially-efficient QEC codes such as the BB code family. In these architectures, over $90\%$ of the total program error arises from the synthillation process, which involves $\lvert T\rangle$-state preparation and injection to implement non-Clifford gates. We observe that standard Rz synthillation requires multiple sequential $\lvert T\rangle$-state injections, each incurring an inter-module measurements, the most expensive instruction in the architecture, which cumulatively dominate the overall error budget.
-  To address this bottleneck, we propose INJEQT, a $2$-factory design that uses an auxiliary code capable of synthesizing $Rz(θ)$ states with lower error rates. These states are then injected into the extractor modules using only a constant number of inter-module measurements. This approach reduces overall error rates by up to $22\times$. We further reduce the time overhead by a pre-fetching strategy that prepares the Rz states and their correction states in parallel. This approach improves the wall-clock time by up to $13\times$ and reduces the space-time cost by up to $7.2\times$, for an optimal choice of the number of INJEQT factories for each metric. We evaluate INJEQT for multiple state preparation techniques such as distillation, cultivation and STAR, and model the execution times for both lattice surgery-based and transversal CNOT based injections. Our results demonstrate that INJEQT is robust across factory choices and device technologies, enabling more efficient architectural designs for FTQC.
+  To address this bottleneck, we propose INJEQT, a $2$-factory design that uses an auxiliary code capable of synthesizing $Rz(\theta)$ states with lower error rates. These states are then injected into the extractor modules using only a constant number of inter-module measurements. This approach reduces overall error rates by up to $22\times$. We further reduce the time overhead by a pre-fetching strategy that prepares the Rz states and their correction states in parallel. This approach improves the wall-clock time by up to $13\times$ and reduces the space-time cost by up to $7.2\times$, for an optimal choice of the number of INJEQT factories for each metric. We evaluate INJEQT for multiple state preparation techniques such as distillation, cultivation and STAR, and model the execution times for both lattice surgery-based and transversal CNOT based injections. Our results demonstrate that INJEQT is robust across factory choices and device technologies, enabling more efficient architectural designs for FTQC.
 </div>
 </div>
 
 <div class="section">
 <h2>一句话核心问题</h2>
-<p>该论文研究的核心问题是：INJEQT: Improved Magic-State Injection Protocol for Fault-Tolerant Quantum Extractor Architectures</p>
+<p>如何在基于提取器架构的容错量子计算中，通过改进魔术态注入协议降低非Clifford门执行的总误差开销与时间成本？</p>
 </div>
 
 <div class="section">
 <h2>AI快评</h2>
-<p>本文研究INJEQT: Improved Magic-State Injection Protocol for Fault-Tolerant Quantum Extractor Architectures。核心贡献在于探索相关方法/系统并给出实验或理论结果。</p>
+<p>本文聚焦容错量子计算架构中的核心瓶颈，针对提取器架构中占90%以上程序误差的魔术态注入环节提出改进方案INJEQT。设计双工厂架构，利用辅助码合成低误差Rz态并以常数级跨模块测量完成注入，整体误差降低22倍。通过预取策略并行准备Rz态及其校正态，wall-clock时间缩短13倍，时空开销降低7.2倍。该工作为QEC提取器架构中的非Clifford门执行提供了具体的误差-时间权衡优化路径。</p>
 </div>
 
 <div class="section">
 <h2>核心物理图像</h2>
-<p>论文研究的物理系统涉及量子态操控、测量方案及相关量子硬件实现，Near-term FTQC system designs are constrained by l</p>
+<p>在基于BB码族的提取器模块阵列中，辅助工厂持续合成低误差Rz魔术态，通过常数级跨模块测量注入主计算模块，预取策略使Rz态与校正态在后台并行制备，非Clifford门执行流水线化。</p>
 </div>
 
 <div class="section">
 <h2>主要贡献</h2>
-<p>论文的主要贡献在于提出并分析了INJEQT: Improved Magic-State Injection Protocol for Fault-To的新方法，为量子计算与量子信息领域提供了重要技术路径</p>
+<p>提出INJEQT双工厂魔术态注入协议，将提取器架构中占主导的非Clifford门误差降低22倍，wall-clock时间缩短13倍，时空开销降低7.2倍，首次实现常数级跨模块测量的Rz态注入。</p>
 </div>
 
 <div class="section">
 <h2>与你的主线关系</h2>
-<p>与你的主线关系：该论文属于qec方向，对中性原子/模拟/系统研究有直接参考价值。</p>
+<p>直接相关。该工作聚焦容错量子计算架构中的QEC码（BB码族）魔术态注入优化，涉及QEC、量子编译与非Clifford门执行，是用户主线核心方向。</p>
 </div>
 
 <div class="section">
 <h2>相关性判定</h2>
-<p><span class="relevance-high">高相关</span>。该论文在quant-ph领域直接涉及量子计算或量子信息的核心方法，对研究有重要参考价值</p>
+<p><span class="relevance-high">高相关</span>。直接涉及容错量子计算架构、QEC提取器设计、BB码族魔术态注入优化，覆盖用户主线中的QEC、量子架构与编译执行核心方向，具有明确技术价值。</p>
 </div>
 
 <div class="section">

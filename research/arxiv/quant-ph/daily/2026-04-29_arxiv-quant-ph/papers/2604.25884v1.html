@@ -34,7 +34,7 @@ h1 { font-size: 1.5em; margin-bottom: 0.3em; }
 </div>
 
 <div class="tags">
-<span class="tag">neutral-atom</span><span class="tag">quantum-info</span><span class="tag">superconducting</span>
+<span class="tag">quantum-calibration</span><span class="tag">vision-language-model</span><span class="tag">benchmarking</span><span class="tag">superconducting-qubits</span><span class="tag">neutral-atoms</span>
 </div>
 
 <div class="section">
@@ -46,32 +46,32 @@ Quantum computing calibration depends on interpreting experimental data, and cal
 
 <div class="section">
 <h2>一句话核心问题</h2>
-<p>该论文研究的核心问题是：QCalEval: Benchmarking Vision-Language Models for Quantum Calibration Plot Understanding</p>
+<p>面向超导量子比特与中性原子两类实验平台的量子校准图，视觉语言模型在零样本和上下文学习两种设置下的理解准确率如何定量评估？</p>
 </div>
 
 <div class="section">
 <h2>AI快评</h2>
-<p>本文研究QCalEval: Benchmarking Vision-Language Models for Quantum Calibration Plot Understanding。核心贡献在于探索相关方法/系统并给出实验或理论结果。</p>
+<p>针对量子计算校准图解读需求，构建首个视觉语言模型基准测试QCalEval，涵盖22个实验家族87种场景的243个样本（含超导与中性原子平台）。最佳零样本通用模型平均得分72.3，闭源前沿模型在多图上下文学习中提升显著而开源权重模型普遍退化。发布基于Qwen3.5-35B-A3B的NVIDIA Ising Calibration 1开源模型，零样本平均得分74.7。直接填补了量子校准自动化解读的评测空白，但监督微调无法弥合多模态上下文学习差距。</p>
 </div>
 
 <div class="section">
 <h2>核心物理图像</h2>
-<p>论文研究的物理系统涉及量子态操控、测量方案及相关量子硬件实现，Quantum computing calibration depends on interpret</p>
+<p>将超导量子比特和中性原子实验产生的校准图（如Rabi振荡、光谱扫描、态制备验证图等）作为多模态输入，通过视觉语言模型自动回答六类定量分析问题，实现从人工判读到AI辅助校准的转换。</p>
 </div>
 
 <div class="section">
 <h2>主要贡献</h2>
-<p>论文的主要贡献在于提出并分析了QCalEval: Benchmarking Vision-Language Models for Quantum Ca的新方法，为量子计算与量子信息领域提供了重要技术路径</p>
+<p>构建首个量子校准图VLM基准QCalEval（243样本/87场景/22实验家族），覆盖超导与中性原子平台，发现闭源模型在多图上下文学习中显著优于开源模型，并发布开源权重NVIDIA Ising Calibration 1模型。</p>
 </div>
 
 <div class="section">
 <h2>与你的主线关系</h2>
-<p>与你的主线关系：该论文属于neutral-atom方向，对中性原子/模拟/系统研究有直接参考价值。</p>
+<p>直接相关：论文明确覆盖中性原子平台的校准图，聚焦量子计算控制校准的自动化，与用户研究的中性原子实验和校准技术直接对口。</p>
 </div>
 
 <div class="section">
 <h2>相关性判定</h2>
-<p><span class="relevance-high">高相关</span>。该论文在quant-ph领域直接涉及量子计算或量子信息的核心方法，对研究有重要参考价值</p>
+<p><span class="relevance-high">高相关</span>。直接涉及量子计算校准(calibration)，明确覆盖超导量子比特和中性原子两种实验平台，构建VLM基准测试以自动化解读校准图，与用户主线的控制校准和中性原子研究高度重合。</p>
 </div>
 
 <div class="section">

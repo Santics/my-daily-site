@@ -34,7 +34,7 @@ h1 { font-size: 1.5em; margin-bottom: 0.3em; }
 </div>
 
 <div class="tags">
-<span class="tag">tensor-network</span>
+<span class="tag">tensor-network-contraction</span><span class="tag">generalized-belief-propagation</span><span class="tag">classical-simulation</span><span class="tag">many-body-systems</span><span class="tag">aklt-state</span>
 </div>
 
 <div class="section">
@@ -46,32 +46,32 @@ Recent years have seen a growing interest in the use of belief propagation - an 
 
 <div class="section">
 <h2>一句话核心问题</h2>
-<p>该论文研究的核心问题是：Contracting Tensor Networks with Generalized Belief Propagation</p>
+<p>如何将广义信念传播算法应用于二维和三维无限/有限张量网络的近似收缩，通过重叠区域层次的消息传递机制高效计算配分函数、基态简并度和量子态可观测量？</p>
 </div>
 
 <div class="section">
 <h2>AI快评</h2>
-<p>本文研究Contracting Tensor Networks with Generalized Belief Propagation。核心贡献在于探索相关方法/系统并给出实验或理论结果。</p>
+<p>在量子系统经典模拟方向，将统计推断中的广义信念传播推广到张量网络收缩。在二维和三维无限及有限张量网络上实现不同区域选择的GBP算法，数值和部分解析求解不动点方程。以完全阻挫Ising模型配分函数、三维冰模型基态简并度、形变AKLT态可观测量和随机张量网络态范数为例验证精度。相比原始信念传播，GBP通过区域层次化显著提升收缩精度，为大规模量子多体系统的近似模拟提供了新工具。</p>
 </div>
 
 <div class="section">
 <h2>核心物理图像</h2>
-<p>论文研究的物理系统涉及量子态操控、测量方案及相关量子硬件实现，Recent years have seen a growing interest in the u</p>
+<p>将张量网络分解为层次化重叠区域（从单区域到 plaquette 到更大簇），在各区域间传递信念消息求解不动点方程，从而近似计算二维/三维无限晶格的配分函数和量子态范数，避免了直接收缩的指数级复杂度。</p>
 </div>
 
 <div class="section">
 <h2>主要贡献</h2>
-<p>论文的主要贡献在于提出并分析了Contracting Tensor Networks with Generalized Belief Propagat的新方法，为量子计算与量子信息领域提供了重要技术路径</p>
+<p>将广义信念传播系统化为张量网络近似收缩方法，在二维/三维无限和有限张量网络上实现并验证，以完全阻挫Ising模型、三维冰模型、形变AKLT态等为例展示了相比原始BP的精度提升和适用范围扩展。</p>
 </div>
 
 <div class="section">
 <h2>与你的主线关系</h2>
-<p>与你的主线关系：该论文属于tensor-network方向，对中性原子/模拟/系统研究有直接参考价值。</p>
+<p>直接相关：张量网络收缩是量子多体系统经典模拟的核心算法，GBP对区域层次的推广为更大规模和更高维度的量子系统模拟提供了新的近似工具，对模拟器开发和算法研究有直接参考价值。</p>
 </div>
 
 <div class="section">
 <h2>相关性判定</h2>
-<p><span class="relevance-high">高相关</span>。该论文在quant-ph领域直接涉及量子计算或量子信息的核心方法，对研究有重要参考价值</p>
+<p><span class="relevance-high">高相关</span>。直接涉及张量网络收缩算法——量子多体系统经典模拟的核心工具，与用户主线的量子模拟和经典模拟方法高度相关，且覆盖二维/三维无限系统。</p>
 </div>
 
 <div class="section">

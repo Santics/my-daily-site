@@ -34,44 +34,44 @@ h1 { font-size: 1.5em; margin-bottom: 0.3em; }
 </div>
 
 <div class="tags">
-<span class="tag">quantum-info</span><span class="tag">open-quantum</span><span class="tag">compilation</span><span class="tag">qec</span>
+<span class="tag">logical-compilation</span><span class="tag">stabilizer-codes</span><span class="tag">hardware-constraints</span><span class="tag">swap-free</span><span class="tag">compressed-sensing</span>
 </div>
 
 <div class="section">
 <h2>原摘要</h2>
 <div class="abstract">
-To implement quantum algorithms on a quantum computer, we must overcome the twin problems of fault-tolerance -- how can we realize a relatively noiseless computation by cleverly combining noisy components? -- and compilation -- how can we realize an arbitrary quantum algorithm given the basic operations available on the quantum device at hand? We show how treating the former problem via error-correcting codes enables greater flexibility in resolving the latter. Specifically, we explicitly leverage the fact that error-correcting codes introduce redundancy which renders physically distinct operators logically indistinguishable. In terms of computation, it suffices to implement any operator logically equivalent to some target, yet from a compilation perspective, certain choices may be preferable to others. Our novel contribution is making this intuition precise in the general setting of the special unitary group. In particular, we describe how to reduce the problem of making a compilation-ideal choice to a least squares problem and provide a closed form solution thereof. Using our framework, it is possible to circumvent inserting costly swaps to adhere to hardware connectivity; instead, we could realize the logical target through a distinct physical Hamiltonian that is natively accessible. We elucidate our approach using the $[[4,2,2]]$ code. We discuss connections to compressed sensing that may pave the way to efficient compilation leveraging physical degrees of freedom.
+To implement quantum algorithms on a quantum computer, we must overcome the twin problems of fault-tolerance -- how can we realize a relatively noiseless computation by cleverly combining noisy components? -- and compilation -- how can we realize an arbitrary quantum algorithm given the basic operations available on the quantum device at hand? We show how treating the former problem via error-correcting codes enables greater flexibility in resolving the latter. Specifically, we explicitly leverage the fact that error-correcting codes introduce redundancy which renders physically distinct operators logically indistinguishable. In terms of computation, it suffices to implement any operator logically等价 to some target, yet from a compilation perspective, certain choices may be preferable to others. Our novel contribution is making this intuition precise in the general setting of the special unitary group. In particular, we describe how to reduce the problem of making a compilation-ideal choice to a least squares problem and provide a closed form solution thereof. Using our framework, it is possible to circumvent inserting costly swaps to adhere to hardware connectivity; instead, we could realize the logical target through a distinct physical Hamiltonian that is natively accessible. We elucidate our approach using the [[4,2,2]] code. We discuss connections to compressed sensing that may pave the way to efficient compilation leveraging physical degrees of freedom.
 </div>
 </div>
 
 <div class="section">
 <h2>一句话核心问题</h2>
-<p>该论文研究的核心问题是：Stabilizers for Compiling Logical Circuits under Hardware Constraints</p>
+<p>在具有硬件连通性约束的量子设备上，如何利用纠错码引入的冗余自由度——即物理上不同但逻辑等价的算符——来选择对编译最有利的物理实现，从而避免插入昂贵的SWAP门？</p>
 </div>
 
 <div class="section">
 <h2>AI快评</h2>
-<p>本文研究Stabilizers for Compiling Logical Circuits under Hardware Constraints。核心贡献在于探索相关方法/系统并给出实验或理论结果。</p>
+<p>该工作面向量子编译与容错计算的交叉子方向，以硬件约束下的逻辑电路编译为研究对象。核心方法：利用纠错码的冗余使物理上不同的算符逻辑等价，将编译最优选择问题约化为特殊酉群上的最小二乘问题，并给出闭式解。以[[4,2,2]]码为例展示如何绕过高成本SWAP门，转而通过硬件原生可访问的物理哈密顿量实现逻辑目标。对用户主线的价值在于：首次将QEC冗余与编译优化在数学上严格结合，为容错量子计算时代的硬件感知编译提供了系统化的最小二乘框架。</p>
 </div>
 
 <div class="section">
 <h2>核心物理图像</h2>
-<p>论文研究的物理系统涉及量子态操控、测量方案及相关量子硬件实现，To implement quantum algorithms on a quantum compu</p>
+<p>一张纠错编码的示意图：同一逻辑算符对应多个物理上不同的实现路径，其中一条路径需要长距离SWAP交换跨越断开的耦合边，而另一条路径通过编码冗余直接利用本地原生耦合完成等价操作，编译器通过最小二乘优化在物理自由度中选择后者。</p>
 </div>
 
 <div class="section">
 <h2>主要贡献</h2>
-<p>论文的主要贡献在于提出并分析了Stabilizers for Compiling Logical Circuits under Hardware Co的新方法，为量子计算与量子信息领域提供了重要技术路径</p>
+<p>在特殊酉群的一般设定下，将纠错码冗余带来的编译自由度选择问题严格形式化为最小二乘问题并给出闭式解，首次建立了QEC与硬件感知编译之间的数学桥梁。</p>
 </div>
 
 <div class="section">
 <h2>与你的主线关系</h2>
-<p>与你的主线关系：该论文属于quantum-info方向，对中性原子/模拟/系统研究有直接参考价值。</p>
+<p>与容错量子计算时代的编译-纠错协同直接相关，若用户关注在编码保护下如何高效映射逻辑电路到真实硬件，该文提供了利用编码冗余避免SWAP开销的数学框架。</p>
 </div>
 
 <div class="section">
 <h2>相关性判定</h2>
-<p><span class="relevance-high">高相关</span>。该论文在quant-ph领域直接涉及量子计算或量子信息的核心方法，对研究有重要参考价值</p>
+<p><span class="relevance-high">高相关</span>。同时覆盖量子纠错（QEC）和量子编译两大核心主线，将纠错码冗余直接用于解决硬件连通性约束下的编译问题，是软件栈中编译层与容错层的深度融合。</p>
 </div>
 
 <div class="section">

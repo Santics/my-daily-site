@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experimental Workflows for Combinatorial Optimization: Towards Quantum Advantage — arXiv 2604.25162v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Experimental Workflows for Combinatorial Optimization: Towards Quantum Advantage</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.25162v1" target="_blank">2604.25162v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.25162v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Prashanti Priya Angara, Luis F. Rivera, Ulrike Stege, Hausi Müller, Ibrahim Shehzad</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-04-28 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">qaoa</span><span class="tag">combinatorial-optimization</span><span class="tag">superconducting-qubits</span><span class="tag">ibm-hardware</span><span class="tag">hybrid-workflow</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Demonstrating quantum advantage for combinatorial optimization requires more than standalone algorithmic results; it calls for end-to-end case studies that integrate problem modelling, quantum execution, and classical refinement into practical workflows. This paper presents a sandbox platform for experimenting with hybrid quantum-classical workflows in graph optimization, enabling the systematic study of end-to-end optimization pipelines. Using our platform, we investigate three classically intractable and mutually reducible graph problems -- Minimum Vertex Cover, Maximum Independent Set, and Maximum Clique -- by transforming them into an unconstrained problem and solving the resulting instances with QAOA on IBM platforms. Our workflow combines classical pre-processing to reduce instance size, quantum optimization on the reduced problem, and classical postprocessing to map quantum outputs to high-quality feasible solutions, thereby avoiding direct constraint encoding in the quantum circuit. We evaluate the approach on synthetic graphs, benchmark instances, and real-world networks, and report hardware experiments on IBM Quantum System One at PINQ2 in Bromont, Quebec, powered by IBM's 156-qubit Heron r2 processor on graphs up to 128 vertices, with circuits involving up to 128 qubits and 13,555 two-qubit gates. The results illustrate how sandbox-style end-to-end experimentation can expose bottlenecks, clarify the role of classical-quantum workload partitioning, and provide domain experts and practitioners with a practical guide for interpreting quantum optimization outputs and assessing quantum utility on the road to quantum advantage in combinatorial optimization.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何在IBM超导量子硬件上通过端到端混合量子-经典工作流，实现图组合优化问题的实际量子优势评估？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>本文聚焦量子优化算法在图组合优化问题中的端到端实验验证。作者构建了混合量子-经典工作流沙盒平台，采用经典预处理降维、QAOA量子优化、经典后处理的三阶段策略。在IBM 156量子比特Heron r2处理器上成功运行128顶点图实例，电路涉及13,555个双量子比特门。该工作暴露了量子-经典工作负载划分瓶颈，为评估量子优化实际效用提供了可操作的实验框架和解读指南。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>128顶点图经经典预处理后映射到156量子比特IBM Heron处理器上，QAOA电路执行13,555个双量子比特门操作，量子输出经经典后处理恢复为高质量可行解，全程在PINQ2硬件上完成。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>构建了端到端混合量子-经典优化沙盒平台，证明经典预处理-量子优化-经典后处理的三阶段策略可在真实硬件上避免直接约束编码，实现对128顶点图的实际求解。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>间接相关。该工作涉及超导量子硬件上的算法执行与后处理优化，其端到端实验方法论可为中性原子平台的组合优化实验提供流程参考，但硬件平台不同。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-medium">中相关</span>。涉及QAOA量子优化算法与IBM超导硬件实验，聚焦端到端工作流设计，对量子-经典协同优化有技术参考价值，但未直接涉及用户主线的QEC、编译、控制或中性原子平台。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2604.25162v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2604.25162v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

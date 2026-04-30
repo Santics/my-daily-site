@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Local tensor-train surrogates for quantum learning models — arXiv 2604.25631v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Local tensor-train surrogates for quantum learning models</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.25631v1" target="_blank">2604.25631v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.25631v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Sreeraj Rajindran Nair, Christopher Ferrie</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-04-28 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">quantum-machine-learning</span><span class="tag">tensor-train-approximation</span><span class="tag">classical-surrogate</span><span class="tag">taylor-polynomial</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+A key bottleneck in quantum machine learning is the computational cost of repeated quantum circuit evaluations during the inference phase. To address this, we present a framework for constructing fast, cheap, provably accurate classical tensor-train surrogates of fully trained quantum machine learning models within local patches of their input data space. The approach combines Taylor polynomial approximation with a tensor-train (TT) representation and embeds it in a statistical learning paradigm via empirical risk minimization. In our analysis, the Taylor-TT construction serves as a deterministic error certificate proving that the TT hypothesis class contains a good approximation; empirical risk minimization then provably recovers a surrogate with controlled generalization error and explicit bounds. This translates into three independently controllable error sources: (i) Taylor truncation error controlled by the patch radius $r$ and polynomial degree $p$, (ii) TT approximation error controlled by the bond dimension $\chi$, and (iii) statistical estimation error. While the parameter count scales polynomially in the number of data dimensions $N$, i.e., $d_{\mathrm{eff}} = N(p+1)\chi^2$ rather than the naive $(p+1)^N$, the worst-case constants inherit an exponential factor through the tensor-product feature norm during Taylor polynomial embedding onto TT. This cleanly separates representation complexity from feature-induced constants. Our risk bounds and sample complexity depend explicitly on the local patch radius $r$.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何利用张量列车表示结合泰勒多项式逼近，在量子机器学习模型的输入空间局部区域内构建具有可控误差证书的经典代理模型，以降低推理阶段的量子电路评估成本？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>第1句：量子机器学习子方向，针对已训练量子模型在推理阶段需要反复评估量子电路的计算瓶颈。第2句：将泰勒多项式逼近嵌入张量列车表示，并通过经验风险最小化在局部数据补丁上构建经典代理。第3句：参数数随数据维度N多项式增长（d_eff = N(p+1)χ²），误差由泰勒截断、TT近似和统计估计三个独立可控来源构成。第4句：为量子机器学习推理提供了可证明的经典替代路径，但最坏情况下的常数因子仍继承指数级增长，限制了实际可处理规模。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>在量子机器学习模型输入空间的局部球形补丁内，泰勒展开的多维特征被映射到张量列车表示的低秩结构中，通过控制补丁半径r、多项式阶数p和键维度χ来独立约束三个误差来源。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出了Taylor-TT经典代理框架，给出了包含泰勒截断、TT近似和统计估计三个独立可控误差来源的确定性误差证书，并推导出显式的风险界和样本复杂度。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>量子机器学习属于量子计算的间接相关方向，经典代理方法对降低量子电路调用开销有通用参考价值，但不特定于中性原子平台。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-medium">中相关</span>。量子机器学习是量子计算的重要应用方向，该工作提出的经典代理方法可降低量子电路调用次数，与量子软件栈和算法效率优化相关，但不直接涉及纠错或中性原子硬件。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2604.25631v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2604.25631v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

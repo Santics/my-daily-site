@@ -34,7 +34,7 @@ h1 { font-size: 1.5em; margin-bottom: 0.3em; }
 </div>
 
 <div class="tags">
-<span class="tag">quantum-info</span><span class="tag">solid-state</span><span class="tag">entanglement</span><span class="tag">qec</span><span class="tag">open-quantum</span><span class="tag">compilation</span>
+<span class="tag">qldpc-codes</span><span class="tag">spin-qubits</span><span class="tag">shuttling</span><span class="tag">syndrome-extraction</span><span class="tag">fault-tolerance</span>
 </div>
 
 <div class="section">
@@ -46,32 +46,32 @@ Semiconductor spin qubits are a promising platform for large-scale quantum compu
 
 <div class="section">
 <h2>一句话核心问题</h2>
-<p>该论文研究的核心问题是：CAbLECAR: efficiently scheduling QLDPC codes on a tileable spin qubit chip with shuttling</p>
+<p>如何在可拼接的自旋量子比特移动架构上高效调度QLDPC纠错码的校验子提取电路，以扩展可行移动范围并提升逻辑错误率性能？</p>
 </div>
 
 <div class="section">
 <h2>AI快评</h2>
-<p>本文研究CAbLECAR: efficiently scheduling QLDPC codes on a tileable spin qubit chip with shuttling。核心贡献在于探索相关方法/系统并给出实验或理论结果。</p>
+<p>本文聚焦半导体自旋量子比特平台的量子纠错方向，研究QLDPC码在基于移动的可拼接芯片架构上的实现问题。作者针对移动噪声模型定制syndrome提取电路，借鉴机器人协调算法开发了支持任意码族的移动调度方案，并通过电路级模拟进行基准测试。优化后的调度方案比手工优化方案快达86%，特定QLDPC码族在编码效率和逻辑错误率上比表面码提升数个数量级。该工作对移动架构量子比特的容错扩展具有直接工程参考价值，但平台为半导体自旋而非中性原子。</p>
 </div>
 
 <div class="section">
 <h2>核心物理图像</h2>
-<p>论文研究的物理系统涉及量子态操控、测量方案及相关量子硬件实现，Semiconductor spin qubits are a promising platform</p>
+<p>在可拼接的自旋量子比特芯片上，物理比特通过受控移动在二维网格中穿梭实现长距离耦合连接；协调调度算法优化校验子测量的移动路径与时序编排，使QLDPC码的提取电路能在移动噪声模型下以比表面码数个数量级更优的逻辑错误率高效执行。</p>
 </div>
 
 <div class="section">
 <h2>主要贡献</h2>
-<p>论文的主要贡献在于提出并分析了CAbLECAR: efficiently scheduling QLDPC codes on a tileable s的新方法，为量子计算与量子信息领域提供了重要技术路径</p>
+<p>针对移动噪声模型定制syndrome提取电路，将可行移动范围扩展5至10倍；借鉴机器人协调算法开发支持任意码族的通用移动调度器，使特定QLDPC码族调度速度比手工优化提升86%；通过电路级模拟识别出编码效率和逻辑错误率均优于表面码数个数量级的具体QLDPC实现方案。</p>
 </div>
 
 <div class="section">
 <h2>与你的主线关系</h2>
-<p>与你的主线关系：该论文属于quantum-info方向，对中性原子/模拟/系统研究有直接参考价值。</p>
+<p>直接相关：论文研究的QLDPC纠错码实现、syndrome提取电路优化和硬件调度方案属于量子计算核心工程问题，与用户关注的QEC+硬件软件栈主线一致，尽管具体平台为半导体自旋量子比特而非中性原子。</p>
 </div>
 
 <div class="section">
 <h2>相关性判定</h2>
-<p><span class="relevance-high">高相关</span>。该论文在quant-ph领域直接涉及量子计算或量子信息的核心方法，对研究有重要参考价值</p>
+<p><span class="relevance-high">高相关</span>。直接涉及QLDPC量子纠错码、容错计算架构、syndrome提取电路优化和硬件平台调度，与用户关注的QEC+硬件主线高度吻合。</p>
 </div>
 
 <div class="section">

@@ -34,44 +34,44 @@ h1 { font-size: 1.5em; margin-bottom: 0.3em; }
 </div>
 
 <div class="tags">
-<span class="tag">math-formal</span><span class="tag">qec</span>
+<span class="tag">quantum-error-correction</span><span class="tag">qecc</span><span class="tag">mixed-dimensional-codes</span><span class="tag">macwilliams-identity</span><span class="tag">ame-states</span>
 </div>
 
 <div class="section">
 <h2>原摘要</h2>
 <div class="abstract">
-As emerging quantum architectures evolve into heterogeneous networks combining different physical substrates, such as qubits for logic and higher-dimensional qudits for robust communication, the traditional scalar metrics of quantum error correction become insufficient. To address this, we introduce a mathematical framework based on dimension multisets to characterize quantum error-correcting codes (QECC) and absolutely maximally entangled (AME) states in mixed-dimensional Hilbert spaces. By replacing scalar weights with multisets, we accurately capture the exact physical composition of error supports across these diverse systems. Our central result is the mixed-dimensional quantum MacWilliams identity, which establishes the formal algebraic relationship between Shor-Laflamme enumerators and unitary weight enumerators. From this foundation, we deduce the mixed-dimensional shadow identity and derive rigorous, generalized constraints on code parameters, explicitly formulating the mixed-dimensional quantum Hamming, Singleton and Scott bounds, and developing a linear program to systematically evaluate code viability. For the Singleton bound, a tighter bound that has no homogeneous analogue is derived for pure mixed-dimensional codes. Finally, we deploy this enumerator machinery to thoroughly analyze AME states, utilizing shadow inequalities to constrain their existence and introducing a combinatorial grid method for the explicit construction of mixed-dimensional tripartite AME states.
+As emerging quantum architectures evolve into heterogeneous networks combining different physical substrates, such as qubits for logic and higher-dimensional qudits for robust communication, the traditional scalar metrics of quantum error correction become insufficient. To address this, we introduce a mathematical framework based on dimension multisets to characterize quantum error-correcting codes (QECC) and absolutely maximally entangled (AME) states in mixed-dimensional Hilbert spaces. By replacing scalar weights with multisets, we accurately capture the exact physical composition of error supports across these diverse systems. Our central result is the mixed-dimensional quantum MacWilliams identity, which establishes the formal algebraic relationship between Shor-Laflamme enumerators and unitary weight enumerators. From this foundation, we deduce the mixed-dimensional shadow identity and derive rigorous, generalized constraints on code parameters, explicitly formulating the mixed-dimensional quantum Hamming, Singleton and Scott bounds, and developing a linear program to systematically evaluate code viability. For the Singleton bound, a tighter bound that has no homogeneous analogue is derived for pure mixed-dimensional codes. Finally, we deploy this enumerator machinery to thoroughly analyze AME states, utilizing shadow inequalities to约束 their existence and introducing a combinatorial grid method for the explicit construction of mixed-dimensional tripartite AME states.
 </div>
 </div>
 
 <div class="section">
 <h2>一句话核心问题</h2>
-<p>该论文研究的核心问题是：The mixed-dimensional quantum MacWilliams identity: bounds for codes and absolutely maximally entangled states in heterogeneous systems</p>
+<p>如何建立混合维度量子纠错码和最大纠缠态的完整计数理论框架，并推导混合维度Hamming/Singleton/Scott界以约束异构量子网络中的纠错码参数</p>
 </div>
 
 <div class="section">
 <h2>AI快评</h2>
-<p>本文研究The mixed-dimensional quantum MacWilliams identity: bounds for codes and absolutely maximally entangled states in heterogeneous systems。核心贡献在于探索相关方法/系统并给出实验或理论结果。</p>
+<p>该工作属于量子纠错码(QECC)理论方向，面向异构量子架构中混合维度系统的纠错需求。作者引入维度多重集框架替代传统标量权重，精确刻画不同物理基底上的误差支撑结构。核心贡献是建立了混合维度量子MacWilliams恒等式，首次给出了混合维度系统的Shor-Laflamme枚举子与幺正权重枚举子之间的代数关系，并由此推导出混合维度Hamming界、Singleton界和Scott界。特别地，对纯混合维度码推导出了无均匀对应物的更紧Singleton界。作者还将该枚举工具用于分析混合维度AME态的存在性和构造方法，提出组合网格方法显式构造三方混合维度AME态。对异构量子网络（如qubit+qudit混合系统）的纠错方案设计具有直接理论支撑。</p>
 </div>
 
 <div class="section">
 <h2>核心物理图像</h2>
-<p>论文研究的物理系统涉及量子态操控、测量方案及相关量子硬件实现，As emerging quantum architectures evolve into hete</p>
+<p>在一个由qubit逻辑层和更高维qudit通信层组成的异构量子网络中，误差不再由单一标量权重描述，而是由维度多重集精确刻画每个错误支撑上的物理组成。混合维度MacWilliams恒等式建立了Shor-Laflamme枚举子与幺正权重枚举子之间的代数对偶关系，使得可以从一个枚举子导出另一个，进而约束码的参数空间。</p>
 </div>
 
 <div class="section">
 <h2>主要贡献</h2>
-<p>论文的主要贡献在于提出并分析了The mixed-dimensional quantum MacWilliams identity: bounds f的新方法，为量子计算与量子信息领域提供了重要技术路径</p>
+<p>首次建立了混合维度量子纠错码的完整计数理论：提出维度多重集框架；证明混合维度量子MacWilliams恒等式；推导混合维度Hamming/Singleton/Scott界（其中Singleton界比均匀维度情形更紧）；开发线性规划工具评估码的可行性；提出组合网格方法显式构造三方混合维度AME态。</p>
 </div>
 
 <div class="section">
 <h2>与你的主线关系</h2>
-<p>与你的主线关系：该论文属于math-formal方向，对中性原子/模拟/系统研究有直接参考价值。</p>
+<p>间接相关。论文讨论的是异构网络中的混合维度纠错码，未专门涉及中性原子或里德伯平台，但混合维度纠错理论对所有多物理基底量子架构（包括可能混合不同自由度平台）有通用理论价值。</p>
 </div>
 
 <div class="section">
 <h2>相关性判定</h2>
-<p><span class="relevance-high">高相关</span>。该论文在quant-ph领域直接涉及量子计算或量子信息的核心方法，对研究有重要参考价值</p>
+<p><span class="relevance-high">高相关</span>。直接涉及量子纠错码(QECC)的理论基础，面向异构量子架构的实际需求。混合维度系统的纠错理论对包含不同物理基底的真实量子网络具有直接指导意义。</p>
 </div>
 
 <div class="section">

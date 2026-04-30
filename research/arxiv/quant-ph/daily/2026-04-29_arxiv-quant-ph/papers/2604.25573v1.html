@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quantum annealing inspired algorithms for the NISQ Era — arXiv 2604.25573v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Quantum annealing inspired algorithms for the NISQ Era</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.25573v1" target="_blank">2604.25573v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.25573v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Rijul Sachdeva, Vrinda Mehta, Manpreet Singh Jattana, Kristel Michielsen, Fengping Jin</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-04-28 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">quantum-annealing</span><span class="tag">qaoa-warm-start</span><span class="tag">nisq-algorithms</span><span class="tag">combinatorial-optimization</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+We study algorithms inspired by quantum annealing that are suited for the NISQ era. First, we analyze approximate quantum annealing (AQA), which employs a discretized annealing ansatz in which the time step and the number of layers are allowed to deviate from a faithful implementation of quantum annealing. Parameter scans identify regimes that reproduce annealing-like behavior with reduced resources, making them more suitable for NISQ devices. The resulting parameters can then be used as an effective warm start for the quantum approximate optimization algorithm (QAOA), improving its performance compared to random initializations. We also introduce evolving Hamiltonian quantum optimization (EHQO), a multistep variational scheme that guides the optimization process through intermediate Hamiltonians derived from the standard annealing Hamiltonian. Numerical simulations on sets of hard 2-SAT instances suggest that quantum annealing-inspired algorithms provide practical strategies for enhancing variational quantum optimization.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何将量子退火启发的近似方案AQA和EHQO适配到NISQ设备的资源限制下，以提升量子近似优化算法QAOA在变分量子优化中的实际表现？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>第1句：NISQ算法与量子近似优化子方向，针对量子退火在有限量子资源下的忠实实现难题。第2句：提出近似量子退火AQA和演化哈密顿量量子优化EHQO两种变分方案，前者通过离散化退火路径减少层数，后者引入中间哈密顿量引导优化。第3句：AQA的参数可作为QAOA的有效热启动，显著优于随机初始化；EHQO在多步变分方案中引导优化过程，在困难2-SAT实例上展示了实用策略。第4句：为NISQ设备的组合优化提供了退火启发的实用路径，但基于2-SAT的数值验证在复杂实际问题上的泛化能力尚待检验。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>在离散化的时间切片上，AQA允许时间步长和层数偏离忠实退火路径，通过参数扫描找到资源节省的退火行为区域；EHQO则构造一系列从标准退火哈密顿量导出的中间哈密顿量，在多步变分中引导系统穿越复杂能量景观。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出了近似量子退火AQA和演化哈密顿量量子优化EHQO两种量子退火启发的NISQ算法，证明AQA参数可作为QAOA的有效热启动，EHQO在困难2-SAT实例上提供了实用优化策略。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>属于量子算法方向的间接相关工作，退火启发的变分优化方法对NISQ量子计算有通用参考价值，但不特定于中性原子平台。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-medium">中相关</span>。该工作探索量子退火启发的NISQ变分优化算法，属于量子计算算法与软件栈方向，对理解NISQ时代组合优化策略有参考价值，但不直接涉及纠错或中性原子平台。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2604.25573v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2604.25573v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

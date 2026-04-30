@@ -34,44 +34,44 @@ h1 { font-size: 1.5em; margin-bottom: 0.3em; }
 </div>
 
 <div class="tags">
-<span class="tag">entanglement</span><span class="tag">quantum-info</span><span class="tag">open-quantum</span><span class="tag">qec</span>
+<span class="tag">qldpc-codes</span><span class="tag">networked-quantum-computing</span><span class="tag">teleported-cnot</span><span class="tag">bivariate-bicycle</span><span class="tag">circuit-level-simulation</span>
 </div>
 
 <div class="section">
 <h2>原摘要</h2>
 <div class="abstract">
-Quantum low-density parity-check (QLDPC) codes with good parameters are promising candidates for low-overhead fault-tolerant quantum computing, but their non-local stabilizers require long-range connectivity and frequent qubit movement, introducing practical challenges. Prior work has studied the networked implementation of topological codes, where each node only holds one or a few qubits of the entire code, and demonstrated competitive performance under practical constraints such as the quality of network-provided entanglement. However, since these codes are already geometrically local, such a networked setting might not be essential. In this work, we propose and study the networked implementation of better QLDPC codes, specifically bivariate bicycle codes due to their similarity to surface codes and the controlled amount of long-range connections in their stabilizers. We begin by recreating networked surface codes in Stim, with one code qubit per node, and provide additional insights into their circuit-level noise performance. We then extend this approach to bipartitions of bivariate bicycle codes, using balanced min-cut partitioning on their combined X-Z Tanner graph to identify optimal qubit splits. For stabilizers spanning nodes, we implement teleported CNOTs and vary the Bell pair fidelity enabling these gates. Through circuit-level noise simulations with BP-OSD decoding, we provide the first insights into networked realizations of these codes and compare their performance with monolithic implementations. We conclude by outlining advantages, limitations, and future directions.
+Quantum low-density parity-check (QLDPC) codes with good parameters are promising candidates for low-overhead fault-tolerant quantum computing, but their non-local stabilizers require long-range connectivity and frequent qubit movement, introducing practical challenges. Prior work has studied the networked implementation of topological codes, where each node only holds one or a few qubits of the entire code, and demonstrated competitive performance under practical constraints such as the quality of network-provided entanglement. However, since these codes are already geometrically local, such a networked setting might not be essential. In this work, we propose and study the networked implementation of better QLDPC codes, specifically bivariate bicycle codes due to their similarity to surface codes and the controlled amount of long-range connections in their stabilizers. We begin by recreating networked surface codes in Stim, with one code qubit per node, and provide additional insights into their circuit级噪声性能. We then extend this approach to bipartitions of bivariate bicycle codes, using balanced min-cut partitioning on their combined X-Z Tanner graph to identify optimal qubit splits. For stabilizers spanning nodes, we implement teleported CNOTs and vary the Bell pair fidelity enabling these gates. Through circuit-level noise simulations with BP-OSD decoding, we provide the first insights into networked realizations of these codes and compare their performance with monolithic implementations. We conclude by outlining advantages, limitations, and future directions.
 </div>
 </div>
 
 <div class="section">
 <h2>一句话核心问题</h2>
-<p>该论文研究的核心问题是：Networked Realization of Quantum LDPC Codes</p>
+<p>对于具有非局域稳定子的优质量子LDPC码（如二元自行车码），如何在网络化的量子节点架构中通过最小割分区与隐形传态CNOT门实现容错实现，并量化网络纠缠保真度对纠错性能的影响？</p>
 </div>
 
 <div class="section">
 <h2>AI快评</h2>
-<p>这是一篇高相关论文。论文标题为「Networked Realization of Quantum LDPC Codes」，研究内容涉及Quantum low-density parity-check (QLDPC) codes with good parameters are promising candidates for low。该工作在量子计算及相关领域提供了有价值的方法与见解。</p>
+<p>该工作面向量子纠错与量子网络的交叉子方向，以优质量子LDPC码的分布式容错实现为研究对象。方法：首先在Stim中复现网络化表面码并分析电路级噪声性能，然后对二元自行车码的X-Z联合Tanner图进行平衡最小割分区以确定最优量子比特分割方案，对跨节点稳定子使用隐形传态CNOT门实现并调节贝尔对保真度。通过BP-OSD解码的电路级噪声仿真，首次给出了QLDPC码网络化实现相对于单体实现的性能对比。对用户主线的直接价值在于：为QLDPC码从单体芯片走向分布式量子网络提供了首个系统化的实现方案和性能基准。</p>
 </div>
 
 <div class="section">
 <h2>核心物理图像</h2>
-<p>论文研究的物理系统涉及量子态操控、测量方案及相关量子硬件实现，Quantum low-density parity-check (QLDPC) codes wit</p>
+<p>一张分布式量子计算网络拓扑图：多个节点各自持有部分量子比特，原本需要长距离耦合的QLDPC稳定子通过节点间的贝尔对隐形传态CNOT门跨越实现，Tanner图的最小割分割线将全局编码最优地分配到各节点，BP-OSD解码器在每个节点上协同运行。</p>
 </div>
 
 <div class="section">
 <h2>主要贡献</h2>
-<p>论文的主要贡献在于提出并分析了Networked Realization of Quantum LDPC Codes的新方法，为量子计算与量子信息领域提供了重要技术路径</p>
+<p>首次提出了优质QLDPC码（二元自行车码）的网络化实现方案，通过平衡最小割分区优化跨节点量子比特分配，结合隐形传态CNOT与电路级噪声仿真，为分布式容错量子计算建立了QLDPC码的性能基准。</p>
 </div>
 
 <div class="section">
 <h2>与你的主线关系</h2>
-<p>与你的主线关系：该论文属于entanglement方向，对中性原子/模拟/系统研究有直接参考价值。</p>
+<p>与容错量子计算的分布式架构直接相关，若用户关注QLDPC码从单体芯片扩展到网络化量子计算机的工程路径，该文提供了关键的分区策略和跨节点门实现方案。</p>
 </div>
 
 <div class="section">
 <h2>相关性判定</h2>
-<p><span class="relevance-high">高相关</span>。该论文在quant-ph领域直接涉及量子计算或量子信息的核心方法，对研究有重要参考价值</p>
+<p><span class="relevance-high">高相关</span>。直接涉及量子纠错（QLDPC码）、量子网络分布式实现、电路级噪声仿真和BP-OSD解码，属于容错量子计算硬件架构与网络架构的核心问题。</p>
 </div>
 
 <div class="section">

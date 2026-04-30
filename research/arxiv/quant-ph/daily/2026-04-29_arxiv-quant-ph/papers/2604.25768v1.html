@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pulse Quality Optimisation in Quantum Optimal Control — arXiv 2604.25768v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Pulse Quality Optimisation in Quantum Optimal Control</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.25768v1" target="_blank">2604.25768v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.25768v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Dylan Lewis, Roeland Wiersema</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-04-28 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">quantum-optimal-control</span><span class="tag">pulse-optimisation</span><span class="tag">quantum-gates</span><span class="tag">control-landscape</span><span class="tag">gate-fidelity</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Quantum optimal control methods are widely used to design experimental control pulses such as laser amplitudes, phases, or detunings, that implement a target unitary evolution. In practice, what makes a pulse &quot;good&quot; depends not only on its fidelity, but also on the experimental setting and the relevant hardware constraints. Here, we introduce geometric quantum control with kernel optimisation (GECKO), a model-agnostic method for improving control pulses after a high-fidelity solution has been found. GECKO uses the Riemannian geometry of the special unitary group to identify directions in pulse空间 that leave the implemented unitary unchanged to first order, allowing one to traverse level sets of the control landscape while optimising a chosen differentiable pulse-quality function. We demonstrate GECKO on a transverse-field Ising Hamiltonian implementing CZ and CNOT gates, optimising pulse properties including spectral filtering, smoothness, robustness to parameter deviations, and pulse duration. In all cases, GECKO finds substantially improved pulse solutions.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何在保持量子门保真度不变的前提下，利用特殊幺正群的黎曼几何优化控制脉冲的频谱特性、平滑度、鲁棒性和持续时间等实验硬件友好指标</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>该工作属于量子最优控制方向，直接面向量子门实验实现中的脉冲质量优化问题。作者提出GECKO方法，在已找到高保真度脉冲解后，利用SU群的黎曼几何识别脉冲空间中一阶保持幺正不变的切向方向，从而沿控制景观的等值线移动并优化可微的脉冲质量函数。在横向场Ising哈密顿量上的CZ和CNOT门演示中，GECKO在频谱滤波、平滑度、参数偏差鲁棒性和脉冲时长等多个维度均找到显著改进的脉冲解。该方法与具体硬件模型无关，可推广到超导、离子阱、中性原子等多种平台。对提升量子门实验实现质量具有直接工具价值。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>在控制景观中，高保真度解构成一个等值面。GECKO利用SU群的黎曼几何计算该等值面的一阶切向方向，使得脉冲可以沿此方向移动而不改变实现的幺正演化，同时优化频谱带宽、平滑度或鲁棒性等二次目标。对于横向场Ising模型中的CZ和CNOT门，脉冲在满足保真度约束的同时获得更窄的频谱、更少的快速振荡或更强的参数鲁棒性。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出GECKO方法，首次系统性地解决高保真度脉冲解后的多目标质量优化问题。利用SU群黎曼几何识别控制景观等值线的切向方向，实现保真度不变前提下的脉冲质量提升，在CZ/CNOT门演示中同时优化频谱滤波、平滑度、参数鲁棒性和脉冲时长。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>直接相关。量子最优控制是中性原子/里德伯原子平台实现高保真度量子门的关键技术，GECKO方法可直接应用于该平台的激光脉冲优化，提升门操作的实验质量。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。直接涉及量子控制和校准，是量子门实验实现的核心技术。脉冲质量优化直接影响所有量子计算平台的门保真度和实验可行性，GECKO方法可推广到多种硬件平台。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2604.25768v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2604.25768v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

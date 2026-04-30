@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polynomial Resource Classification of Quantum Circuit Familes via Classical Shadows — arXiv 2604.25708v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Polynomial Resource Classification of Quantum Circuit Familes via Classical Shadows</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.25708v1" target="_blank">2604.25708v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.25708v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Andrew Maciejunes, Ross Gore, Sachin Shetty, Barry Ezell</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-04-28 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">quantum-circuit-classification</span><span class="tag">classical-shadows</span><span class="tag">measurement-strategy</span><span class="tag">benchmarking</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+We compare four polynomial-resource measurement strategies, (I) $Z$-basis-only, (II) nearest-neighbor $ZZ$ (NN), (III) multi-basis ($Z$, $X$, $Y$), and (IV) classical shadows, for classifying three quantum circuit families: IQP, Clifford, and Clifford$+T$. We find $Z$-only measurements outperform multi-basis and classical shadows across all qubit counts and all four classifiers evaluated, and the $O(\nqubits)$-feature NN strategy matches $Z$-only to within $0.02$ in Random Forest accuracy. The best result is a Random Forest accuracy of $0.91$ at 4--5 qubits under $Z$-only ($0.89$ for NN, $0.85$ for multi-basis, $0.67$ for shadows). All four strategies collapse to near-chance accuracy ($\approx 0.33$) above approximately 12 qubits under the quadratic shot budget $\shots = 16\nqubits^2$. These findings indicate that the discriminative signal between these circuit families is concentrated in local, nearest-neighbor $Z$-basis correlations, consistent with the diagonal gate structure of IQP circuits, and that additional Pauli correlator types or long-range correlations carry no compensating discriminative power for this task. We provide a formal theoretical framework showing that circuits with high diagonal fraction in a given basis concentrate their correlator structure in that basis, and that any deviation from the dominant basis incurs a provably higher estimator variance. These results establish that a quadratic shot budget is insufficient for reliable classification above approximately 12 qubits, but do not rule out the existence of a subquadratic or otherwise more efficient polynomial-resource strategy; whether any polynomial measurement protocol can classify these families at large qubit counts remains an open question.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何利用多项式资源的测量策略（包括经典阴影）有效区分IQP、Clifford和Clifford+T三类量子电路家族，并识别大规模下的判别信号来源？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>该工作属于量子电路表征与资源分析方向，研究对象为IQP、Clifford和Clifford+T三类量子电路家族的可区分性。比较了Z基、近邻ZZ、多基和经典阴影四种多项式资源测量策略的分类性能。发现Z基测量在4-5量子比特时达到0.91的随机森林准确率，超过约12量子比特时二次shot预算下所有策略退化至随机水平(~0.33)。该工作为量子电路验证提供了资源效率分析，对实验中的电路基准测试有间接参考价值，但尚未解决大规模分类问题。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>不同量子电路家族（IQP/Clifford/Clifford+T）在Z基测量下产生可区分的局部关联函数分布模式，多项式shot预算下分类准确率随量子比特数增加呈现从高效区分到随机水平的相变行为。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>系统比较了四种多项式资源测量策略对三类量子电路的分类性能，证明了判别信号集中在局部Z基关联中而非长程或多基关联，并建立了高对角分数电路的关联结构集中理论框架。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>属于量子电路验证与基准测试的理论分析，对量子计算实验中电路族表征、测量资源效率评估和规模化分类问题研究有间接参考价值。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-medium">中相关</span>。该工作属于量子电路分类与验证的理论分析，涉及测量资源效率和电路族判别，与量子计算实验中的电路基准测试有间接关联，但不直接涉及纠错、算法优化或硬件实现。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2604.25708v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2604.25708v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

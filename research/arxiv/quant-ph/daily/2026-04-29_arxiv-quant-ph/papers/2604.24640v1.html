@@ -34,7 +34,7 @@ h1 { font-size: 1.5em; margin-bottom: 0.3em; }
 </div>
 
 <div class="tags">
-<span class="tag">tensor-network</span><span class="tag">open-quantum</span><span class="tag">qec</span>
+<span class="tag">diffusion-model</span><span class="tag">qec-decoding</span><span class="tag">superconducting-qubit</span><span class="tag">posterior-inference</span><span class="tag">syndrome-decoding</span>
 </div>
 
 <div class="section">
@@ -46,32 +46,32 @@ Quantum computers could solve problems beyond the reach of classical devices, bu
 
 <div class="section">
 <h2>一句话核心问题</h2>
-<p>该论文研究的核心问题是：DiffQEC: A versatile diffusion model for quantum error correction</p>
+<p>如何将离散去噪扩散模型应用于多轮时空综合征历史的量子纠错解码，以建模错误后验分布并提升逻辑错误率？</p>
 </div>
 
 <div class="section">
 <h2>AI快评</h2>
-<p>本文研究DiffQEC: A versatile diffusion model for quantum error correction。核心贡献在于探索相关方法/系统并给出实验或理论结果。</p>
+<p>该工作属于量子纠错生成式解码子方向，面向超导量子处理器的多轮稳定子综合征数据。作者将QEC解码重构为离散去噪扩散的后验推断问题，设计了syndrome processor和syndrome feature modulation来条件化去噪过程。在Google超导芯片实验数据上，DiffQEC相对最小权重完美匹配解码逻辑错误率降低10.2%，相对张量网络解码降低约5%，优势在码距17和更深逻辑电路中保持。对量子纠错系统设计而言，该框架提供的置信度估计和后验结构信息具有直接工程参考价值，但目前仅在超导平台验证，向中性原子平台迁移需进一步研究。</p>
 </div>
 
 <div class="section">
 <h2>核心物理图像</h2>
-<p>论文研究的物理系统涉及量子态操控、测量方案及相关量子硬件实现，Quantum computers could solve problems beyond the </p>
+<p>将多轮稳定子测量产生的时空综合征历史输入去噪扩散模型，模型从纯噪声开始，通过syndrome feature modulation逐步条件化去噪，最终采样出与观测综合征一致的错误模式，同时输出每个错误的置信度权重，揭示底层物理错误的空间聚集结构和时间演化特征。</p>
 </div>
 
 <div class="section">
 <h2>主要贡献</h2>
-<p>论文的主要贡献在于提出并分析了DiffQEC: A versatile diffusion model for quantum error corre的新方法，为量子计算与量子信息领域提供了重要技术路径</p>
+<p>提出DiffQEC生成式解码器，首次将离散去噪扩散用于QEC后验推断解码，通过syndrome processor处理时空综合征历史，借助syndrome feature modulation实现全推理过程的条件化，在Google超导量子处理器实验数据上实现相对MWPM最高10.2%、相对张量网络约5%的逻辑错误率降低。</p>
 </div>
 
 <div class="section">
 <h2>与你的主线关系</h2>
-<p>与你的主线关系：该论文属于tensor-network方向，对中性原子/模拟/系统研究有直接参考价值。</p>
+<p>直接涉及量子纠错解码这一用户主线核心方向，其生成式后验解码框架与置信度估计机制对解码器设计和错误结构分析具有明确的方法参考价值。</p>
 </div>
 
 <div class="section">
 <h2>相关性判定</h2>
-<p><span class="relevance-high">高相关</span>。该论文在quant-ph领域直接涉及量子计算或量子信息的核心方法，对研究有重要参考价值</p>
+<p><span class="relevance-high">高相关</span>。直接涉及量子纠错解码核心问题，提出扩散模型生成式解码框架DiffQEC，利用后验分布建模替代单点假设，在Google超导芯片上有明确量化增益，对纠错解码器设计有工程参考价值。</p>
 </div>
 
 <div class="section">

@@ -34,7 +34,7 @@ h1 { font-size: 1.5em; margin-bottom: 0.3em; }
 </div>
 
 <div class="tags">
-<span class="tag">architecture</span><span class="tag">quantum-info</span><span class="tag">open-quantum</span><span class="tag">qec</span>
+<span class="tag">mid-circuit-measurement</span><span class="tag">error-mitigation</span><span class="tag">hardware-software-codesign</span><span class="tag">qec</span><span class="tag">quantum-control</span>
 </div>
 
 <div class="section">
@@ -48,32 +48,32 @@ Distributed Quantum Computing (DQC) and Quantum Error Correction (QEC) rely on d
 
 <div class="section">
 <h2>一句话核心问题</h2>
-<p>该论文研究的核心问题是：MCMit: Mid-Circuit Measurement Error Mitigation</p>
+<p>在分布式量子计算和量子纠错电路中，如何通过软硬件协同设计（常数延迟分支指令+CNN判别器+静态MCM消除）降低中段测量引起的分支错误和延迟退相干？</p>
 </div>
 
 <div class="section">
 <h2>AI快评</h2>
-<p>这是一篇高相关论文。论文标题为「MCMit: Mid-Circuit Measurement Error Mitigation」，研究内容涉及Distributed Quantum Computing (DQC) and Quantum Error Correction (QEC) rely on dynamic circuits that。该工作在量子计算及相关领域提供了有价值的方法与见解。</p>
+<p>针对分布式量子计算和量子纠错中中段测量(MCM)的高错误率与反馈延迟瓶颈，提出软硬件协同设计框架MCMit。硬件侧引入常数延迟多控制分支指令（反馈延迟降低70%，电路深度改善7倍）和CNN/Transformer判别器（短测量时长下精度提升37-73%）；软件侧采用静态MCM消除和随机分支策略。在Qubic平台用实验提取的QPU读出轨迹验证，CNN判别器使QEC逻辑错误率降低80%，软件缓解进一步提升保真度18-30%。对量子纠错工程实现有直接工程价值。</p>
 </div>
 
 <div class="section">
 <h2>核心物理图像</h2>
-<p>论文研究的物理系统涉及量子态操控、测量方案及相关量子硬件实现，Distributed Quantum Computing (DQC) and Quantum Er</p>
+<p>在量子纠错电路中段测量后，通过常数延迟硬件分支指令快速执行经典反馈，配合CNN判别器在低信噪比短测量条件下准确区分量子态，软件层消除冗余MCM并缓解残余分支错误。</p>
 </div>
 
 <div class="section">
 <h2>主要贡献</h2>
-<p>论文的主要贡献在于提出并分析了MCMit: Mid-Circuit Measurement Error Mitigation的新方法，为量子计算与量子信息领域提供了重要技术路径</p>
+<p>提出MCMit软硬件协同框架解决中段测量瓶颈：常数延迟分支指令降低反馈延迟70%、CNN判别器在短测量下提升精度37-73%（对应QEC逻辑错误率降低80%）、软件缓解策略额外提升保真度18-30%。</p>
 </div>
 
 <div class="section">
 <h2>与你的主线关系</h2>
-<p>与你的主线关系：该论文属于architecture方向，对中性原子/模拟/系统研究有直接参考价值。</p>
+<p>直接相关：中段测量是量子纠错电路的核心操作，论文从硬件指令、量子态判别到软件缓解的全栈方案对QEC工程实现有直接参考价值。</p>
 </div>
 
 <div class="section">
 <h2>相关性判定</h2>
-<p><span class="relevance-high">高相关</span>。该论文在quant-ph领域直接涉及量子计算或量子信息的核心方法，对研究有重要参考价值</p>
+<p><span class="relevance-high">高相关</span>。直接聚焦量子纠错(QEC)的核心瓶颈——中段测量误差与反馈延迟，提出软硬件协同缓解方案并在真实QPU读出数据上验证，逻辑错误率降低80%的量化结果对纠错电路实现具有明确工程意义。</p>
 </div>
 
 <div class="section">

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minimum Toffoli depth for the multi-controlled Toffoli gate via teleportation — arXiv 2604.25861v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Minimum Toffoli depth for the multi-controlled Toffoli gate via teleportation</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.25861v1" target="_blank">2604.25861v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.25861v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Spyros Tserkis, Muhammad Umer, Eleftherios Mastorakis, Dimitris G. Angelakis</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-04-28 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">quantum-compilation</span><span class="tag">toffoli-decomposition</span><span class="tag">quantum-teleportation</span><span class="tag">circuit-optimization</span><span class="tag">multi-controlled-gates</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+The decomposition of complex quantum operations into experimentally feasible gate sets has been a central challenge since the early development of quantum computing. The multi-controlled Toffoli (MCT) gate is a key example, with applications across a wide range of quantum algorithms, whose decomposition into smaller gates, however, typically leads to deep circuits. In this work, we introduce a teleportation-based decomposition that implements an arbitrary MCT gate with unit Toffoli depth, independent of the number of controls, while maintaining a relatively low Toffoli count compared to existing approaches. This is achieved at the cost of a linear overhead in ancilla qubits and the ability to distribute entangled pairs across distant qubits, a capability already available in several quantum computing platforms. We further demonstrate the advantages of this implementation in circuits that rely on MCT gates, such as the adder operator, quantum read-only memory, quantum neurons, and quantum decision trees.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>在量子电路编译中，如何通过基于量子隐形传态的分解方案，以常数Toffoli深度实现任意多控制Toffoli门，同时保持较低的辅助量子比特开销？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>研究量子电路编译中多控制Toffoli(MCT)门的深度优化问题。提出基于量子隐形传态的分解方案，实现与控件数量无关的常数Toffoli深度（深度为1），代价为线性辅助量子比特和远程纠缠对分发能力。在加法器、量子只读存储器、量子神经元和量子决策树等依赖MCT的电路中展示了优势。对量子算法编译和电路优化有参考价值，但依赖的远程纠缠分发能力在多数平台尚不成熟。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>利用预先分发的远程纠缠对和量子隐形传态，将n控制Toffoli门的分解转化为常数Toffoli深度电路，通过线性数量的辅助量子比特和局域操作实现任意数量控制位的逻辑门。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出基于量子隐形传态的MCT分解方案，实现与控件数无关的常数Toffoli深度（深度=1），在加法器、量子ROM、量子神经网络等典型电路中展示深度优势。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>间接相关：论文聚焦量子编译中的多控制门优化，对算法电路实现有参考价值，但依赖的远程纠缠分发假设与用户关注的中性原子/超导平台的实际约束不完全匹配。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-medium">中相关</span>。聚焦量子编译中的核心问题——多控制Toffoli门的电路深度优化，提出的常数深度方案对量子算法电路实现有参考价值，但依赖远程纠缠分发假设，在现有硬件平台的可行性受限。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2604.25861v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2604.25861v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

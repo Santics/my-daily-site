@@ -34,7 +34,7 @@ h1 { font-size: 1.5em; margin-bottom: 0.3em; }
 </div>
 
 <div class="tags">
-<span class="tag">open-quantum</span><span class="tag">compilation</span><span class="tag">variational</span>
+<span class="tag">qaoa</span><span class="tag">swap-free-compilation</span><span class="tag">nisq-hardware</span><span class="tag">hamiltonian-approximation</span><span class="tag">combinatorial-optimization</span>
 </div>
 
 <div class="section">
@@ -46,32 +46,32 @@ The performance of the Quantum Approximate Optimization Algorithm (QAOA) on nois
 
 <div class="section">
 <h2>一句话核心问题</h2>
-<p>该论文研究的核心问题是：A SWAP-free Framework for QAOA</p>
+<p>在稀疏耦合的NISQ硬件上，如何通过修改QAOA代价哈密顿量而非插入SWAP门，来实现硬件原生的组合优化算法执行，并量化近似误差对最终优化结果的影响？</p>
 </div>
 
 <div class="section">
 <h2>AI快评</h2>
-<p>这是一篇高相关论文。论文标题为「A SWAP-free Framework for QAOA」，研究内容涉及The performance of the Quantum Approximate Optimization Algorithm (QAOA) on noisy intermediate-scale。该工作在量子计算及相关领域提供了有价值的方法与见解。</p>
+<p>该工作面向NISQ量子计算的编译优化子方向，以QAOA算法在稀疏连通性硬件上的性能瓶颈为研究对象。提出一种SWAP-free框架：将原始代价矩阵投影为与硬件拓扑兼容的形式，通过混合整数半定规划（MISDP）同时选择近似矩阵和优化变量到物理量子比特的映射分配，并证明该决策问题为NP-完备。在指数跟踪的组合优化模型上实验显示，该方法在受SWAP噪声影响的基线对比下具有竞争力。对用户主线的价值在于：它为在真实稀疏架构上运行QAOA提供了绕过高开销SWAP插入选项的系统化编译方案，但其NP-完备性意味着启发式方法仍是实用化的必要补充。</p>
 </div>
 
 <div class="section">
 <h2>核心物理图像</h2>
-<p>论文研究的物理系统涉及量子态操控、测量方案及相关量子硬件实现，The performance of the Quantum Approximate Optimiz</p>
+<p>一张稀疏耦合的NISQ芯片拓扑图上，QAOA的逻辑变量节点被重新着色分配，使得相邻交互边与硬件原生耦合一一对应，原本需要长路径SWAP交换的逻辑边被替换为牺牲少量精度的邻近边。</p>
 </div>
 
 <div class="section">
 <h2>主要贡献</h2>
-<p>论文的主要贡献在于提出并分析了A SWAP-free Framework for QAOA的新方法，为量子计算与量子信息领域提供了重要技术路径</p>
+<p>将SWAP-free QAOA编译问题形式化为混合整数半定规划（MISDP），从理论上证明其NP-完备性，并建立MISDP目标值与原始优化问题损失之间的Lovász数关联界，为硬件拓扑约束下的代价哈密顿量近似提供了首个系统化的优化框架。</p>
 </div>
 
 <div class="section">
 <h2>与你的主线关系</h2>
-<p>与你的主线关系：该论文属于open-quantum方向，对中性原子/模拟/系统研究有直接参考价值。</p>
+<p>与NISQ时代的算法-编译-硬件协同优化直接相关，若用户关注在真实量子处理器上运行QAOA的实际可行性，该文提供了避免SWAP开销的具体编译路径。</p>
 </div>
 
 <div class="section">
 <h2>相关性判定</h2>
-<p><span class="relevance-high">高相关</span>。该论文在quant-ph领域直接涉及量子计算或量子信息的核心方法，对研究有重要参考价值</p>
+<p><span class="relevance-high">高相关</span>。直接涉及量子算法编译与NISQ硬件约束适配，通过硬件感知哈密顿量近似替代SWAP门插入，属于量子计算软件栈中编译层与算法层的交叉问题。</p>
 </div>
 
 <div class="section">

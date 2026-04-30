@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data-Driven Hamiltonian Reduction for Superconducting Qubits via Meta-Learning — arXiv 2604.24912v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Data-Driven Hamiltonian Reduction for Superconducting Qubits via Meta-Learning</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2604.24912v1" target="_blank">2604.24912v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.24912v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Arielle Sanford, Andrew T. Kamen, Frederic T. Chong, Andy J. Goldschmidt</span><br>
+<span><strong>分类:</strong> quant-ph, cs.LG</span><br>
+<span><strong>发布时间:</strong> 2026-04-27 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">meta-learning</span><span class="tag">hamiltonian-reduction</span><span class="tag">superconducting-qubits</span><span class="tag">calibration</span><span class="tag">transmon</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+We introduce HAML (Hamiltonian Adaptation via Meta-Learning), a framework for fast online adaptation of effective Hamiltonian models of superconducting quantum processors. HAML proceeds in two phases. A supervised training phase uses an ensemble of simulated devices to learn an offline map from control inputs and device parameters to effective Hamiltonian coefficients. An online adaptation phase then uses a small number of hardware-accessible measurements to identify the unknown parameters of a new device. By training directly against effective two-qubit coefficients extracted from full multi-mode simulations, HAML implicitly learns the reduction from full multi-mode Hamiltonians to effective qubit descriptions without invoking perturbation theory. We further show that a variance-maximizing greedy selection of measurement configurations boosts online adaptation efficiency. We demonstrate HAML on a transmon-coupler-transmon system, recovering effective two-qubit coefficients across a wide range of operating regimes, including parameter regions where Schrieffer-Wolff perturbation theory (SWPT) breaks down. This establishes a scalable, sample-efficient approach to Hamiltonian reduction and characterization for near-term quantum processors, with direct implications for calibration, control, and error mitigation.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>超导量子处理器如何通过元学习框架在少量硬件测量下实现高效在线哈密顿量约化与参数标定</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>聚焦超导量子比特表征与校准方向，以transmon-coupler-transmon系统为对象。提出HAML框架：离线阶段通过模拟器件集合学习控制输入到有效哈密顿量系数的映射，在线阶段通过少量测量标定新器件参数。在SWPT失效的参数区域仍能有效恢复两量子比特耦合系数，样本效率显著提升。对用户主线具有直接价值：提供了无需微扰论的样本高效哈密顿量约化方法，直接关联超导平台的校准、控制与错误缓解。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>超导transmon-coupler-transmon三体系统中，多模式全哈密顿量通过神经网络离线映射到有效两量子比特耦合系数，在线阶段仅需少量投影测量即可快速标定未知器件参数，绕过传统SWPT在强耦合区的失效问题。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出HAML元学习框架，实现从全多模式模拟数据到有效两量子比特哈密顿量的自动约化，无需显式微扰论计算，并通过方差最大化贪婪策略提升在线标定效率，在SWPT失效区域仍能准确恢复耦合系数。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>直接相关：超导量子比特的校准和控制是用户主线之一，本文提供的样本高效标定方法直接适用于超导平台的日常运维与错误缓解，且元学习思路可迁移至其他量子硬件平台。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。论文直接针对超导量子处理器的哈密顿量约化和在线标定，与量子控制、校准和错误缓解等用户主线高度重合，且提出的元学习方法可推广至其他量子平台。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2604.24912v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2604.24912v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>
