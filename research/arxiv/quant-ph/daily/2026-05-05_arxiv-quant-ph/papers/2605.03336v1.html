@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centralizing Task-based Approach to Quantum Network Control — arXiv 2605.03336v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Centralizing Task-based Approach to Quantum Network Control</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2605.03336v1" target="_blank">2605.03336v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.03336v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Alexander Pirker, Robert J. Hayek, Alexander Kolar, Igor Kadota, Joaquin Chung, Rajkumar Kettimuthu</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-05-05 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">quantum-network</span><span class="tag">centralized-scheduling</span><span class="tag">task-based-control</span><span class="tag">entanglement-distribution</span><span class="tag">sequence-simulator</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+For the last decade, layered stacks have dominated the way of reasoning about architectures for quantum networks. However, layered architectures impose stringent design and timing constraints on quantum networks, adding additional latency to the time required to serve an entanglement generation request. Moreover, increasing delays from the layered approach to network control causes degradation of state, effectively minimizing achievable fidelities. In this work we simulate a resource-centric, task-based approach to quantum network control by utilizing a centralized controller. Using the SeQUeNCe quantum network simulator, we implement the centralized controller which tracks quantum memory availability across all节点, and schedules objectives in an offline fashion using a priority-based scheduler. We evaluate the performance of this controller on multiple topologies (bottleneck, grid, star, caveman) of significant scale, with varying reservation patterns; thereby we demonstrate the viability of the resource-centric task-based quantum network control framework for scaling. Our simulation results show that the caveman and grid topologies have a higher fraction of delivered请求 with low delay compared to the star topology, but with a higher fraction of highly delayed请求 as well. Furthermore, we find a linear shift of the CDFs in terms of queue size for all topologies depending on the reservation delay. More interestingly, we conclude that the CDFs of priority queues for the star topology converge fast into saturation for increasing request arrival rates, demonstrating together with the other results that the framework is robust for high load scenarios in quantum networks.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>在量子网络中，如何用集中式任务调度替代传统分层架构，以减少纠缠生成请求的延迟并避免量子态退相干导致的保真度下降，同时在大规模拓扑中验证该框架的可扩展性？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>属于量子网络架构与量子通信方向，直接对应用户主线。本文提出资源中心的集中式任务调度方案替代分层堆栈架构，通过SeQUeNCe模拟器在瓶颈、网格、星型、caveman等多种大规模拓扑上验证。核心发现是：分层架构的严格时序约束会引入额外延迟并降低保真度，而集中式离线优先级调度能显著提升低延迟请求交付比例，且星型拓扑在高负载下快速饱和，网格和caveman拓扑更具鲁棒性。对于关注量子网络扩展性与纠缠分发效率的用户，该文提供了具体的架构替代方案和模拟数据支撑。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>量子网络由多个节点通过量子信道连接，每个节点配备量子存储器。传统分层架构像经典互联网协议栈一样逐级处理请求，导致时序约束严格、延迟累积。本文的集中式控制器像一个全局调度中心，实时跟踪所有节点的量子存储器可用状态，离线规划纠缠生成任务的优先级和执行顺序，类似于空中交通管制系统对航班的起降调度，从而减少排队延迟和量子态在存储器中的退相干损失。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出并验证了资源中心的集中式任务调度框架替代量子网络中的传统分层堆栈架构，通过SeQUeNCe模拟器在四种大规模拓扑（瓶颈、网格、星型、caveman）上系统评估了离线优先级调度的性能。发现分层架构的时序约束会引入额外延迟并降低纠缠保真度，而集中式调度能显著提升低延迟交付比例，且网格和caveman拓扑在高负载下比星型拓扑更具鲁棒性。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>用户关注量子网络中的纠缠分发与网络扩展性。本文直接针对量子网络控制架构的延迟和保真度瓶颈，提出集中式调度方案并给出大规模拓扑模拟数据，为量子网络从实验室小规模演示向可扩展架构演进提供了具体的工程参考。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。用户主线明确包含量子网络。本文直接研究量子网络控制架构，提出集中式任务调度替代分层堆栈以减少延迟和保真度损失，并在多种拓扑上进行了大规模模拟验证。其资源中心调度思路与量子网络中的纠缠分发、量子存储管理密切相关，对用户关注的网络扩展性问题有直接参考价值。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2605.03336v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2605.03336v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neural optimization for quantum architectures: graph embedding problems with Distance Encoder Networks — arXiv 2605.03565v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Neural optimization for quantum architectures: graph embedding problems with Distance Encoder Networks</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2605.03565v1" target="_blank">2605.03565v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.03565v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Chiara Vercellino, Giacomo Vitali, Paolo Viviani, Alberto Scionti, Andrea Scarabosio, Olivier Terzo, Edoardo Giusto, Bartolomeo Montrucchio</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-05-05 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">neutral-atoms</span><span class="tag">qubit-positioning</span><span class="tag">constrained-unit-disk-problem</span><span class="tag">neural-optimization</span><span class="tag">distance-encoder-network</span><span class="tag">embedding-loss</span><span class="tag">quantum-compilation</span><span class="tag">quantum-architecture</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Quantum machines are among the most promising technologies expected to provide significant improvements in the following years. However, bridging the gap between real-world applications and their implementation on quantum hardware is still a complicated task. One of the main challenges is to represent through qubits (i.e., the basic units of quantum information) the problems of interest. According to the specific technology underlying the quantum machine, it is necessary to implement a proper representation strategy, generally referred to as embedding. This paper introduces a neural-enhanced optimization framework to solve the constrained unit disk problem, which arises in the context of qubits positioning for neutral atoms-based quantum hardware. The proposed approach involves a modified autoencoder model, i.e., the Distances Encoder Network, and a custom loss, i.e., the Embedding Loss Function, respectively, to compute Euclidean distances and model the optimization constraints. The core idea behind this design relies on the capability of neural networks to approximate non-linear transformations to make the Distances Encoder Network learn the spatial transformation that maps initial non-feasible solutions of the constrained unit disk problem into feasible ones. The proposed approach outperforms classical solvers, given fixed comparable computation times, and paves the way to address other optimization problems through a similar策略.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>中性原子量子硬件中，如何将量子比特的物理位置布局问题（约束单位圆盘问题）转化为神经网络可学习的优化任务，以超越传统求解器的性能？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>该文属于量子编译与量子架构优化方向，直接关联用户主线。作者针对中性原子量子硬件中的量子比特排布问题——约束单位圆盘问题（CUDP），提出了一种神经增强优化框架。核心方法是Distance Encoder Network（改进自编码器）和Embedding Loss Function，利用神经网络的非线性逼近能力将初始不可行解映射为可行解。关键发现是该方法在固定计算时间内超越了经典求解器，为量子架构中的其他优化问题提供了可扩展的神经网络策略。对用户而言，中性原子平台的量子比特排布和编译优化是用户主线中的量子编译控制方向，本文将深度学习引入量子硬件布局优化，代表了编译层与机器学习融合的前沿趋势，具有直接参考价值。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>中性原子量子处理器中，原子被光镊捕获并排列在二维平面上。由于原子间的相互作用范围有限，量子门只能在距离足够近的原子对之间执行。约束单位圆盘问题（CUDP）要求将代表量子比特的原子放置在平面上，使得相互作用范围内的原子对形成所需的量子电路连接图，同时满足最小间距约束（避免原子重叠或相互作用过强）。这是一个组合几何优化问题，经典求解器在大规模下效率低下。本文提出的Distance Encoder Network是一种改进的自编码器，它学习一种非线性空间变换：将随机初始化的原子位置（通常不可行，即存在重叠或缺失连接）映射到满足所有约束的可行排布。Embedding Loss Function同时惩罚原子间距离过小（违反最小间距）和距离过大（缺失必要连接），引导网络收敛到高质量解。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>本文的主要贡献包括：第一，将中性原子量子硬件中的量子比特排布问题形式化为约束单位圆盘问题（CUDP），明确了该问题在量子架构优化中的核心地位；第二，提出了Distance Encoder Network，一种改进的自编码器架构，利用神经网络的非线性逼近能力学习从不可行解到可行解的空间变换；第三，设计了Embedding Loss Function，同时编码欧氏距离计算和约束优化目标，使网络在训练过程中自动满足物理约束；第四，实验证明在固定计算时间内，该方法超越了经典求解器的性能，为大规模量子架构优化提供了可扩展的神经网络方案；第五，指出该框架可推广到其他量子架构优化问题。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>该文与用户量子编译控制主线直接相关：中性原子平台的量子比特排布是编译层必须解决的核心问题，直接影响量子电路的映射效率和门保真度。本文将深度学习引入量子硬件布局优化，代表了编译层与机器学习融合的前沿趋势。Distance Encoder Network和Embedding Loss的设计思路对中性原子处理器的硬件-软件协同设计具有直接参考价值，可作为编译工具链中的布局优化模块。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。该文直接针对中性原子量子硬件的量子比特排布优化问题，属于用户主线中的量子编译控制方向。将神经网络引入量子架构优化是当前编译层与机器学习融合的前沿趋势，对中性原子平台的硬件-软件协同设计有直接参考价值。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2605.03565v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2605.03565v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

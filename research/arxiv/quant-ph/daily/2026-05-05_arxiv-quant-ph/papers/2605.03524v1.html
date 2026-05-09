@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BBQ-mIS: a parallel quantum algorithm for graph coloring problems — arXiv 2605.03524v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>BBQ-mIS: a parallel quantum algorithm for graph coloring problems</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2605.03524v1" target="_blank">2605.03524v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.03524v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Chiara Vercellino, Giacomo Vitali, Paolo Viviani, Edoardo Giusto, Alberto Scionti, Andrea Scarabosio, Olivier Terzo, Bartolomeo Montrucchio</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-05-05 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">graph-coloring</span><span class="tag">maximum-independent-set</span><span class="tag">rydberg-atoms</span><span class="tag">neutral-atom-qc</span><span class="tag">hybrid-quantum-classical</span><span class="tag">branch-and-bound</span><span class="tag">parallel-computing</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Among the limitations of current quantum machines, the qubits count represents one of the most critical challenges for porting reasonably large computational problems, such as those coming from real-world applications, to the scale of the quantum hardware. In this regard, one possibility is to decompose the problems at hand and exploit parallelism over multiple size-limited quantum resources. To this purpose, we designed a hybrid quantum-classical algorithm, i.e., BBQ-mIS, to solve graph coloring problems on Rydberg atoms quantum machines. The BBQ-mIS algorithm combines the natural representation of Maximum Independent Set (MIS) problems onto the machine Hamiltonian with a Branch&amp;Bound (BB) approach to identify a proper graph coloring. In the proposed solution, the graph representation emerges from qubit interactions (qubits represent vertexes of the graph), and the coloring is then retrieved by iteratively assigning one color to a maximal set of independent vertexes of the graph, still minimizing the number of colors with the Branch&amp;Bound approach. We emulated real quantum hardware onto an IBM Power9-based cluster, with 32 cores/node and 256 GB/node, and exploited an MPI-enhanced library to implement the parallelism for the BBQ-mIS algorithm. Considering this use case, we also identify some technical requirements and challenges for an effective HPC-QC integration. The results show that our problem decomposition is effective in terms of graph coloring solutions quality, and provide a reference for applying this methodology to other quantum technologies or applications.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>在量子比特数量受限的条件下，如何通过分支定界与最大独立集的自然映射相结合，实现图着色问题在中性原子量子机上的并行混合求解？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>本文属于中性原子量子计算与量子-经典混合算法方向。作者提出BBQ-mIS算法，将图着色问题分解为最大独立集子问题，利用Rydberg原子量子机的自然哈密顿量映射实现迭代着色，并通过MPI实现多量子资源并行。在IBM Power9集群上的模拟表明该分解策略在解质量上有效。对于关注中性原子应用的研究者，该工作展示了如何将组合优化问题映射到Rydberg平台，但当前仅为模拟结果，尚未在真实中性原子硬件上验证。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>想象一张需要着色的地图，每个区域是一个顶点，相邻区域不能同色。Rydberg原子阵列就像一张天然的「冲突检测网」——当两个原子靠得太近时，它们会互相排斥（Rydberg阻塞效应），这恰好对应图中不相邻顶点可以同色。算法通过分支定界迭代地找出最大独立集，每次为一组不相邻的顶点分配一种颜色，直到整张地图着色完成。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出BBQ-mIS混合量子-经典算法，将图着色问题通过最大独立集自然映射到Rydberg原子哈密顿量，结合分支定界实现迭代着色，并通过MPI实现多量子资源并行，在集群模拟中验证了分解策略的有效性。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>用户重点关注中性原子量子计算，本文直接面向Rydberg平台设计组合优化算法，利用Rydberg阻塞效应与MIS问题的天然对应关系，是中性原子应用研究的具体范例。HPC-QC集成的讨论也对中性原子系统的规模化部署有参考价值。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。用户主线明确包含中性原子量子计算，本文直接在Rydberg原子量子机上求解图着色问题，利用MIS与Rydberg哈密顿量的自然对应关系，是中性原子平台应用层的典型工作。同时涉及HPC-QC集成，对理解中性原子系统的规模化使用有参考意义。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2605.03524v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2605.03524v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

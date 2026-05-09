@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harnessing DEN models for quantum computing tasks on neutral atom QPUs — arXiv 2605.03503v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Harnessing DEN models for quantum computing tasks on neutral atom QPUs</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2605.03503v1" target="_blank">2605.03503v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.03503v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Chiara Vercellino, Giacomo Vitali, Paolo Viviani, Alberto Scionti, Olivier Terzo, Bartolomeo Montrucchio</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-05-05 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">neutral-atom-qc</span><span class="tag">unit-disk-graph</span><span class="tag">graph-embedding</span><span class="tag">distance-encoder-network</span><span class="tag">pasqal-orion-alpha</span><span class="tag">quera-aquila</span><span class="tag">quantum-machine-learning</span><span class="tag">graph-coloring</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+We present our work on effectively representing unit-disk graphs on the registers of neutral atom quantum machines. Specifically, we aimed to embed graphs corresponding to proteins and cellular antenna networks into unit-disk graphs, ensuring compatibility with the registers of two real QPUs: Orion Alpha by PASQAL and Aquila by QuEra. To address machine-specific constraints, we made adjustments and integrated Distance Encoder Networks (DEN) from our previous work. Despite these challenges, we successfully embedded up to 76% of protein-representing graphs for a quantum machine learning classification task on the Aquila QPU, and all subgraphs derived from 90 antenna geographical positions in Turin, Italy, on the Orion Alpha QPU. In the latter case, the graphs represented instances of the graph coloring problem, which we tackled using the hybrid quantum-classical algorithm BBQ-mIS. These promising results underscore the effectiveness and versatility of our embedding approach for representing unit-disk graphs on neutral atom quantum computers across diverse applications.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何利用距离编码网络将真实世界图结构（蛋白质网络、蜂窝天线网络）有效嵌入中性原子量子处理器的单位圆盘图寄存器中，并在真实硬件上完成量子机器学习与图着色任务？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>本文属于中性原子量子计算应用方向。作者将距离编码网络（DEN）与中性原子平台结合，实现了蛋白质图和蜂窝天线网络图到单位圆盘图的嵌入，并在PASQAL Orion Alpha和QuEra Aquila两台真实中性原子QPU上分别完成了量子机器学习分类和图着色任务。蛋白质图嵌入率达76%，天线网络子图全部成功嵌入。对于关注中性原子应用的研究者，该工作展示了从真实数据到中性原子硬件的端到端映射能力，是应用层的重要进展。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>想象一张城市地图，上面布满了蜂窝天线的位置点，某些天线之间需要避免信号干扰。中性原子阵列中的原子就像这些天线，当两个原子距离足够近时，它们之间可以发生相互作用（Rydberg阻塞）。距离编码网络（DEN）的作用就像一位「图结构翻译官」，将真实世界的不规则图结构翻译成中性原子硬件能理解的「单位圆盘图」语言——确保每个顶点都能在原子阵列中找到合适的位置，同时保持原有的连接关系。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>将距离编码网络与中性原子平台结合，实现了蛋白质网络和蜂窝天线网络到单位圆盘图的高效嵌入，在PASQAL Orion Alpha和QuEra Aquila两台真实QPU上分别完成了量子机器学习分类（76%嵌入率）和图着色任务，展示了从真实数据到中性原子硬件的端到端映射能力。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>用户重点关注中性原子量子计算，本文直接在PASQAL和QuEra两台主流中性原子QPU上运行真实应用任务，涉及图嵌入、量子机器学习等前沿应用方向，是理解中性原子平台实际数据处理能力的直接参考。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。用户主线明确包含中性原子量子计算，本文直接在PASQAL和QuEra两台真实中性原子QPU上运行任务，涉及图嵌入、量子机器学习、图着色等具体应用，是中性原子平台从理论走向实际数据处理的典型工作。与同一批的BBQ-mIS论文形成系列，展示了该团队在中性原子应用上的持续投入。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2605.03503v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2605.03503v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

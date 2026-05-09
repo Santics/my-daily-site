@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design and Analysis of Quantum Dual-Containing CSS LDPC Codes based on Quasi-Dyadic Matrices — arXiv 2605.03631v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Design and Analysis of Quantum Dual-Containing CSS LDPC Codes based on Quasi-Dyadic Matrices</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2605.03631v1" target="_blank">2605.03631v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.03631v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Alessio Baldelli, Marco Baldi, Massimo Battaglioni, Franco Chiaraluce, Paolo Santini</span><br>
+<span><strong>分类:</strong> cs.IT, quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-05-05 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">quantum-error-correction</span><span class="tag">css-ldpc-codes</span><span class="tag">quasi-dyadic-matrices</span><span class="tag">dual-containing-codes</span><span class="tag">belief-propagation-decoding</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Building scalable quantum computers requires quantum error-correcting codes that enable reliable operations in the presence of noise. Motivated by such need, this paper introduces two constructions of high-rate, quantum dual-containing (DC) Calderbank-Shor-Steane (CSS) low-density parity-check (LDPC) codes based on quasi-dyadic matrices. Their DC structure enables the transversal implementation of the Hadamard gate, and, jointly with the sparsity of their parity-check matrices enable low-complexity decoding via a standard binary belief-propagation algorithm. We provide several theoretical results concerning the cycle properties of these CSS codes. We also investigate their automorphism groups as well as their minimum distance. Furthermore, through numerical simulations, we show that the quantum CSS LDPC codes obtained through these constructions achieve better finite-length误码率性能 than existing DC codes across different block lengths and code rates.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何基于准Dyadic矩阵构造高码率、双包含结构的CSS LDPC量子纠错码，使其支持Hadamard门的横式实现并通过置信传播低复杂度译码？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>本文属于量子纠错码构造与编码理论方向。研究提出了两种基于准Dyadic矩阵的量子双包含CSS LDPC码构造，使Hadamard门可横式实现且校验矩阵稀疏支持二进制置信传播译码。关键成果是循环性质的理论分析、自同构群和最小距离研究，以及数值验证显示其在多种码长和码率下优于现有DC码。对用户而言，该工作直接关联量子纠错主线，LDPC码是当前量子纠错研究的核心方向之一，但构造方法为代数编码理论，需评估是否适配中性原子平台的物理约束。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>准Dyadic矩阵是一种具有特定对称结构的矩阵，其元素由少量基矩阵通过循环移位生成。将其用于构造CSS LDPC码时，校验矩阵保持稀疏性以支持置信传播译码，同时满足双包含条件使得Hadamard门可以横式实现，避免了逻辑门编译中的复杂魔术态注入。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出了两种基于准Dyadic矩阵的量子双包含CSS LDPC码构造方法，理论上分析了码的循环性质、自同构群和最小距离，并通过数值模拟证明其在多种码长和码率下优于现有双包含码的有限长度误码率性能。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>用户关注量子纠错，LDPC码是容错量子计算的核心方向。该工作的高码率构造和低复杂度译码特性对中性原子平台的纠错架构设计有参考意义，但需评估准Dyadic结构是否适配中性原子的二维或三维晶格连接约束。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。该工作直接聚焦量子纠错码的构造与性能分析，LDPC码是当前量子纠错研究的前沿方向，与用户关注的量子纠错主线高度相关。虽然基于准Dyadic矩阵的代数构造方法需进一步评估是否适配中性原子平台的物理约束，但其高码率和低复杂度译码特性对任何量子计算平台都有参考价值。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2605.03631v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2605.03631v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

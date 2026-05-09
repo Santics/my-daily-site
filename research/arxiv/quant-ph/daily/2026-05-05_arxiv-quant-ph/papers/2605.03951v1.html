@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Factoring 2048 bit RSA integers with a half-million-qubit modular atomic processor — arXiv 2605.03951v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Factoring 2048 bit RSA integers with a half-million-qubit modular atomic processor</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2605.03951v1" target="_blank">2605.03951v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.03951v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Nicolas D. Sawaya, Erik J. Gustafson, Timothy J. Proctor, Karolyhazy L. M. Radtke, T. E. Skinner, Christopher M. Wilson, Wim van Dam</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-05-05 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">shor-algorithm</span><span class="tag">modular-atomic-processor</span><span class="tag">rsa-factoring</span><span class="tag">neutral-atom</span><span class="tag">distributed-compilation</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Shor's algorithm is one of the most promising applications of quantum computers. However, since ~10^6 physical qubits are believed to be required for established approaches, the algorithm will need to be distributed across many modules. In this paper, we provide a distributed compilation of Shor's algorithm for a modular atomic processor architecture with ~5×10^5 qubits. We show that by using a modular architecture with nearest-neighbor connectivity, we can factor 2048-bit RSA integers with a quantum circuit depth of O(n^3) and a total gate count that is competitive with monolithic superconducting approaches. Our analysis includes detailed resource estimates, error correction overhead, and communication costs between modules. We also discuss the practical challenges in building such a system, including the need for high-fidelity inter-module connections and the effects of crosstalk between modules. Our results suggest that modular atomic processors could provide a viable path to scalable quantum computing for cryptographic applications.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>在约50万量子比特的模块化原子处理器架构上，如何通过分布式编译实现Shor算法对2048位RSA整数的分解，并优化模块间通信成本和纠错开销？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>该工作属于量子算法与可扩展架构方向，研究模块化原子处理器上的Shor算法分布式编译。在约50万量子比特的中性原子模块化架构上实现2048位RSA整数分解，使用最近邻连接的模块架构，量子电路深度为O(n^3)，总门数与单片超导方案竞争。包含详细的资源估算、纠错开销和模块间通信成本分析。讨论高保真度模块间连接和串扰等实际建造挑战。表明模块化原子处理器可为密码学应用的可扩展量子计算提供可行路径。直接涉及中性原子平台和量子算法实现。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>将模块化原子处理器视为由多个中性原子模块组成的量子计算阵列，每个模块如同一个独立的量子计算单元，通过高保真度的光镊连接通道相互通信。Shor算法的分布式编译如同将庞大的分解任务分解成可在各模块上并行执行的子电路，模块间的纠缠分发如同在单元之间建立量子信息高速公路。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出50万量子比特模块化原子处理器上Shor算法的分布式编译方案；实现2048位RSA整数分解，电路深度O(n^3)；详细分析资源估算、纠错开销和模块间通信成本；讨论高保真度模块间连接和串扰等实际挑战；表明模块化原子处理器可为密码学应用提供可扩展量子计算路径。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>直接涉及中性原子量子计算平台，其模块化架构设计和分布式编译方法对用户关注的中性原子可扩展系统有明确参考价值。50万量子比特的资源估算和纠错开销分析对理解中性原子平台的实用化边界有直接帮助。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。直接涉及中性原子量子计算平台和Shor算法的分布式编译实现，50万量子比特模块化架构对理解中性原子平台的可扩展性和量子算法资源估算有直接参考价值。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2605.03951v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2605.03951v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

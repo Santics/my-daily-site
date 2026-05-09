@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FTPrimitiveBench: A Benchmark Suite For Logical Computation Under Hardware-Motivated and Biased Noise Models — arXiv 2605.04049v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>FTPrimitiveBench: A Benchmark Suite For Logical Computation Under Hardware-Motivated and Biased Noise Models</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2605.04049v1" target="_blank">2605.04049v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.04049v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Shuwen Kan, Adrian Harkness, Zefan Du, Rod Rofougaran, Sean Garner, Chenxu Liu, Ying Mao, Samuel Stein</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-05-05 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">surface-code</span><span class="tag">lattice-surgery</span><span class="tag">biased-noise</span><span class="tag">logical-primitives</span><span class="tag">hardware-aware-qec</span><span class="tag">stabilizer-simulation</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Fault-tolerant quantum computing requires understanding how error-correcting codes perform on diverse physical hardware. This is typically assessed via noisy stabilizer simulation of logical circuits at HPC scale, combined with a noise model that yields a logical error rate for the relevant code distances and depths. The uniform depolarizing model is the standard baseline, but its homogeneous assumptions fail to capture the heterogeneity, asymmetries, and correlations of real devices, where Pauli, measurement, and spatio-temporal errors are not weakly coupled. Yet these same structured features create opportunities for joint code-hardware co-design, motivating noise models that more faithfully reflect target hardware while remaining tractable to simulate.
+  We introduce FTPrimitiveBench, a systematic benchmarking approach for studying how logical primitives interact with hardware-motivated noise. It supports both custom specifications and representative structured noise families: Pauli bias, measurement bias, and spatial or spatio-temporal non-uniformity -- together with generators for core surface-code Clifford primitives: logical memory, lattice surgery, transversal logical Hadamard, and the logical phase gate via lattice surgery. We find that structured noise affects these primitives in qualitatively distinct ways, with outcomes shaped by the interplay between noise model, primitive, and decoder choice. These results extend memory benchmarks to active logical computation, where the interaction between noise structure and primitive implementation matters. By standardizing the link between noise-model specification and primitive construction, FTPrimitiveBench enables reproducible comparative studies of QEC protocols and decoders, supporting hardware-aware co-design of fault-tolerant architectures. Code: https://github.com/ShuwenKan/FTPrimitiveBench.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>在硬件驱动的非均匀噪声模型下，如何系统性地评估表面码逻辑基元（如晶格手术、横向Hadamard门）的容错性能，并建立噪声模型与基元实现之间的标准化关联？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>量子纠错与容错计算方向。该工作提出了一套面向硬件驱动噪声的容错基元基准测试框架FTPrimitiveBench，支持Pauli偏置、测量偏置和时空非均匀噪声族。核心发现是结构化噪声对不同逻辑基元产生定性不同的影响，且结果强烈依赖于噪声模型、基元实现和译码器选择三者之间的耦合。对于从事量子纠错和编译控制的研究者，该框架为硬件感知的码-硬件协同设计提供了可复现的比较工具，直接关联到如何为真实物理平台选择和优化纠错协议。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>在真实量子硬件中，错误并非均匀分布：某些Pauli错误更频繁，测量结果可能系统性偏斜，不同空间位置和时刻的噪声强度也不同。该工作将这些真实特征抽象为可模拟的结构化噪声族，并观察它们如何与表面码的晶格手术、横向Hadamard等逻辑操作相互作用——噪声的结构性会改变不同基元的错误率排序，这意味着为特定硬件定制纠错协议比使用通用方案更有效。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出FTPrimitiveBench框架，将内存基准测试扩展到主动逻辑计算领域；系统刻画了Pauli偏置、测量偏置和时空非均匀噪声对四种核心表面码逻辑基元的差异化影响；揭示了噪声模型、基元实现和译码器选择三者之间的非平凡耦合关系，为硬件感知的码-硬件协同设计提供了可复现的评估工具。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>用户关注量子纠错和编译控制，该工作直接涉及表面码逻辑基元在真实噪声下的性能评估，为选择编译策略和纠错协议提供了量化依据，对中性原子或超导平台均适用。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。用户主线聚焦量子纠错与量子编译控制，该工作正是为真实硬件噪声下的表面码逻辑操作建立基准测试框架，涉及晶格手术、横向门等核心编译基元，与用户研究直接相关。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2605.04049v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2605.04049v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Space-Time Tradeoffs of Pauli-Based Computation in Distributed qLDPC Architectures — arXiv 2605.03854v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Space-Time Tradeoffs of Pauli-Based Computation in Distributed qLDPC Architectures</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2605.03854v1" target="_blank">2605.03854v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.03854v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Naphan Benchasattabuse, Michal Hajdušek, Rodney Van Meter</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-05-05 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">distributed-quantum-computing</span><span class="tag">pauli-based-computation</span><span class="tag">qldpc</span><span class="tag">surface-code</span><span class="tag">q-fly-architecture</span><span class="tag">space-time-tradeoff</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Pauli-based computation (PBC) provides a universal framework for executing fault-tolerant quantum algorithms using Pauli测量 and magic states. In monolithic architectures, the serialized nature of PBC directly ties runtime to a circuit's T-gate count, making it slow on metrics like circuit depth. However, in distributed quantum computing (DQC), the primary bottleneck is remote Bell pair generation. We investigate the tradeoff between error-correcting code block size and execution time of PBC within the Q-Fly architecture at intermediate scale, limiting individual node capacities to reflect near-term constraints while supplying abundant network nodes to minimize routing and compilation effects. We find that large qLDPC code blocks outperform the surface code baseline in terms of execution time by up to an order of magnitude when evaluated against quantum优化 algorithms. By moving groups of qubits to free nodes to bypass the sequential bottleneck of PBC, the large-block architecture minimizes网络 operations and achieves faster overall execution. This demonstrates that PBC is a competitive model in the distributed regime, establishing it as a practical compilation baseline for qLDPC systems before invoking more efficient transversal or homological gates.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>在分布式量子计算的Q-Fly架构中，如何利用大码块qLDPC编码和节点间量子比特迁移策略，克服Pauli-based计算的顺序瓶颈，实现比表面码快一个数量级的执行时间？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>分布式量子计算与量子纠错编译方向。该工作研究分布式架构中Pauli-based计算（PBC）的时空权衡，发现在Q-Fly架构中使用大码块qLDPC编码可将执行时间比表面码基线提升一个数量级。核心策略是通过将量子比特组迁移到空闲节点来绕过PBC的顺序瓶颈，最小化网络操作。对于关注量子编译控制和分布式量子计算的研究者，该工作为qLDPC系统的实用编译基线提供了分析，揭示了分布式环境下PBC的竞争力，对量子纠错码选择和编译策略优化有参考价值。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>在分布式量子计算中，多个量子计算节点通过量子网络连接，每个节点运行纠错码保护逻辑量子比特。Pauli-based计算通过顺序的Pauli测量和magic态注入实现通用计算，在单体架构中这导致运行时间与T门数量成正比。该工作发现，在分布式架构中可以通过将量子比特组动态迁移到空闲节点来绕过顺序瓶颈，同时使用大码块qLDPC编码减少所需的网络操作次数，从而将整体执行时间比表面码基线提升一个数量级。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>在Q-Fly分布式架构中分析Pauli-based计算的时空权衡，证明大码块qLDPC编码在执行时间上比表面码基线快一个数量级；提出通过量子比特组迁移到空闲节点绕过PBC顺序瓶颈的策略；建立PBC在分布式环境下的竞争力，为qLDPC系统提供了实用的编译基线分析。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>用户关注量子纠错和编译控制，该工作直接涉及分布式架构中的纠错码选择（qLDPC vs 表面码）和编译执行策略优化，对理解不同纠错码在分布式环境下的性能权衡有重要参考价值，适用于多种物理平台包括中性原子。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。用户主线包含量子纠错和量子编译控制，该工作直接研究分布式架构中qLDPC编码与Pauli-based计算的时空权衡，涉及纠错码选择、编译策略和分布式执行优化，与用户研究高度相关。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2605.03854v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2605.03854v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

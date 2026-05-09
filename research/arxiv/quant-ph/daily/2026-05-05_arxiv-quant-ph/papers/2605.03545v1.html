@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shortest Path in Pauli Forest -- An Algorithm for Decomposing Pauli Exponentials to Quantum Circuits — arXiv 2605.03545v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Shortest Path in Pauli Forest -- An Algorithm for Decomposing Pauli Exponentials to Quantum Circuits</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2605.03545v1" target="_blank">2605.03545v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.03545v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Lauri Vuorenkoski, Arianne Meijer-van de Griend</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-05-05 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">pauli-exponential-decomposition</span><span class="tag">circuit-synthesis</span><span class="tag">architecture-aware-compilation</span><span class="tag">qubit-placement</span><span class="tag">quantum-compilation</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Decomposing Pauli exponentials efficiently to quantum circuits has been the subject of intense research in recent years. Pauli exponentials are an essential component of many different quantum algorithms. Due to the error-prone nature of current and near term quantum devices, it is crucial that quantum circuits are as compact as possible. Several different types of algorithms have been developed to decompose Pauli exponentials into as short circuits as possible. We propose a novel algorithm for architecture-aware synthesis of Pauli exponentials that also determines the initial qubit placement on the device. We call this the Shortest Path in Pauli Forest algorithm. The results show an improved CNOT count and runtime for both random Pauli exponentials and molecular ansätze.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何在考虑硬件架构约束的前提下，将Pauli指数算符高效分解为最短的量子电路，并同时确定最优的初始量子比特排布？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>本文属于量子编译与电路综合方向。作者提出了一种名为「Pauli森林最短路径」的新算法，用于架构感知的Pauli指数算符分解，并联合优化初始量子比特放置。该方法在随机Pauli指数和分子拟设上均实现了CNOT门数量和运行时间的改善。对于关注量子编译优化的研究者，该算法在电路紧凑性与硬件适配之间提供了新的权衡思路，但距离直接应用于中性原子平台的编译流程尚需进一步适配。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>想象一片由Pauli算符构成的森林，每棵树代表一种Pauli弦的演化路径。算法的目标是在这片森林中找到从根到叶的最短路径，同时考虑底层硬件的物理连通性约束——就像为每个量子比特在芯片上安排一个「座位」，使得森林中的信息流动所需经过的「桥梁」（CNOT门）数量最少。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出Pauli森林最短路径算法，首次将Pauli指数分解与初始量子比特放置联合优化，在架构感知的前提下实现了比现有方法更少的CNOT门数量和更快的运行时间，并在随机实例和分子拟设上进行了验证。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>用户关注量子编译控制，Pauli指数分解是变分量子算法和量子模拟中编译流程的关键瓶颈。本文的架构感知联合优化思路可为中性原子平台的编译策略设计提供参考，尤其是当中性原子设备需要优化原子移动和门序列时。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-medium">中相关</span>。量子编译控制是用户主线之一，本文聚焦Pauli指数分解这一编译核心任务，且明确考虑架构感知与初始排布优化，对理解编译层面的电路压缩技术有直接参考价值。但算法目前面向通用门模型，未针对中性原子的特定连通性或移动约束做适配。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2605.03545v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2605.03545v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

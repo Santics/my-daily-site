@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fault-tolerant measurement-device-independent quantum key distribution with noisy non-Gaussian error correction — arXiv 2605.03292v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Fault-tolerant measurement-device-independent quantum key distribution with noisy non-Gaussian error correction</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2605.03292v1" target="_blank">2605.03292v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.03292v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Zhiyue Zuo, Stefano Pirandola</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-05-05 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">gkp-code</span><span class="tag">mdi-qkd</span><span class="tag">continuous-variable</span><span class="tag">quantum-error-correction</span><span class="tag">quantum-network</span><span class="tag">finite-size-security</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+It is well known that the repeater node is an essential ingredient for the future global quantum network, which will enable high-rate private communication and entanglement distribution over very long distances. The near-term repeater architecture uses the measurement-based node that operate without both entanglement and quantum memory, which is the main idea of the measurement-device-independent quantum key distribution (MDI-QKD) protocol. The MDI-QKD protocol removes the trust条件 from the inter repeaters, while its continuous variable (CV) version, when proposed, benefited from its deterministic nature, compatible with the classical devices, and shows a high rate for the short-range local area network (LAN). Whilst the theoretical backbone of CV-MDI-QKD protocol is well established, its secure transmission range is yet limited for practical LAN. In this study, we propose an enhanced scheme for the asymmetric CV-MDI-QKD protocol by using Gottesman-Kitaev-Preskill (GKP) oscillators-to-oscillators codes, where both loss error and operation error are suppressed to below the break-even point, without any delays caused by classical heralding signals. In particular, the proposed scheme, which correlates the noises of the data and ancilla via a pair of symplectic transforms, extracts the error syndromes from stabilizer measurements on the ancilla mode and informs the data mode for a corrective displacement. Numerical analysis shows the composable finite-size security of the protocol under the collective Gaussian attack, encompassing noiseless and noisy GKP states, with both wired (i.e., fiber-based) and wireless (i.e., free-space) configurations. In addition, we demonstrate that the residual errors of the GKP code can be further reduced by the concatenation method but has a trade-off between the layers number and the finite GKP squeezing.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何在连续变量测量设备无关量子密钥分发（CV-MDI-QKD）中引入GKP纠错码，将损耗误差和操作误差同时抑制到盈亏平衡点以下，同时避免经典 herald 信号带来的延迟，并在有限码长下证明可组合安全性？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>属于量子通信与量子纠错交叉方向，直接对应用户主线。本文针对CV-MDI-QKD的安全传输距离受限问题，提出使用GKP振子-振子编码的增强方案，通过辛变换关联数据模式和辅助模式的噪声，从辅助模式的稳定子测量中提取差错综合征并反馈校正。数值分析证明了在集体高斯攻击下的可组合有限尺寸安全性，涵盖无噪和有噪GKP态，以及光纤和自由空间两种配置。对于关注量子纠错（GKP码）和量子网络（量子密钥分发中继）的用户，该文提供了具体的编码方案和安全性证明，具有直接参考价值。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>量子密钥分发网络由多个中继节点连接Alice和Bob。传统CV-MDI-QKD中，测量设备不可信，但损耗和操作误差限制了安全距离。本文引入GKP编码，将数据光子和辅助光子通过辛变换关联噪声，辅助光子上的稳定子测量提取差错综合征，像经典通信中的前向纠错一样实时反馈校正数据光子，从而将误差抑制到盈亏平衡点以下，无需等待经典herald信号，避免了延迟。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出基于GKP振子-振子编码的非对称CV-MDI-QKD增强方案，通过辛变换关联数据模式与辅助模式的噪声，从辅助模式稳定子测量中提取差错综合征并执行校正位移，将损耗误差和操作误差同时抑制到盈亏平衡点以下且无需经典herald延迟。数值证明了在集体高斯攻击下的可组合有限尺寸安全性，涵盖无噪和有噪GKP态，以及光纤与自由空间配置，并分析了级联层数与有限GKP压缩之间的权衡。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>用户关注量子纠错和量子网络。本文将GKP编码（一种重要的玻色子纠错码）应用于量子密钥分发中继协议，解决了CV-MDI-QKD的安全距离瓶颈，为量子网络的实用化通信链路提供了具体的编码方案和安全性保证。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。用户主线明确包含量子纠错和量子网络。本文将GKP编码（用户关注的纠错码类型之一）应用于CV-MDI-QKD协议，解决了损耗和操作误差的双重抑制问题，并给出了有限尺寸安全性证明。量子密钥分发是量子网络的核心应用之一，该文对量子通信中继架构的实用化有直接影响。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2605.03292v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2605.03292v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

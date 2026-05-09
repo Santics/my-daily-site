@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fast, accurate, high-resolution simulation of large-scale Fermi-Hubbard models on a digital quantum processor — arXiv 2605.04025v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Fast, accurate, high-resolution simulation of large-scale Fermi-Hubbard models on a digital quantum processor</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2605.04025v1" target="_blank">2605.04025v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.04025v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Gavin S. Hartnett, Khadijeh Sona Najafi, Aleksei Khindanov, Haoran Liao, Michael Schutzman, Michael R. Hush, Michael J. Biercuk, Yuval Baum</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-05-05 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">digital-quantum-simulation</span><span class="tag">fermi-hubbard</span><span class="tag">superconducting-qubit</span><span class="tag">trotter-steps</span><span class="tag">error-suppression</span><span class="tag">spin-charge-separation</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+We report experimental digital quantum simulation of the one-dimensional Fermi-Hubbard model on a superconducting quantum processor at a scale beyond the reach of exact statevector simulation and challenging for state-of-the-art tensor-network methods. We encode this problem using up to 120 qubits through an efficient mapping that reduces circuit complexity, and we improve accuracy through error suppression to simulate dynamical evolution using up to 90 Trotter steps. From a vacancy defect introduced in the middle of an $L=31$-site (62-qubit) N\'eel initial state, we directly observe spin-charge separation to $t=9$ in natural units using up to 90 Trotter steps, and quantitatively extract velocity ratios $v_c/v_s$ which match classical simulations across a range of model parameters. We then extend experiments to $L=60$ (120 qubits) and long evolution times to $t=6$ using 30 Trotter steps; Quantum-processor outputs agree quantitatively with approximate classical simulations performed using a time-dependent variational principle (TDVP) solver; increasing the TDVP bond dimension through $\chi= 4096$ expands the range of evolution times within which agreement has RMSE $\sim 1\%$ before the approaches diverge. Owing to the large scale of the simulation and the use of efficient overhead-free error-suppression techniques, for simulated evolution times at the limit of quantum/ classical agreement ($t\gtrsim 5$ in natural hopping units), the wall-clock runtime of the quantum processor is up to $3000\times$ faster than an optimized TDVP simulation using $\chi= 4096$. These results establish contemporary digital quantum processors as a versatile, quantitatively accurate, and competitive platform for the study of fermionic many-body dynamics in regimes where leading classical方法 can become prohibitively expensive.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何利用超导量子处理器实现大规模一维Fermi-Hubbard模型的数字量子模拟，在超越精确态矢模拟和当前张量网络方法可达的尺度上，获得与经典近似方法定量一致的动力学结果？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>量子模拟与超导量子计算方向。该工作在超导量子处理器上实现了多达120量子比特的一维Fermi-Hubbard模型数字模拟，使用高效编码映射和误差抑制技术实现90步Trotter演化。核心成果是在31格点（62量子比特）系统中直接观测到自旋-电荷分离现象，并定量提取速度与经典模拟吻合；在60格点（120量子比特）系统中量子处理器运行时间比优化TDVP模拟快3000倍。对于关注量子模拟的研究者，该工作展示了当前数字量子处理器在费米子多体动力学研究中的竞争力，为量子优越性在物理模拟领域的实现提供了实验证据。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>在一维晶格中，费米子之间的强关联导致激发分离：电荷激发以速度vc传播，自旋激发以速度vs传播，二者在空间上拉开距离。该工作使用超导量子处理器模拟这一物理过程，通过高效的Jordan-Wigner类型映射将费米子模型编码到量子比特上，再利用Trotter分解和误差抑制技术实现长达90步的演化，最终在量子处理器上直接观测到这种自旋-电荷分离的动力学特征。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>在超导量子处理器上实现了120量子比特的一维Fermi-Hubbard模型数字模拟，使用高效编码映射降低线路复杂度；通过误差抑制技术实现90步Trotter演化，在31格点系统中直接观测自旋-电荷分离并定量提取速度比；在60格点系统中展示量子处理器运行时间比优化TDVP模拟快3000倍，证明数字量子处理器在费米子多体动力学研究中的竞争力。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>用户关注量子模拟，该工作展示了超导平台上大规模费米子模型的数字模拟能力，包括高效编码映射、误差抑制和Trotter演化策略，这些技术思路对中性原子等平台的量子模拟实现同样有参考价值。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。用户主线包含量子模拟，该工作展示了超导平台上大规模费米子模型的数字量子模拟，直接观测到自旋-电荷分离等物理现象，且与经典方法进行了定量比较，对量子模拟研究有重要参考价值。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2605.04025v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2605.04025v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reducing Postselection Overhead in Magic-State Cultivation by In-Patch Multiplexing — arXiv 2605.03616v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Reducing Postselection Overhead in Magic-State Cultivation by In-Patch Multiplexing</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2605.03616v1" target="_blank">2605.03616v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.03616v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Dongmin Kim, Jeonggeun Seo, Aniket Patra, Youngsun Han</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-05-05 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">magic-state-cultivation</span><span class="tag">fault-tolerant-quantum-computing</span><span class="tag">in-patch-multiplexing</span><span class="tag">postselection-overhead</span><span class="tag">logical-magic-states</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Fault-tolerant quantum computing requires high-fidelity logical magic states for implementing non-Clifford operations. Magic-state cultivation provides a lower-overhead route to logical magic-state preparation, but its efficiency is limited by postselection loss during the early injection-and-cultivation stages. In this work, we propose an in-patch multiplexing scheme that uses early-stage idle resources within a single logical patch to create multiple local cultivation opportunities. A candidate that passes the early stages is forwarded to the standard escape pathway, while the escape stage and the decoder-based acceptance procedure are kept identical to those of the single-site baseline. Under a uniform depolarizing noise model with idle noise, the proposed protocol substantially reduces the injection-and-cultivation discard rate and the expected number of attempts required to obtain an accepted early-stage candidate. At a physical error rate of $p=2\times10^{-3}$, the injection-and-cultivation expected attempts are reduced by $45.46\%$ for $d_1=3$ and by $72.91\%$ for $d_1=5$, relative to the single-site MSC baseline. In the direct full-cycle evaluation including escape, the expected attempts per kept logical output are further reduced by $49.04\%$ for $d_1=3$ and by $78.69\%$ for $d_1=5$ at the same physical error rate. The full-cycle cost curves are shifted toward smaller expected attempts, while the final logical-error behavior remains governed by the escape-stage gap threshold. These results show that in-patch multiplexing can reduce postselection overhead while preserving the standard magic-state cultivation framework.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何在魔术态培育的早期注入-培育阶段，利用单逻辑块内的空闲资源实现块内复用，从而在保持标准逃逸路径和译码接受流程不变的前提下显著降低后选择开销？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>本文属于容错量子计算与魔术态蒸馏方向。研究提出了一种块内复用方案，在单个逻辑块内利用早期阶段的空闲资源创建多个局部培育机会，通过标准逃逸路径和译码接受流程筛选候选态。关键成果是在物理误码率p=2e-3时，注入-培育阶段的期望尝试次数降低45%-73%，全周期成本降低49%-79%。对用户而言，该工作直接关联量子纠错和容错计算主线，魔术态培育是通用量子计算的关键瓶颈，降低开销对任何量子平台都有重要意义。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>在表面码等拓扑纠错码的一个逻辑块内，早期魔术态注入和培育阶段存在大量空闲的物理量子比特和稳定子测量资源。块内复用方案将这些空闲资源用于同时培育多个魔术态候选，每个候选独立通过早期阶段验证，通过的候选再进入标准的逃逸路径和译码接受流程，从而在不影响最终逻辑错误率的前提下指数级降低后选择丢弃率。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出了块内复用魔术态培育方案，利用单逻辑块内早期阶段的空闲资源创建多个局部培育机会，在保持标准逃逸路径和译码接受流程不变的前提下，将注入-培育阶段的期望尝试次数降低45%-73%（d1=3和d1=5），全周期成本降低49%-79%。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>用户关注量子纠错和容错量子计算，魔术态培育是实现通用非Clifford门的关键瓶颈。该工作的块内复用方案可直接应用于中性原子平台的纠错架构设计，通过降低后选择开销减少物理资源消耗和实验时间，对推进中性原子量子计算的实用化有重要意义。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。该工作直接聚焦容错量子计算中的魔术态培育开销优化，是量子纠错和通用量子计算的核心问题。魔术态蒸馏/培育是任何量子平台实现通用门集的必经之路，该方案通过块内复用显著降低后选择开销，对用户关注的量子纠错主线有直接参考价值。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2605.03616v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2605.03616v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>
