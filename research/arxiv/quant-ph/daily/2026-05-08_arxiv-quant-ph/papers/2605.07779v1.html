@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neural network quantum states in the grand canonical ensemble — arXiv 2605.07779v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Neural network quantum states in the grand canonical ensemble</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2605.07779v1" target="_blank">2605.07779v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.07779v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Anton Hul, Matija Medvidović, Juan Carrasquilla</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-05-08 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">neural-network-quantum-state</span><span class="tag">variational-monte-carlo</span><span class="tag">bosonic-system</span><span class="tag">grand-canonical</span><span class="tag">quantum-simulation</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Variational Monte Carlo calculations have recently reached state-of-the-art accuracy in the approximation of ground state properties of quantum many-body systems. Making use of flexible neural quantum states and automatic differentiation has bypassed traditional computational obstacles such as reliance on basis sets. In this paper, we propose a neural quantum state architecture capable of representing symmetric bosonic wavefunctions in Fock space, enabling the study of systems with variable particle number. By supplementing our variational state with Monte Carlo sampling and geometric optimization, we demonstrate competitive variational energies across an array of one- and two-dimensional systems, converging to the physical boson number under a set chemical potential. Our approach enables accurate estimates of one-body reduced density matrices, opening access to observables such as condensate fractions and radial density profiles from first principles. Our method opens the door to numerical predictions of key measurable quantities in practical grand canonical systems.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何在Fock空间中构建对称玻色子神经网络量子态架构，以在变粒子数系统中实现巨正则系综下的变分蒙特卡洛模拟？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>该工作提出了可在Fock空间中表示对称玻色子波函数的神经网络量子态架构，实现了巨正则系综下变粒子数系统的变分蒙特卡洛计算。作者结合蒙特卡洛采样与几何优化，在一维和二维系统中获得了有竞争力的变分能量，并在设定化学势下收敛到物理玻色子数。该方法可精确估算单体约化密度矩阵，从而从第一性原理获取凝聚体分数和径向密度分布等可观测量。该论文对量子多体模拟器设计有直接方法价值，与中性原子量子模拟软件栈高度相关。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>该架构在Fock空间中用神经网络参数化对称玻色子波函数，允许粒子数随化学势变化。核心图像是：神经网络的输出定义了每个Fock态的振幅，通过蒙特卡洛采样在巨正则系综中遍历不同粒子数的配置空间。几何优化器调整网络参数以最小化能量期望值，系统在固定化学势下自发收敛到最优粒子数。由此可从第一性原理提取凝聚体分数和密度分布等物理可观测量。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出了在Fock空间中表示对称玻色子波函数的神经网络量子态架构；实现了巨正则系综下变粒子数系统的变分蒙特卡洛计算；在一维和二维系统中获得了有竞争力的变分能量；发展了从第一性原理估算单体约化密度矩阵、凝聚体分数和径向密度分布的方法。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>该论文的神经网络量子态方法可直接用于中性原子量子模拟器的验证与基准测试，特别是玻色子系统（如Bose-Hubbard模型）的经典模拟。巨正则系综框架也对中性原子平台中粒子数涨落的模拟有实际参考价值，可帮助评估模拟器在不同粒子数下的性能。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。该论文直接研究量子多体系统的神经网络量子态模拟，提出了巨正则系综下的对称玻色子波函数表示方法。神经网络量子态是经典模拟量子系统的前沿工具，对中性原子平台的量子模拟器设计与验证有直接方法借鉴价值。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2605.07779v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2605.07779v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

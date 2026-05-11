@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Price and Payoff: Non-Determinism in Fault Tolerant Quantum Computation — arXiv 2605.07983v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Price and Payoff: Non-Determinism in Fault Tolerant Quantum Computation</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2605.07983v1" target="_blank">2605.07983v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.07983v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Aditi Awasthi, Sayam Sethi, Sahil Khan, Gokul Subramanian Ravi, Jonathan Mark Baker</span><br>
+<span><strong>分类:</strong> quant-ph</span><br>
+<span><strong>发布时间:</strong> 2026-05-08 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">fault-tolerant-quantum-computing</span><span class="tag">magic-state-distillation</span><span class="tag">resource-planning</span><span class="tag">stochastic-modeling</span><span class="tag">qec-architecture</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+A promising approach to achieving scalable fault-tolerant quantum computation is the use of quantum error correction (QEC) codes augmented with magic states i.e. resource states produced via distillation, cultivation, or $R_z$ synthesis and teleported into the circuit as needed. Because magic-state production dominates the space-time volume of fault-tolerant programs, system architects must decide how many production单元来分配。当前方法依赖确定性分析，要么为最坏情况峰值需求预留资源（浪费从不会同时使用的工厂上的宝贵量子比特资源），要么假设平均需求，这会延长执行时间。在本工作中，我们构建了一个将电路调度与不同随机魔法态生产模型耦合的仿真框架，并用它量化了非确定性对电路执行的影响。我们表明非确定性具有确定性模型无法捕捉的双重效应：它膨胀总执行时间（代价），同时压缩每周期峰值资源需求（回报）。对于基于蒸馏的架构，这种需求平滑改变了时空最优配置点：相比确定性分析预测，需要更少的工厂来最小化时空体积。跨基准测试，随机感知配置相比蒸馏的确定性最优减少了高达27%的时空体积，同时需要减少高达30%的工厂。我们表征了每种制备机制的这些效应，绘制了 resulting design-space tradeoffs，并证明静态资源估计系统性地错误表征了容错执行的成本。我们的结果确立了随机感知分析对于合理调整工厂分配是必要的，应该取代确定性启发式作为FTQC资源规划的标准方法论。
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>在容错量子计算中，魔法态生产的内在非确定性如何影响时空体积最优配置，使得随机感知资源规划相比确定性分析能显著减少工厂数量？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>该工作聚焦容错量子计算中魔法态供应的非确定性效应，构建了耦合电路调度与随机生产模型的仿真框架。作者发现魔法态生产的随机性同时带来「代价」（执行时间膨胀）和「回报」（峰值需求平滑），使得蒸馏架构的时空最优配置点向更少工厂方向移动。跨基准测试表明，随机感知配置相比确定性最优可减少27%时空体积和30%工厂数量。该论文对量子纠错系统的资源规划与架构设计有直接工程参考价值，与中性原子平台向容错计算扩展时的魔法态管理问题高度相关。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>该框架将容错量子程序的电路调度与魔法态生产工厂的随机输出耦合起来。核心图像是：魔法态工厂以随机速率产出资源态，电路执行过程中按需消耗魔法态；当工厂产出波动时，峰值需求被平滑而非累积，导致确定性分析高估了所需工厂数量。通过蒙特卡洛仿真，作者量化了这种「需求平滑」效应，并给出了不同制备机制（蒸馏/培养/合成）下的最优配置曲面。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>构建了耦合电路调度与随机魔法态生产模型的仿真框架；量化了非确定性对容错执行时空体积的双重效应（膨胀执行时间但平滑峰值需求）；证明了随机感知配置相比确定性最优可减少27%时空体积和30%工厂数量；提出了应以随机感知分析取代确定性启发式作为FTQC资源规划的标准方法论。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>该论文对中性原子平台向容错量子计算扩展时的魔法态资源规划有直接参考价值。中性原子平台（如QuEra、Atom Computing）未来若要实现容错计算，同样面临魔法态蒸馏与供应的架构设计问题，本文的随机感知配置方法可直接借鉴用于优化工厂数量和时空体积。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。该论文直接研究容错量子计算中的魔法态资源规划，提出了随机感知配置可显著降低时空体积，对量子纠错架构设计有重要贡献。魔法态蒸馏与供应是任何容错量子计算平台（包括中性原子）必须面对的核心工程问题。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2605.07983v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2605.07983v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

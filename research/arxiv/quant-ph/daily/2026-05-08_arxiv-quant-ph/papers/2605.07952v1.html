@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reducibility of native weighted graphs on Rydberg Arrays — arXiv 2605.07952v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Reducibility of native weighted graphs on Rydberg Arrays</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2605.07952v1" target="_blank">2605.07952v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.07952v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> J. Kombe, J. D. Pritchard</span><br>
+<span><strong>分类:</strong> quant-ph, cond-mat.dis-nn, cond-mat.quant-gas, physics.atom-ph</span><br>
+<span><strong>发布时间:</strong> 2026-05-08 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">rydberg-atom</span><span class="tag">maximum-independent-set</span><span class="tag">quantum-optimization</span><span class="tag">kernelization</span><span class="tag">neutral-atom</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+We investigate the classical reducibility of random unit-disk graph (UDG) instances of the maximum independent set (MIS) and maximum weighted independent set (MWIS) problems, which can be natively realised in Rydberg atom quantum processors. Using state-of-the-art kernelisation techniques, we systematically probe how far classical preprocessing can simplify such native optimisation problems of varying size and connectivity. While many small or sparse instances can be fully reduced, dense graphs often retain finite irreducible kernels even after extensive reductions. Introducing vertex weights tends to increase reducibility, whereas extending the interaction range in the underlying UDG connectivity suppresses the reduction efficiency. By exploring where classical reductions cease to be effective, we aim to delineate the regime of problem instances that remain computationally demanding - those most relevant for testing and benchmarking near-term量子优化硬件。我们发现，对于剩余的有限核，量子执行将需要非原生嵌入并带来大量资源开销，这表明直接运行原生实例可能比嵌入约简核更为实用。
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>在里德堡原子处理器可原生实现的最大独立集问题中，经典核化预处理能将随机单位圆盘图实例简化到何种程度，哪些参数 regime 下问题仍保持计算困难性？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>该工作研究里德堡原子阵列中最大独立集（MIS）和最大加权独立集（MWIS）问题的经典可约性。作者利用最先进的核化技术系统探测了经典预处理对随机单位圆盘图实例的简化极限，发现稀疏图可完全约简，但稠密图在广泛约简后仍保留有限不可约核。顶点权重增加可约性，而扩展相互作用范围则抑制约简效率。该研究直接针对里德堡原子量子优化硬件的基准测试需求，对中性原子平台的算法-硬件协同设计有直接参考价值。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>该研究将里德堡原子阵列映射为单位圆盘图上的最大独立集问题。原子间距决定了相互作用范围，形成图中的边连接。经典核化预处理试图通过规则化简缩小问题规模：稀疏图中大量顶点可被移除，但稠密图保留有限不可约核。权重引入改变了约简动力学，而扩展相互作用范围（更大的原子间距阈值）则使图更稠密、更难约简。核心图像是经典-量子计算边界的划定：哪些实例对量子硬件仍具挑战性。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>系统研究了随机单位圆盘图MIS/MWIS实例的经典核化极限；发现稀疏实例可完全约简，稠密实例保留有限不可约核；量化了顶点权重增加约简性和相互作用范围扩展抑制约简效率的效应；指出对约简后的核进行量子执行需要非原生嵌入且资源开销大，直接运行原生实例可能更实用。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>该论文直接针对里德堡原子量子优化处理器（如QuEra Aquila）的基准测试需求，研究了MIS问题的经典预处理极限。这对中性原子平台的算法选择、实例生成和硬件性能评估有直接参考价值，可帮助用户判断哪些问题实例最值得在中性原子硬件上运行。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。该论文直接研究里德堡原子阵列中的最大独立集问题，里德堡原子阵列是中性原子量子计算的核心平台之一。论文对经典预处理极限的系统分析有助于界定中性原子量子优化硬件最有价值的基准测试实例 regime，对算法-硬件协同设计有直接参考意义。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2605.07952v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2605.07952v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

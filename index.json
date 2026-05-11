@@ -1,7 +1,7 @@
 {
   "site_name": "Quantum Daily",
   "site_description": "量子计算与量子信息前沿跟踪（配置驱动版）",
-  "last_updated": "2026-05-05",
+  "last_updated": "2026-05-08",
   "modules": {
     "quant-ph": {
       "config_files": [
@@ -9,25 +9,40 @@
         "SOURCES.md",
         "PROFILE.md"
       ],
-      "latest": "2026-05-05",
-      "latest_url": "research/arxiv/quant-ph/daily/2026-05-05_arxiv-quant-ph/index.html",
-      "paper_count": 67,
-      "highlight_count": 12,
+      "latest": "2026-05-08",
+      "latest_url": "research/arxiv/quant-ph/daily/2026-05-08_arxiv-quant-ph/index.html",
+      "paper_count": 44,
+      "highlight_count": 8,
       "highlights": [
-        "2605.04049v1",
-        "2605.04042v1",
-        "2605.04025v1",
-        "2605.04021v1",
-        "2605.04016v1",
-        "2605.03951v1",
-        "2605.03854v1",
-        "2605.03631v1",
-        "2605.03616v1",
-        "2605.03579v1",
-        "2605.03565v1",
-        "2605.03545v1"
+        "2605.08009v1",
+        "2605.07983v1",
+        "2605.07952v1",
+        "2605.07779v1",
+        "2605.07668v1",
+        "2605.07627v1",
+        "2605.07621v1",
+        "2605.07559v1"
       ],
       "history": [
+        {
+          "date": "2026-05-08",
+          "url": "research/arxiv/quant-ph/daily/2026-05-08_arxiv-quant-ph/index.html",
+          "papers": 44,
+          "highlights": [
+            "2605.08009v1",
+            "2605.07983v1",
+            "2605.07952v1",
+            "2605.07779v1",
+            "2605.07668v1",
+            "2605.07627v1",
+            "2605.07621v1",
+            "2605.07559v1"
+          ],
+          "config_driven": true,
+          "mode": "production",
+          "qa_passed": true,
+          "notes": "2026-05-08 周五数据，44 篇论文，8 High, 11 Medium, 25 Low, 8 detail pages, all QA PASS"
+        },
         {
           "date": "2026-05-05",
           "url": "research/arxiv/quant-ph/daily/2026-05-05_arxiv-quant-ph/index.html",

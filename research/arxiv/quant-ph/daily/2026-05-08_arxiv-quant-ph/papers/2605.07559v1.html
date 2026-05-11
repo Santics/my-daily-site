@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>svPITE: A Python package for the state-vector-based probabilistic imaginary-time evolution algorithm — arXiv 2605.07559v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>svPITE: A Python package for the state-vector-based probabilistic imaginary-time evolution algorithm</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2605.07559v1" target="_blank">2605.07559v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.07559v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Pascal Sievers, Satoshi Ejima</span><br>
+<span><strong>分类:</strong> quant-ph, cond-mat.str-el</span><br>
+<span><strong>发布时间:</strong> 2026-05-08 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">quantum-software</span><span class="tag">imaginary-time-evolution</span><span class="tag">ground-state-preparation</span><span class="tag">python-package</span><span class="tag">quantum-simulation</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+We present a Python package for ground-state preparation based on the probabilistic imaginary-time evolution algorithm, with particular focus on its state-vector-based implementation. A standard shot-based simulation is also supported, and results can be benchmarked against exact diagonalisation via a dedicated wrapper. The package enables efficient tuning of initial parameters, facilitating systematic exploration and optimisation of the method's performance. Starting from the prepared ground state, the strong interoperability with other packages further enables real-time evolution and the computation of spectral functions, such as the spin-spin dynamical structure factor.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何开发一个支持状态向量和shot-based两种实现模式的Python包，用于概率虚时间演化算法的基态制备、实时演化和谱函数计算？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>该工作发布了svPITE——基于概率虚时间演化算法的基态制备Python包。该包支持状态向量实现和shot-based模拟两种模式，并提供了与精确对角化的基准比较接口。作者设计了高效的初始参数调谐功能，便于系统性地探索和优化算法性能。从制备的基态出发，包还支持实时演化和谱函数计算（如自旋-自旋动力学结构因子），并具有良好的包间互操作性。该论文属于量子计算软件工具开发，对中性原子量子模拟软件栈有直接参考价值。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>该Python包实现了概率虚时间演化算法，核心图像是：从一个试探态出发，通过虚时间演化算符的随机投影逐步逼近基态。包支持两种实现路径——状态向量模式直接在希尔伯特空间中演化完整波函数，shot-based模式则通过测量采样来近似演化。制备的基态可进一步用于实时演化，通过时间关联函数计算提取谱函数（如动力学结构因子）。包内建了与精确对角化的比较接口，用于验证和基准测试。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>发布了概率虚时间演化算法的Python包svPITE；支持状态向量和shot-based两种实现模式；提供了高效的初始参数调谐功能和与精确对角化的基准比较接口；实现了从基态出发的实时演化和谱函数计算（如自旋-自旋动力学结构因子）；具有良好的包间互操作性。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>该论文发布的svPITE包对中性原子量子模拟软件栈的工具开发有直接参考价值。概率虚时间演化是制备多体基态的重要方法，该包的功能设计（双模式模拟、谱函数计算、基准比较）可直接借鉴用于中性原子平台的模拟器开发，辅助实验设计和结果验证。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。该论文直接发布了量子计算软件包svPITE，用于概率虚时间演化算法的基态制备和谱函数计算。量子模拟软件工具是中性原子量子计算软件栈的重要组成部分，该包的设计思路和功能（状态向量模拟、shot-based模拟、谱函数计算）对中性原子平台的模拟器开发有直接参考意义。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2605.07559v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2605.07559v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

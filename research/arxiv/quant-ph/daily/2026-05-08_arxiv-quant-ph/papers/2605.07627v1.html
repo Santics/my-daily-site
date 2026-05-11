@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Unified Local Light-shifts Encoding For Solving Optimization Problems on a Rydberg Annealer — arXiv 2605.07627v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>A Unified Local Light-shifts Encoding For Solving Optimization Problems on a Rydberg Annealer</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2605.07627v1" target="_blank">2605.07627v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.07627v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Kapil Goswami, Peter Schmelcher</span><br>
+<span><strong>分类:</strong> quant-ph, math.OC, physics.atom-ph, physics.comp-ph</span><br>
+<span><strong>发布时间:</strong> 2026-05-08 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">rydberg-annealer</span><span class="tag">combinatorial-optimization</span><span class="tag">qubo</span><span class="tag">quantum-annealing</span><span class="tag">neutral-atom</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+Combinatorial optimization problems play a central role in computer science with many real world applications. A number of relevant problems remain computationally difficult to solve as they lie in the NP-hard complexity class. We present a unified framework for solving such optimization problems represented in the quadratic unconstrained binary optimization (QUBO) formalism, namely two-SAT, XOR-SAT, mixed-two-XOR-SAT, set packing, quadratic assignment, binary clustering, and protein folding, by expanding the domain of applications of \textit{PRR, 6(2), 023031}. A direct mapping from the QUBO form of these problems onto the Rydberg quantum platform is demonstrated as our first step. This mapping to the Rydberg system depends on distance-dependent long-range interactions and configurable local detuning, thus reducing resource overhead and improving scalability. Following-up on the encoding, the solution is reached by steering the system toward the ground state of the target Hamiltonian using an optimized quantum annealing protocol that controls the time-dependent detuning and Rabi frequency profiles. The framework can handle a variety of problems, each with different complexity. To quantify the complexity of any problem, a generalized hardness parameter is introduced that compares different problems based on the structure of their optimization landscapes. This is a proceedings contribution to the Athens Workshop in Theoretical Physics: 10th Anniversary, held at the National and Kapodistrian University of Athens on December 17-19 2025.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何利用里德堡原子平台中的局域光移编码和优化量子退火协议，将多种NP-hard组合优化问题（如QUBO、set packing、protein folding等）统一映射并求解？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>该工作提出了里德堡原子退火器上求解组合优化问题的统一框架，将two-SAT、XOR-SAT、set packing、quadratic assignment、binary clustering和protein folding等多种QUBO问题直接映射到里德堡量子平台。作者利用距离依赖的长程相互作用和可配置局域失谐减少了资源开销，并通过优化时间依赖的失谐和Rabi频率曲线引导系统到达目标Hamiltonian基态。此外还引入了广义困难度参数来量化不同问题的优化景观复杂度。该论文对中性原子量子优化平台的算法设计和应用拓展有直接工程价值。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>该框架将组合优化问题的QUBO形式直接映射到里德堡原子阵列的物理Hamiltonian上。核心图像是：每个二元变量对应一个里德堡原子，变量间的二次耦合由原子间距离依赖的van der Waals相互作用实现，线性项由局域光移产生的失谐来编码。优化退火协议通过随时间变化的失谐和Rabi频率曲线，将系统从初始简单基态绝热地引导到目标问题的基态解。广义困难度参数则量化了不同问题优化景观的崎岖程度。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出了里德堡原子退火器上求解多种NP-hard组合优化问题的统一QUBO映射框架；利用距离依赖的长程相互作用和局域光移实现了低资源开销的问题编码；设计了优化的时间依赖退火协议来控制失谐和Rabi频率曲线；引入了广义困难度参数来量化不同问题的优化景观复杂度并比较其求解难度。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>该论文对中性原子量子优化平台（如QuEra Aquila）的算法设计和应用拓展有直接工程参考价值。统一QUBO映射框架可直接用于扩展里德堡原子退火器的应用范围，优化退火协议和困难度参数也为评估和比较不同问题在中性原子硬件上的可解性提供了实用工具。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。该论文直接研究里德堡原子平台上的组合优化问题求解，提出了多种NP-hard问题的统一QUBO映射和优化退火协议。里德堡原子退火器是中性原子量子计算的核心应用方向之一，论文对算法编码、资源优化和困难度量化都有直接工程价值。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2605.07627v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2605.07627v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>

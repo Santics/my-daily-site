@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entanglement-informed distributed wavefunction approach to scalable quantum many-body systems — arXiv 2605.07621v1</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+h1 { font-size: 1.5em; margin-bottom: 0.3em; }
+.meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+.meta span { margin-right: 1em; display: inline-block; margin-bottom: 0.3em; }
+.section { margin: 1.8em 0; }
+.section h2 { font-size: 1.15em; color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-bottom: 0.8em; }
+.abstract { background: #f8f9fa; padding: 1em; border-left: 3px solid #3498db; margin: 1em 0; }
+.tag { display: inline-block; background: #eef2f7; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin: 2px; color: #2c3e50; }
+.back { margin: 1em 0; padding: 0.5em; background: #f8f9fa; border-radius: 4px; }
+.back a { color: #3498db; text-decoration: none; }
+.relevance-high { color: #c0392b; font-weight: bold; }
+.relevance-medium { color: #e67e22; font-weight: bold; }
+.relevance-low { color: #7f8c8d; }
+</style>
+</head>
+<body>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+<h1>Entanglement-informed distributed wavefunction approach to scalable quantum many-body systems</h1>
+<div class="meta">
+<span><strong>arXiv ID:</strong> <a href="https://arxiv.org/abs/2605.07621v1" target="_blank">2605.07621v1</a></span>
+<span><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.07621v1" target="_blank">下载</a></span><br>
+<span><strong>作者:</strong> Adriano Amaricci</span><br>
+<span><strong>分类:</strong> quant-ph, cond-mat.str-el, physics.comp-ph</span><br>
+<span><strong>发布时间:</strong> 2026-05-08 | <strong>数据来源:</strong> arXiv</span>
+</div>
+
+<div class="tags">
+<span class="tag">distributed-simulation</span><span class="tag">entanglement-structure</span><span class="tag">krylov-subspace</span><span class="tag">quantum-many-body</span><span class="tag">tensor-network</span>
+</div>
+
+<div class="section">
+<h2>原摘要</h2>
+<div class="abstract">
+We show that the entanglement structure of quantum many-body states defines a natural and optimal distributed representation for their simulation. An arbitrary entanglement cut induces a bipartite decomposition of the wavefunction, mapping its distribution onto that of the entanglement spectrum. In this representation the Hamiltonian application, the core of Krylov-subspace methods, reduces to local contractions and communication-optimal operations. Using benchmarks from different methods and models, we demonstrate near-linear scaling for sufficiently large systems and identify entanglement spectrum fragmentation as a key factor controlling computational cost. This establishes entanglement as an organizing principle and unified, method-independent, route for scaling up quantum many-body simulations.
+</div>
+</div>
+
+<div class="section">
+<h2>一句话核心问题</h2>
+<p>如何利用量子多体态的纠缠结构来定义波函数的分布式表示，使得Krylov子空间方法中的Hamiltonian作用退化为局部缩约和通信最优操作？</p>
+</div>
+
+<div class="section">
+<h2>AI快评</h2>
+<p>该工作提出了纠缠引导的分布式波函数方法用于可扩展量子多体模拟。作者利用任意纠缠切割诱导的波函数双分分解，将波函数分布映射到纠缠谱上，使得Krylov子空间方法核心的Hamiltonian作用简化为局部缩约和通信最优操作。跨不同方法和模型的基准测试表明，足够大的系统可实现近线性扩展，纠缠谱碎片化是控制计算成本的关键因素。该论文对量子多体经典模拟器的设计有直接方法价值，与中性原子平台的模拟器验证和规模扩展高度相关。</p>
+</div>
+
+<div class="section">
+<h2>核心物理图像</h2>
+<p>该方法以量子多体态的纠缠结构为组织原则构建分布式表示。核心图像是：任意纠缠切割将系统分为两部分，波函数在该切割下的施密特分解定义了纠缠谱。分布式计算中，每部分只保留本地的纠缠谱分量，Hamiltonian作用通过网络上的局部缩约和最小通信操作实现。纠缠谱的碎片化程度直接决定了分布式节点间的通信量和计算成本，碎片化越低，近线性扩展性能越好。</p>
+</div>
+
+<div class="section">
+<h2>主要贡献</h2>
+<p>提出了以纠缠结构为组织原则的分布式波函数表示方法；证明了任意纠缠切割下Hamiltonian作用可简化为局部缩约和通信最优操作；通过跨方法跨模型基准测试展示了近线性扩展能力；识别了纠缠谱碎片化作为控制分布式量子多体模拟计算成本的关键因素。</p>
+</div>
+
+<div class="section">
+<h2>与你的主线关系</h2>
+<p>该论文对中性原子量子模拟器的分布式设计和规模扩展有直接参考价值。纠缠引导的分布式表示方法可整合到中性原子平台的经典模拟器软件栈中，用于在集群或云计算环境中高效模拟大规模中性原子系统，辅助实验设计和结果验证。</p>
+</div>
+
+<div class="section">
+<h2>相关性判定</h2>
+<p><span class="relevance-high">高相关</span>。该论文直接研究量子多体系统的分布式波函数模拟方法，以纠缠结构为组织原则实现了近线性扩展。经典模拟器是中性原子量子计算软件栈的重要组成部分，该论文对模拟器的分布式架构设计和规模扩展有直接参考价值。</p>
+</div>
+
+<div class="section">
+<h2>原文链接</h2>
+<p><a href="https://arxiv.org/abs/2605.07621v1" target="_blank">arXiv Abstract</a> | <a href="https://arxiv.org/pdf/2605.07621v1" target="_blank">PDF</a></p>
+</div>
+
+<div class="back"><a href="../index.html">← 返回日报</a></div>
+
+</body>
+</html>
