@@ -1,7 +1,7 @@
 {
   "site_name": "Quantum Daily",
   "site_description": "量子计算与量子信息前沿跟踪（配置驱动版）",
-  "last_updated": "2026-05-08",
+  "last_updated": "2026-06-11",
   "modules": {
     "quant-ph": {
       "config_files": [
@@ -9,39 +9,33 @@
         "SOURCES.md",
         "PROFILE.md"
       ],
-      "latest": "2026-05-08",
-      "latest_url": "research/arxiv/quant-ph/daily/2026-05-08_arxiv-quant-ph/index.html",
-      "paper_count": 44,
-      "highlight_count": 8,
+      "latest": "2026-06-11",
+      "latest_url": "research/arxiv/quant-ph/daily/2026-06-11_arxiv-quant-ph/index.html",
+      "paper_count": 100,
+      "highlight_count": 5,
       "highlights": [
-        "2605.08009v1",
-        "2605.07983v1",
-        "2605.07952v1",
-        "2605.07779v1",
-        "2605.07668v1",
-        "2605.07627v1",
-        "2605.07621v1",
-        "2605.07559v1"
+        "2606.12409v1",
+        "2606.12394v1",
+        "2606.12310v1",
+        "2606.12313v1",
+        "2606.12338v1"
       ],
       "history": [
         {
-          "date": "2026-05-08",
-          "url": "research/arxiv/quant-ph/daily/2026-05-08_arxiv-quant-ph/index.html",
-          "papers": 44,
+          "date": "2026-06-11",
+          "url": "research/arxiv/quant-ph/daily/2026-06-11_arxiv-quant-ph/index.html",
+          "papers": 100,
           "highlights": [
-            "2605.08009v1",
-            "2605.07983v1",
-            "2605.07952v1",
-            "2605.07779v1",
-            "2605.07668v1",
-            "2605.07627v1",
-            "2605.07621v1",
-            "2605.07559v1"
+            "2606.12409v1",
+            "2606.12394v1",
+            "2606.12310v1",
+            "2606.12313v1",
+            "2606.12338v1"
           ],
           "config_driven": true,
-          "mode": "production",
-          "qa_passed": true,
-          "notes": "2026-05-08 周五数据，44 篇论文，8 High, 11 Medium, 25 Low, 8 detail pages, all QA PASS"
+          "mode": "production-dry-run",
+          "qa_passed": false,
+          "notes": "2026-06-11 数据，100 篇论文，5 High, 95 Medium, 0 Low, 5 detail pages, 简化字段生成，待完整 QA"
         },
         {
           "date": "2026-05-05",
