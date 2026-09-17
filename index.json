@@ -1,7 +1,7 @@
 {
   "site_name": "Quantum Daily",
   "site_description": "量子计算与量子信息前沿跟踪（配置驱动版）",
-  "last_updated": "2026-06-11",
+  "last_updated": "2026-09-17",
   "modules": {
     "quant-ph": {
       "config_files": [
@@ -9,18 +9,28 @@
         "SOURCES.md",
         "PROFILE.md"
       ],
-      "latest": "2026-06-11",
-      "latest_url": "research/arxiv/quant-ph/daily/2026-06-11_arxiv-quant-ph/index.html",
+      "latest": "2026-09-17",
+      "latest_url": "research/arxiv/quant-ph/daily/2026-09-17_arxiv-quant-ph/index.html",
       "paper_count": 100,
-      "highlight_count": 5,
+      "highlight_count": 2,
       "highlights": [
-        "2606.12409v1",
-        "2606.12394v1",
-        "2606.12310v1",
-        "2606.12313v1",
-        "2606.12338v1"
+        "2609.18447v1",
+        "2609.17313v1"
       ],
       "history": [
+        {
+          "date": "2026-09-17",
+          "url": "research/arxiv/quant-ph/daily/2026-09-17_arxiv-quant-ph/index.html",
+          "papers": 100,
+          "highlights": [
+            "2609.18447v1",
+            "2609.17313v1"
+          ],
+          "config_driven": true,
+          "mode": "production",
+          "qa_passed": true,
+          "notes": "2026-09-17 数据，100 篇论文，2 High, 12 Medium, 86 Low, 2 detail pages, QA 通过"
+        },
         {
           "date": "2026-06-11",
           "url": "research/arxiv/quant-ph/daily/2026-06-11_arxiv-quant-ph/index.html",
